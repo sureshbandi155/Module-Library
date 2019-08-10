@@ -1,0 +1,50 @@
+content_section_wd_9
+three-col-adjust
+hs_cos_wrapper
+
+.section-padding
+.section-border
+
+
+==for cm naming conversions==
+Add Background Color
+Add Background Image
+Add Heading
+== for repeater ===
+Add Image
+Add Title
+Add Description
+
+
+
+/*==================================================================
+   Content Section WD 9 Styling
+=====================================================================*/
+
+.content_section_wd_9 h2{
+    margin-bottom:74px;
+}
+
+
+.content_section_wd_9 h4{
+    margin: 27px 0px 16px;
+}
+
+
+
+/*==================================================================
+   End Of Content Section WD 9 Styling
+=====================================================================*/
+            for tap
+h1-62px
+h2-42
+h3-34
+h4-24
+h5-18
+h6-14
+p-16
+a-
+
+//         <div class="span6 image-section" style="background:  url('{{ module.add_image.src }}') no-repeat; background-size: cover;min-height: 514px">
+
+//         </div>
