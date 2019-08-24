@@ -1,0 +1,227 @@
+/*==================================================================
+ Content Section WD 39 Styling
+=====================================================================*/
+
+.content_section_wd_39 .inner-layer .single-card{
+    box-sizing: border-box;
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    margin:0 0 29px 29px;
+    position: relative;
+
+
+}
+.content_section_wd_39 .inner-layer .single-card hr {
+    border: 1px solid;
+    margin-bottom:13px;
+
+}
+.content_section_wd_39 .inner-layer .single-card .image-text{
+    padding: 55px 16px 0 25px;
+
+}
+.content_section_wd_39 .inner-layer .single-card .button-section a{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.content_section_wd_39 .inner-layer .single-card .button-section {
+    text-align: center;
+    padding: 0 0 17px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.content_section_wd_39 .inner-layer .single-card .text-section{
+    padding: 32px 0 75px;
+}
+.content_section_wd_39 .inner-layer .single-card .image-section img{
+    height: 38px;
+    width: 38px;
+}
+@media (min-width: 1024px) {
+    .content_section_wd_39 .inner-layer .single-card{
+        flex-basis: 22.7%;
+        -webkit-flex-basis:  22.7%;
+        float: left;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(4n+1){
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content_section_wd_39 .inner-layer .single-card{
+        flex-basis: 30.5%;
+        -webkit-flex-basis:  30.5%;
+        float: left;
+
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(3n+1){
+        margin-left: 0;
+    }
+}
+@media (min-width: 576px) {
+    .content_section_wd_39 .inner-layer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: stretch;
+        -moz-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        -wevkit-flex-wrap: wrap;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .content_section_wd_39 .inner-layer .single-card{
+        flex-basis: 46.9%;
+        -webkit-flex-basis:  46.6%;
+        float: left;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(2n+1){
+        margin-left: 0;
+    }
+}
+@media (max-width: 575px){
+    .content_section_wd_39 .inner-layer .single-card{
+
+        margin: 0 0 30px;
+    }
+
+}
+/*==================================================================
+   End Of  Content Section WD 39 Styling
+=============================================
+========================*/
+
+
+.content_section_wd_39 .inner-layer .single-card{
+    box-sizing: border-box;
+    padding:40px 15px 50px;
+
+
+}
+.content_section_wd_39 .inner-layer .single-card .text-section{
+    padding: 29px 0 0;
+}
+.content_section_wd_39 .inner-layer .single-card .image-section img{
+    height: 38px;
+    width: 38px;
+}
+@media (min-width: 1024px) {
+    .content_section_wd_39 .inner-layer .single-card{
+        flex-basis: 25%;
+        -webkit-flex-basis:  25%;
+        float: left;
+        border-right: 2px solid #e7e7e7;
+        border-bottom: 2px solid #e7e7e7;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(4n+1){
+        padding-left: 0;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(4n){
+        border-right: none;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(1) {
+        border-bottom: none;
+        margin: 0 auto;
+        margin-left: 0
+
+
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(2) {
+        border-bottom: none;
+        margin: 0 auto;
+        margin-right: 0;
+        border-left: 2px solid #e7e7e7;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content_section_wd_39 .inner-layer .single-card{
+        flex-basis: 33.3%;
+        -webkit-flex-basis:  33.3%;
+        float: left;
+
+        border-right: 2px solid #e7e7e7;
+        border-bottom: 2px solid #e7e7e7;
+
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(3n+1){
+        padding-left: 0;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(3n){
+        border-right: none;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(1) {
+        border-bottom: none;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(2) {
+        border-bottom: none;
+    }
+}
+@media (min-width: 576px) {
+    .content_section_wd_39 .inner-layer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: stretch;
+        -moz-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        -wevkit-flex-wrap: wrap;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .content_section_wd_39 .inner-layer .single-card{
+        flex-basis: 50%;
+        -webkit-flex-basis:  50%;
+        float: left;
+
+        border-right: 2px solid #e7e7e7;
+        border-bottom: 2px solid #e7e7e7;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(2n+1){
+        padding-left: 0;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-child(2n){
+        border-right: none;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(1) {
+        border-bottom: none;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(2) {
+        border-bottom: none;
+    }
+}
+@media (max-width: 575px){
+    .content_section_wd_39 .inner-layer .single-card{
+        border-bottom: 2px solid #e7e7e7;
+
+        margin: 0 0 30px;
+    }
+    .content_section_wd_39 .inner-layer .single-card:nth-last-child(1) {
+        border-bottom: none;
+    }
+
+}

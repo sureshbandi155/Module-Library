@@ -1,0 +1,98 @@
+<div class="span12 customer_centric_consumer section-padding change-mobile" style="background:{{ module.add_background_color }}">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <p>{{ module.add_consumer_text }}</p>
+                <h3>{{ module.add_heading }}</h3>
+                <h4>{{ module.add_sub_heading }}</h4>
+            </div>
+        </div>
+        <div class="two-col-text-image">
+            <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6 left-col">
+                    <p>{{ module.add_left_col_text }}</p>
+                    <h4>{{ module.add_left_col_heading }}</h4>
+                    <ol>
+                        {% for item in module.add_left_col_lists_group %}
+
+                        <li>{{ item.add_left_col_list }}</li>
+                        {% endfor %}
+                    </ol>
+                    <hr>
+                    <div class="button-section">
+                        {% cta guid="{{ module.add_button }}" %}
+                    </div>
+                </div>
+
+                <div class="span6 right-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .customer_centric_consumer p{
+        margin: 0;
+        padding: 0 0 16px;
+    }
+    .customer_centric_consumer h3{
+        margin: 0;
+        padding: 0 0 14px;
+    }
+    .customer_centric_consumer h4{
+        margin: 0;
+    }
+    .customer_centric_consumer .two-col-text-image p{
+        margin: 0;
+        padding: 0 0 26px;
+    }
+    .customer_centric_consumer .two-col-text-image h4{
+        margin: 0;
+        padding: 0 0 20px;
+    }
+    .customer_centric_consumer .two-col-text-image ol li{
+        margin: 0;
+        padding: 0 0 15px;
+    }
+    .customer_centric_consumer .two-col-text-image ol {
+        padding: 0 0 0 34px;
+    }
+    @media (min-width: 1024px){
+        .customer_centric_consumer .two-col-text-image{
+            padding: 75px 0 0;
+        }
+        .customer_centric_consumer .left-col{
+            max-width: 510px;
+            padding: 20px 0 0;
+        }
+        .customer_centric_consumer .two-col-text-image hr{
+            margin:0;
+            padding: 9px 0 25px;
+        }
+        .customer_centric_consumer h4 span{
+            text-decoration: underline;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+        .customer_centric_consumer .two-col-text-image{
+            padding: 50px 0 0;
+        }
+    }
+    @media (max-width: 767px){
+        .customer_centric_consumer .two-col-text-image{
+            padding: 30px 0 0;
+        }
+        .customer_centric_consumer .right-col{
+            padding: 0 0 30px;
+        }
+    }
+
+</style>
+

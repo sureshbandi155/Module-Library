@@ -1,0 +1,73 @@
+/*==================================================================
+   Customer Centric Consumer Styling
+=====================================================================*/
+
+.customer_centric_consumer p{
+    margin: 0;
+    padding: 0 0 16px;
+}
+.customer_centric_consumer h3{
+    margin: 0;
+    padding: 0 0 14px;
+}
+.customer_centric_consumer h4{
+    margin: 0;
+}
+.customer_centric_consumer .two-col-text-image p{
+    margin: 0;
+    padding: 0 0 26px;
+}
+.customer_centric_consumer .two-col-text-image h4{
+    margin: 0;
+    padding: 0 0 20px;
+}
+.customer_centric_consumer .two-col-text-image ol li{
+    margin: 0;
+    padding: 0 0 15px;
+}
+.customer_centric_consumer .two-col-text-image ol {
+    padding: 0 0 0 34px;
+}
+.customer_centric_consumer .two-col-text-image hr{
+    border-top: 1px solid rgba(35, 41, 50, 0.2);
+}
+.customer_centric_consumer h4 span{
+    text-decoration: underline;
+}
+.customer_centric_consumer .right-col .image-section img{
+    object-fit: contain;
+    box-shadow: -6px 6px 24px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width: 1024px){
+    .customer_centric_consumer .two-col-text-image{
+        padding: 75px 0 0;
+    }
+    .customer_centric_consumer .left-col{
+        max-width: 510px;
+        padding: 20px 0 0;
+    }
+    .customer_centric_consumer .right-col{
+        margin: 0 0 0 90px;
+    }
+    .customer_centric_consumer .two-col-text-image hr{
+        margin:0;
+        padding: 9px 0 25px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .customer_centric_consumer .two-col-text-image{
+        padding: 50px 0 0;
+    }
+
+}
+@media (max-width: 767px){
+    .customer_centric_consumer .two-col-text-image{
+        padding: 30px 0 0;
+    }
+    .customer_centric_consumer .right-col{
+        padding: 0 0 30px;
+    }
+}
+/*==================================================================
+   End of Customer Centric Consumer Styling
+=====================================================================*/

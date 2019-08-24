@@ -1,0 +1,209 @@
+<div class="span12 content_section_psd section-padding">
+    <div class="top-background-img" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="left-background-image" style="background: url('{{ module.add_right_col_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    <div class="span6 left-col" style="background:{{ module.add_background_color_left_col }};">
+                        <div class="outer-layer all-text-white">
+                            {% for item in module.add_list_group %}
+                            <h5>{{ item.add_list_text }}</h5>
+                            {% endfor %}
+                        </div>
+
+                    </div>
+                    <div class="span6 right-col vertical-center">
+                        <div class="text-section">
+                            <h2>{{ module.add_heading }}</h2>
+                            <p>{{ module.add_description }}</p>
+                        </div>
+                        <div class="button-section">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="top-background-img" style="background: url('{{ module.add_top_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="row-fluid-wrapper">
+        <div class="row-fluid">
+        </div>
+    </div>
+</div>
+
+<style>
+    .content_section_psd .left-col .outer-layer h5{
+        border-bottom: 1px solid #3c3c3c;
+        padding: 21px 0 ;
+    }
+    .content_section_psd .left-col .outer-layer h5:last-child{
+        border-bottom: none;
+    }
+    .content_section_psd .left-col {
+        border-left: 10px solid #232937;
+        border-bottom: 10px solid #232937;
+        oultine-left: 10px solid #232937;
+        outline-bottom: 10px solid #232937;
+    }
+    .content_section_psd .left-col {
+        padding: 41px;
+    }
+    @media (min-width: 768px) {
+        .content_section_psd .right-col .text-section{
+            max-width: 443px;
+        }
+
+    }
+    .content_section_psd .right-background-image:before{
+        background: url("https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/p2h/content%20top%20background.svg") no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+    /*     <div class="top-background-img" style="background: url('{{ module.add_top_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+            </div>
+        </div>
+    </div> */
+    style="background:{{ module.add_background_color_left_col }};"
+    .content_section_psd .right-background-image{position: relative;}
+    .content_section_psd .right-background-image:before{
+        position: absolute;
+        content: '';
+        background: url("https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/p2h/content%20top%20background.svg") no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+
+
+</style>
+
+
+<style>
+
+    .content_section_psd {
+        position: relative
+    }
+    .content_section_psd:before{
+        position: absolute;
+        content: '';
+        background: url("https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/p2h/content%20section%20top%20image.png") no-repeat;
+        background-size: cover;
+        background-position: top center;
+        top:0;
+        left: 0;
+        width: 100%;
+        min-height: 279px;
+    }
+    .content_section_psd .right-background-image {
+        margin: 173px 0 0;
+    }
+    .content_section_psd .left-col .outer-layer h5{
+        border-bottom: 1px solid #3c3c3c;
+        padding: 21px;
+        margin: 0;
+    }
+    .content_section_psd .left-col .outer-layer {
+        padding: 21px 41px;
+        position: relative;
+        z-index: 1;
+    }
+    .content_section_psd .left-col{
+        position: relative;
+    }
+    .content_section_psd .left-col:before {
+        position: absolute;
+        content: '';
+        top: 3.4%;
+        bottom: 0;
+        right: 0;
+        left: -3.4%;
+        height: 100%;
+        width: 100%;
+        background: #c1c2c6;
+        z-index: 1;
+    }
+    .content_section_psd .left-col:after {
+        position: absolute;
+        content: '';
+        top: 6.8%;
+        bottom: 0;
+        right: 0;
+        left: -6.8%;
+        height: 100%;
+        width: 100%;
+        background: #dbdcde;
+        z-index: 0;
+    }
+    .content_section_psd .left-col .outer-layer h5:last-child{
+        border-bottom: none;
+    }
+    .content_section_psd .right-col .button-section a.cta_button{
+        text-decoration: none;
+        font-size: 16px;
+
+    }
+    @media (max-width: 1299px) {
+        .content_section_psd .left-col:after{
+            padding-left: 15px;
+        }
+    }
+    @media (max-width: 1260px){
+        .content_section_psd .wrapper .row-fluid:before{
+            margin-left: 15px;
+        }
+    }
+    @media (min-width: 768px) {
+        .content_section_psd .right-col .text-section{
+            max-width: 429px;
+        }
+        .content_section_psd .right-col .text-section h2{
+            padding: 0 0 20px;
+            margin: 0;
+        }
+        .content_section_psd .right-col .text-section p{
+            padding: 0 0 30px;
+            margin: 0;
+        }
+        .content_section_psd .left-col{
+            margin: 100px 0;
+        }
+        .content_section_psd .right-col{
+            margin: 0 0 0 83px;
+        }
+        .content_section_psd .right-col .button-section a.cta_button{
+            padding: 22px 33px;
+        }
+        .content_section_psd .right-background-image {
+            position: relative;
+            margin: 173px 0 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .content_section_psd .left-col .outer-layer{
+            max-width: 528px;
+        }
+
+    }
+    @media (max-width: 767px){
+        .content_section_psd .left-col:before {
+            max-width: 100%
+        }
+        .content_section_psd .left-col:after {
+            max-width: 100%
+        }
+        body .row-fluid .content_section_psd .left-col{
+            margin: 0 0 64px 18px;
+        }
+
+    }
+</style>

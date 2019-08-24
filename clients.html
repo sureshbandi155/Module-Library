@@ -1,0 +1,69 @@
+<div class="span12 client_section_wd_20 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+        <div class="outer-layer">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    {% for item in module.add_clients_group %}
+                    <div class="image-section">
+                        <img src="{{ item.add_image.src }}"
+                             alt="{{ item.add_image.alt }}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .client_section_wd_20 .outer-layer button.slide-arrow.prev-arrow2.slick-arrow{
+        outline: none;
+        border: none;
+        background: none;
+
+    }
+    .client_section_wd_20 .outer-layer button.slide-arrow.prev-arrow2.slick-arrow{
+        outline: none;
+        border: none;
+        background: none;
+
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
+            left: -5%;
+            top: 9%;
+
+        }
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
+
+            right: -2.2%;
+            top: 9%;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1300px) {
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
+            left: -5%;
+            top: 9%;
+
+        }
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
+            right: -2.2%;
+            top: 9%;
+        }
+    }
+    @media (min-width: 1024px) {
+        .client_section_wd_20 h2 {
+            margin: 0;
+            padding: 0 0 50px;
+        }
+
+    }
+
+</style>

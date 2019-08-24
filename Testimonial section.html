@@ -1,0 +1,99 @@
+<div class="span12 testimonial-section-wd-2 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="outer-layer">
+            {% for item in module.add_testimonial_group %}
+
+            <div class="inner-layer" style="background: url('{{ item.add_background_image_card.src }}')no-repeat;background-position:top center;background-size:cover;">
+                <div class="image-section">
+                    <div class="left-img">
+                        <img src="{{ item.add_left_image.src }}"
+                             alt="{{ item.add_left_image.alt }}">
+                    </div>
+                    <div class="right-img">
+                        <img src="{{ item.add_right_image.src }}"
+                             alt="{{ item.add_right_image.alt }}">
+                    </div>
+                </div>
+                <div class="text-section">
+                    <p>{{ item.add_description }}</p>
+                    <span><h4>{{ item.add_testimonial_heading }}</h4> - <p>{{ item.add_testimonial_paragaph }}</p></span>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .slick-slide:focus{
+        outline:none;
+    }
+    .testimonial_section_wd_2 ul.slick-dots {
+
+        padding-left: 0px;
+    }
+    .testimonial_section_wd_2 .slick-dots li{
+        margin: 0 5px;
+        display: inline-block;
+    }
+    .testimonial_section_wd_2 .slick-dots li.slick-active button {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background:#000;
+    }
+    .testimonial_section_wd_2 .slick-dots li button:hover{
+        background: #000;
+    }
+
+    .testimonial_section_wd_2 .slick-dots li button {
+        font-size: 1px;
+        color: transparent;
+        padding: 0;
+        border: 0;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #294D5C;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+    .testimonial_section_wd_2 .slick-dots li:focus,.office-slide .slick-dots li.slick-active button:focus {
+        outline: none;
+    }
+    .slick-dots li button:before {
+        display: none;
+    }
+    .testimonial_section_wd_2 .outer-layer .inner-layer .image-section{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+    .testimonial_section_wd_2 .outer-layer .image-section .image-section .left-img img{
+        width: 69px;
+        height: 69px;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section{
+        padding: 40px 63px 68px;
+    }
+    @media (min-width: 1024px) {
+        .testimonial_section_wd_2 .section-heading h2{
+            padding: 0 0 100px;
+            margin: 0;
+        }
+    }
+
+</style>
+

@@ -1,0 +1,57 @@
+<div class="span12 faqs-wd-5 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span4">
+                    <div class="questions-section">
+                        {% for item in module.add_questions_group %}
+
+                        <p>Q. {{ item.add_question }} ?</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="span8">
+                    {% for item in module.add_question_and_answer_group %}
+
+                    <div class="question-answer-section">
+
+                        <h5>{{ item.add_question }}</h5>
+                        <p>{{ item.add_answer }}</p>
+                        <hr>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .faqs-wd-5 .question-answer-section hr{
+        border-color: #000;
+    }
+    .faqs-wd-5 .questions-section p a{
+        text-decoration: none;
+
+    }
+    @media (min-width: 1024px){
+        .faqs-wd-5 .question-answer-section hr{
+            margin: 0;
+        }
+        .faqs-wd-5 .question-answer-section h5{
+            margin: 0;
+            padding: 0 0 26px;
+        }
+        .faqs-wd-5 .question-answer-section{
+            margin: 0;
+            padding: 0 0 50px;
+        }
+    }
+    @media (max-width: 767px) {
+        .faqs-wd-5 .questions-section {
+            padding: var(--mobile-padding);
+            text-align: center;
+        }
+    }
+</style>
