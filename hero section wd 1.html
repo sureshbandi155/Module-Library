@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Typography.css">
+    <title>hero section wd 1</title>
+    <style>
+        /*==================================================================
+   Hero Section WD 1 Styling
+=====================================================================*/
+
+
+        .hero_section_wd_1 .wrapper .button .left-button .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button {
+            margin: 0 26px 0 0;
+        }
+        .hero_section_wd_1 .wrapper .button .right-button .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button {
+            color: #000;
+            background: #fff;
+            border: 1px solid #000;
+
+        }
+        .hero_section_wd_1 .wrapper .button .right-button .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button:hover {
+            color: #fff;
+            background: #000;
+            border: 1px solid #fff;
+
+        }
+        .hero_section_wd_1.our-clients .wrapper .logo-section {
+            position: relative;
+
+        }
+        .hero_section_wd_1 .wrapper .logo-section:before {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 1px;
+            border-image-source: linear-gradient(to right, #ffffff, #000000 52%, #ffffff);
+            border-image-slice: 1;
+            width: 100%;
+            margin: 0 auto;
+            top: 0;
+
+        }
+        @media (min-width: 768px) {
+            .hero_section_wd_1.our-clients .logo-section {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .hero_section_wd_1.our-clients .wrapper .logo-section .each-logo{
+                padding: 17px 59px 0 0;
+            }
+            .hero_section_wd_1.our-clients{
+                padding: 0 0 100px;
+            }
+            .hero_section_wd_1{
+                position: relative;
+            }
+            .hero_section_wd_1 .right-col {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        @media (max-width: 767px) {
+            body .container-fluid .row-fluid .hero_section_wd_1 .span6.right-col {
+                margin: 0 0 40px;
+                min-height: 324px;
+                max-width: 75%;
+
+            }
+            .hero_section_wd_1.our-clients{
+                padding: 0 0 60px;
+            }
+            .hero_section_wd_1.our-clients .wrapper .logo-section {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+            }
+            .hero_section_wd_1.our-clients .wrapper .logo-section{
+                text-align: center;
+            }
+
+            .hero_section_wd_1.our-clients .wrapper .logo-section .each-logo{
+                padding: 20px 0 0;
+
+                flex-basis: 50%;
+                -webkit-flex-basis: 50%;
+                margin: 0;
+            }
+            .hero_section_wd_1.our-clients .wrapper .logo-section:before {
+                top: 0;
+                left: 0;
+            }
+
+
+        }
+        @media (max-width: 567px) {
+            .hero_section_wd_1.our-clients .wrapper .logo-section {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            body .container-fluid .row-fluid .hero_section_wd_1 .span6.right-col {
+
+                max-width: 80%;
+
+            }
+        }
+        @media (max-width: 480px) {
+            .hero_section_wd_1 .wrapper .button .left-button .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button {
+                margin: 0 0 20px;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="span12 hero_section_wd_1 section-padding change-mobile" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+
+                <div class="span6 left-col section-heading vertical-center">
+                    <h1>{{ module.add_heading }}</h1>
+                    <p>
+                        {{ module.add_sub_heading }}
+                    </p>
+                    <div class="button">
+                        <span class="left-button">{% cta guid="{{ module.add_cta_button }}" %}</span>
+                        <span class="right-button">{% cta guid="{{ module.add_cta_button_1 }}" %}</span>
+                    </div>
+                </div>
+                <div class="span6 right-col"  style="background: url('{{ module.add_image.src }}') no-repeat;background-position:right;background-size:contain;">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="span12 hero_section_wd_1 our-clients">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="logo-section">
+                    {% for item in module.logo_section %}
+                    <div class="each-logo">
+                        <img src="{{ item.add_image_logos.src }}"
+                             alt="{{ item.add_image_logos.alt }}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

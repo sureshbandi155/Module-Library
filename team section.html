@@ -1,0 +1,74 @@
+<style>
+
+
+    /*==================================================================
+    Client Section WD 4 Styling
+    =====================================================================*/
+    @media (min-width: 768px) {
+        .clients_section_wd_8 .outer-layer .row-fluid{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: stretch;
+            -moz-box-align: stretch;
+            -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            flex-wrap: wrap;
+            -wevkit-flex-wrap: wrap;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            margin-right: -2.5%;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+    }
+    @media (min-width: 1024px) {
+        .clients_section_wd_8 .outer-layer .inner-layer{
+            -ms-flex-preferred-size: 30%;
+            -webkit-flex-basis: 33%;
+            flex-basis: 30%
+        }
+
+        .clients_section_wd_8 .outer-layer .inner-layer:nth-child(3n-1){
+            text-align: center;
+        }
+        .clients_section_wd_8 .outer-layer .inner-layer:nth-child(3n){
+            text-align: end;
+        }
+        .clients_section_wd_8 h5 {
+            margin: 0;
+            padding: 0 0 40px;
+        }
+
+    }
+
+    /*==================================================================
+    End Of  Team Section WD 4 Styling
+    =====================================================================*/
+</style>
+
+<div class="span12 clients_section_wd_8 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <h5>{{ module.add_heading }}</h5>
+            </div>
+        </div>
+        <div class="outer-layer">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    {% for item in module.left_col_group %}
+                    <div class="inner-layer">
+                        <h6>{{ item.add_company_name }}</h6>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

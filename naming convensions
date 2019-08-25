@@ -48,3 +48,22 @@ a-
 //         <div class="span6 image-section" style="background:  url('{{ module.add_image.src }}') no-repeat; background-size: cover;min-height: 514px">
 
 //         </div>
+{% for item in module.add_slider_group %}
+	{% inline_text field="add_background_color" value="{{ item.add_background_color }}" %}
+	{% if item.add_background_image.src %}
+		<img src="{{ item.add_background_image.src }}"
+			alt="{{ item.add_background_image.alt }}"
+			width="{{ item.add_background_image.width }}"
+			height="{{ item.add_background_image.height }}">
+	{% endif %}
+	{% inline_text field="add_heading" value="{{ item.add_heading }}" %}
+	{% inline_rich_text field="add_description" value="{{ item.add_description }}" %}
+	{% cta guid="{{ item.add_cta_button }}" %}
+	{% cta guid="{{ item.add_cta_button_1 }}" %}
+	{% if item.add_image.src %}
+		<img src="{{ item.add_image.src }}"
+			alt="{{ item.add_image.alt }}"
+			width="{{ item.add_image.width }}"
+			height="{{ item.add_image.height }}">
+	{% endif %}
+{% endfor %}
