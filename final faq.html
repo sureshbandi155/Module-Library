@@ -1,0 +1,250 @@
+<div class="span12 faq_system section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span4 left-col" style="background:{{ module.add_left_col_background }}">
+                    <h4>
+                        {{ module.add_left_col_heading }}
+                    </h4>
+                    <hr>
+                    <div class="all-questions">
+                        {% for item in module.add_topics_group %}
+                        <h5 class="each-question current" data-tab="{{ item.add_topic_data_id }}">
+                            {{ item.add_topic_question }}
+                        </h5>
+                        <h5 class="each-question" data-tab="question-2">
+                            {{ module.add_left_col_sub_heading_1 }}
+                        </h5>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="span8 right-col">
+                    <div class="form-section">
+                        <input type="text" placeholder="Type Keyword">
+                        <div class="search-icon">
+                            <i class="fa fa-search fa-2x"  aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id="Topic1" class="single-question">
+                        <h2></h2>
+                        {% for item in module.add_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div id="Topic2" class="single-question">
+                        {% for item in module.add_second_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div id="Topic3" class="single-question">
+                        {% for item in module.add_third_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div id="Topic4" class="single-question">
+                        {% for item in module.add_fourth_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div id="Topic5" class="single-question">
+                        {% for item in module.add_fifth_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div id="Topic6" class="single-question">
+                        {% for item in module.add_sixth_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div id="Topic7" class="single-question">
+                        {% for item in module.add_seventh_question_and_answer %}
+                        <div class="question-answer">
+                            <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
+                                <div class="question">
+                                    <h5>{{ item.add_question }}</h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ item.add_answer }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .faq_system .left-col h5{
+        cursor: pointer;
+    }
+    .faq_system .right-col .form-section .search-icon {
+        color: #fff;
+        background:  #232937;
+        width: 64px;
+        height: 47px;
+    }
+    .faq_system .right-col .form-section{
+        display: flex;
+    }
+    .faq_system .right-col .search-icon .fa-2x{
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        padding: 7px;
+    }
+    .faq_system .current{
+        text-decoration: underline;
+    }
+    .faq_system .single-question{
+        display: none;
+    }
+    .faq_system .single-question.current{
+        display: inherit;
+    }
+    .faq_system .right-col .single-question{
+        padding: 73px 0 0;
+    }
+    /* padding for question and answer */
+    .faq_system .right-col .question-answer .question-answer-group{
+        margin: 0;
+        padding: 44px 0 44px 84px;
+        border-bottom: 1px solid #c2c2c2;
+    }
+    .faq_system .right-col .question-answer .question-answer-group .question h5{
+        margin: 0;
+    }
+    .faq_system .right-col .question-answer .question-answer-group .answer p{
+        margin: 0;
+        padding: 41px 0 6px;
+    }
+
+    /******for toggle ***/
+    body .faq_system  .question h5 {
+        margin: 0;
+        padding-bottom: 0px;
+        cursor:pointer;
+        position:relative;
+    }
+    .faq_system .question h5:after {
+        content: " ";
+        background-image: url('https://cdn2.hubspot.net/hubfs/6203144/p2h/plus.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        top: 5px;
+        left: -52px;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+    }
+    .faq_system .question{
+        position: relative;
+    }
+    .faq_system .question-answer-group.expanded h5:after {
+        content: "";
+        background-image: url('https://cdn2.hubspot.net/hubfs/6203144/p2h/border.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 15px;
+        height: 5px;
+        top: 11px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+
+        $('.faq_system .all-questions h5').click(function(){
+            var tab_id = $(this).attr('data-tab');
+            var heading = $('.faq_system .single-question h2');
+            console.log($(this).text());
+            heading.text($(this).text());
+            $('.faq_system .all-questions h5').removeClass('current');
+            $('.single-question').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        });
+
+    });
+
+
+    var quesitonAnswer = $('.question-answer');
+    // Initially hide all accordion content
+    quesitonAnswer.find('.answer').hide();
+    // Initially display the accordion content with .expanded class
+    quesitonAnswer.find('.question-answer-group.expanded .answer').show();
+    quesitonAnswer.find('.question').click(function(){
+// Hide the displayed sibling accordion content so only one appears at a time
+        quesitonAnswer.find(".question").not(this).parent(".question-answer-group.expanded").removeClass('expanded').children('.answer').stop(true,true).slideUp();
+        if(!$(this).parent('.question-answer-group').hasClass('expanded')){
+// Display the accordion content if it is not displayed
+            $(this).parent(".question-answer-group").addClass('expanded').children('.answer').stop(true,true).slideDown();
+        }
+        else{
+// Hide the accordion content if it is displayed
+            $(this).parent(".question-answer-group").removeClass('expanded').children('.answer').stop(true,true).slideUp();
+        }
+    });
+
+
+
+</script>

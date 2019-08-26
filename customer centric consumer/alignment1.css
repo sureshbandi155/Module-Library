@@ -71,3 +71,137 @@
 /*==================================================================
    End of Customer Centric Consumer Styling
 =====================================================================*/
+
+
+
+/*==================================================================
+   White label partner Styling
+   =====================================================================*/
+/*removing margin */
+.white_label_partner p, .white_label_partner h2{
+    margin: 0;
+}
+.white_label_partner .outer-layer .single-partner {
+    box-sizing: border-box;
+    padding: 45px 43px 30px;
+}
+.white_label_partner .outer-layer .single-partner .text-section{
+    padding: 15px 0 0;
+}
+@media (min-width: 1024px) {
+    .white_label_partner .outer-layer .single-partner{
+        flex-basis: 25%;
+        -webkit-flex-basis:  25%;
+        -ms-flex-preferred-size: 22.6%;
+        float: left;
+        border-right: 1px solid #c2c2c2;
+        border-bottom: 1px solid #c2c2c2;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-child(4n){
+        border-right: none;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-last-child(1) {
+        border-bottom: none;
+        margin: 0 auto;
+        margin-left: 0
+    }
+    .white_label_partner .outer-layer .single-partner:nth-last-child(2) {
+        border-bottom: none;
+        margin: 0 auto;
+        margin-right: 0;
+        padding-left: 40px;
+        box-shadow: -1px 0 0 #c2c2c2;
+    }
+    body .container-fluid .row-fluid .white_label_partner .section-heading{
+        max-width: 620px;
+        padding: 0 0 90px;
+        margin: 0 auto;
+    }
+    .white_label_partner  .button-section{
+        padding: 66px 0 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .white_label_partner .outer-layer .single-partner{
+        flex-basis: 33.3%;
+        -webkit-flex-basis:  33.3%;
+        float: left;
+        border-right: 1px solid #c2c2c2;
+        border-bottom: 1px solid #c2c2c2;
+
+    }
+    .white_label_partner .outer-layer .single-partner:nth-child(3n){
+        border-right: none;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-last-child(1) {
+        border-bottom: none;
+    }
+
+    .white_label_partner  .button-section{
+        padding: 40px 0 0;
+    }
+    body .container-fluid .row-fluid .white_label_partner .section-heading{
+        max-width: 620px;
+    }
+}
+@media (min-width: 576px) {
+    .white_label_partner .outer-layer .row-fluid {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: stretch;
+        -moz-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        -wevkit-flex-wrap: wrap;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        width: 100%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .white_label_partner .outer-layer .single-partner{
+        flex-basis: 50%;
+        -webkit-flex-basis:  50%;
+        float: left;
+
+        border-right: 1px solid #c2c2c2;
+        border-bottom: 1px solid #c2c2c2;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-child(2n){
+        border-right: none;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-last-child(1) {
+        border-bottom: none;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-last-child(2) {
+        border-bottom: none;
+    }
+
+    .white_label_partner  .button-section{
+        padding: 30px 0 0;
+    }
+}
+@media (max-width: 575px){
+    .white_label_partner .outer-layer .single-partner{
+        border-bottom: 1px solid #c2c2c2;
+        box-sizing: border-box;
+    }
+    .white_label_partner .outer-layer .single-partner:nth-last-child(1) {
+        border-bottom: none;
+    }
+
+    .white_label_partner  .button-section{
+        padding: 30px 0 0;
+    }
+    .white_label_partner .outer-layer .single-partner {
+        padding: 45px;
+    }
+}
+/*==================================================================
+   End Of  White label partner Styling
+=====================================================================*/

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Typography.css">
+    <title>faq</title>
+</head>
+<body>
+
+<div class="span12 faq_system section-padding">
+    <div class="wrapper">
+        <div class="row-fluid">
+            <div class="row-fluid-wrapper">
+                <div class="span4">
+                    <h3>Help Center</h3>
+                    <hr>
+                    <div class="section-heading">
+                        <p id="first">General Questions</p>
+                        <p id="second">Services Related Questions</p>
+                    </div>
+                </div>
+                <div class="span8">
+                    <h2 class="single-question"></h2>
+                    <input type="text" placeholder="Type Keyword">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+<div class="span12 faq_system section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span4 left-col" style="background:{{ module.add_left_col_background }}">
+                    <h4>
+                        {{ module.add_left_col_heading }}
+                    </h4>
+                    <hr>
+                    <h5>
+                        {{ module.add_left_col_sub_heading }}
+                    </h5>
+                    <h5>
+                        {{ module.add_left_col_sub_heading_1 }}
+                    </h5>
+                </div>
+                <div class="span8 right-col">
+                    <div class="form-section">
+                        <input type="text" placeholder="Type Keyword">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequuntur corporis cumque illo laborum modi numquam officiis possimus repellat ullam?</p>
+
+<style>
+    .faq_system{
+        position: absolute;
+    }
+    .faq_system .left-col h5{
+        cursor: pointer;
+    }
+
+</style>
+
+
+
+
+<div  class="customer-centric-design align-center section-padding">
+    <!--   <div class="wrapper"> -->
+    <div class="row-fluid-wrapper">
+        <div class="row-fluid">
+            <!--         <div class="container"> -->
+            <div class="header-section">
+                {{ module.add_heading }}
+                {{ module.add_header_text }}
+            </div>
+            <ul class="nav-text span12">
+                {% for item in module.tab_link %}
+                <li class="nav-link span3" data-tab="{{ item.add_data_tab }}">{{ item.add_nav_link_text }}</li>
+                {% endfor %}
+            </ul>
+
+            <div class="span12">
+                {% for item in module.tabber_content_group %}
+                <div id="{{ item.add_tab_ids }}" class="tab-content wrapper ">
+                    <div class="two-col-items ">
+                        <div class="left-col span6">
+                            <h2>{{ item.add_section_heading }}</h2>
+                            {{ item.add_description }}
+                        </div>
+                        <div class="right-col span6">
+                            {% for item2 in item.accordion_group %}
+                            <div class="accordion">
+                                <div class="accordion_group span12 text-margin-zero     {% if item2.make_this_default_open %} expanded {% endif %}">
+                                    <div class="accordion_header accordion-start text-margin-zero">
+                                        <h5>{{ item2.add_accordion_heading }}</h5>
+                                    </div>
+                                    <div class="accordion_content ">
+                                        <p> {{ item2.add_accordion_content }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
