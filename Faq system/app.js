@@ -6,3 +6,5 @@ faqQuestion1.addEventListener('click', () => {
     console.log(faqQuestion1.textContent);
     singleQuestion.innerHTML = faqQuestion1.textContent;
 });
+if (){}
+if else

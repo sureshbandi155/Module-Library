@@ -1,4 +1,4 @@
-<div class="span12 faq_system section-padding" style="background:{{ module.add_left_col_background }}">
+<div class="span12 faq_system section-padding" style="background:{{ module.add_left_col_background  }}">
     <div class="wrapper">
         <div class="row-fluid-wrapper">
             <div class="row-fluid">
@@ -19,11 +19,12 @@
                     <div class="form-section">
                         <input type="text" placeholder="Type Keyword" class="search-box">
                         <div class="search-icon">
+                            <i class="fa fa-search fa-2x"  aria-hidden="true"></i>
                         </div>
                     </div>
                     {% for item in module.add_topics_group %}
                     <div id="{{ item.add_topic_data_id }}" class="single-question {{ item.add_class_for_initial_hightlight }}">
-                        <h2>General Questions</h2>
+                        <h2></h2>
                         {% for item2 in item.add_questions_and_answers_group %}
                         <div class="question-answer">
                             <div class="question-answer-group span12 {% if item2.make_this_default_open %} expanded {% endif %}">
@@ -41,21 +42,17 @@
                         {% endfor %}
                     </div>
                     {% endfor %}
-                    <div class="hide-text">
-                        <p>
-                            {{ module.add_not_found_text }}
-                        </p>
-                    </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
+
+
 <style>
     /*==================================================================
-Faq System Styling
-=====================================================================*/
+       Faq System Styling
+    =====================================================================*/
     /* for removing inherit border bottom for current heading */
     body .row-fluid .faq_system .single-question.current{
         text-decoration: none;
@@ -63,6 +60,8 @@ Faq System Styling
         -ms-transform: none;
         transform: none;
     }
+
+
     /* styling for input */
     input.search-box {
         border: 1px solid #dadada;
@@ -73,19 +72,18 @@ Faq System Styling
     }
     .faq_system .right-col .form-section .search-icon {
         color: #fff;
+        background:  #232937;
         width: 64px;
         height: 47px;
-        background:  #232937 url('https://cdn2.hubspot.net/hubfs/6203144/p2h/search%20(2).png') no-repeat;
+    }
+    .faq_system .right-col .form-section{
+        display: flex;
+    }
+    .faq_system .right-col .search-icon .fa-2x{
         text-align: center;
         margin: 0 auto;
         display: block;
         padding: 7px;
-        background-position: 17px;
-    }
-    .faq_system .right-col .form-section{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
     }
     .faq_system .current{
         text-decoration: underline;
@@ -102,17 +100,25 @@ Faq System Styling
     .faq_system .right-col .single-question{
         padding: 73px 0 0;
     }
-    .faq_system .hide-text{
-        text-align: center;
-        margin: 0 auto;
-        padding: 70px 0 0;
-    }
-    .faq_system .right-col .form-section .search-box {
-        padding-left: 10px;
+    /* padding for question and answer */
+    .faq_system .right-col .question-answer .question-answer-group{
+        /*         margin: 0;
+                padding: 44px 0 44px 84px; */
+        /*       border-bottom: 1px solid #c2c2c2; */
     }
     .faq_system .right-col .question-answer .question-answer-group .border-section{
         border-bottom: 1px solid #c2c2c2;
     }
+    .faq_system .right-col .question-answer .question-answer-group .question h5{
+        margin: 0;
+        padding: 44px 0 44px 84px;
+        /*       padding: 73px 0 0; */
+    }
+    .faq_system .right-col .question-answer .question-answer-group .answer p{
+        margin: 0;
+        padding: 0 0 51px 84px;
+    }
+
     /******for toggle ***/
     body .faq_system  .question h5 {
         margin: 0;
@@ -148,7 +154,7 @@ Faq System Styling
     }
     @media (min-width: 768px) {
         .faq_system .right-col {
-            padding: 0 0 0 55px;
+            padding: 0 0 0 57px;
         }
         /*for backgroundcolor*/
         .faq_system {
@@ -172,7 +178,6 @@ Faq System Styling
             position: relative;
             right: 53px;
             left: -45px;
-            margin: 0;
         }
         .faq_system .left-col h4{
             margin: 0;
@@ -185,143 +190,36 @@ Faq System Styling
             margin: 0;
             padding: 0 0 16px;
         }
-        .faq_system .right-col .single-question{
-            padding: 67px 0 0;
-        }
-        .faq_system .right-col .question-answer .question-answer-group .question h5{
-            margin: 0;
-            padding: 44px 0 44px 84px;
-        }
-        .faq_system .right-col .question-answer .question-answer-group .answer p{
-            margin: 0;
-            padding: 0 0 45px 84px;
-        }
+
     }
-    @media (min-width: 1400px) {
-        .faq_system.section-padding:before {
-            width: 61.4%;
-        }
-        .faq_system .right-col {
-            padding: 0 0 0 45px;
-        }
+    @media (min-width: 1440px) {
+
     }
     @media (min-width: 1024px) and (max-width: 1339px) {
-        .faq_system.section-padding:before {
-            width: 67.8%;
-        }
+
     }
     @media (min-width: 768px) and (max-width: 1023px) {
         .faq_system.section-padding:before {
-            width: 67.8%;
+            position: absolute;
+            content: '';
+            background: #fff;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 60.8%;
+            z-index: -1;
         }
-
     }
     @media (max-width: 767px) {
         .faq_system .left-col{
             text-align: center;
-            padding: 0 0 30px;
         }
-        /* for hr */
-        .faq_system .left-col hr{
-            width: 279px;
-            position: relative;
-            right: 53px;
-            left: 0;
-        }
-        .faq_system .right-col .single-question{
-            padding: 40px 0 0;
-        }
-        .faq_system .right-col .question-answer .question-answer-group .question h5{
-            margin: 0;
-            padding: 22px 0 22px 42px;
-        }
-        .faq_system .question h5:after {
-            top: 21px;
-            left: 12px;
-        }
-        .faq_system .question-answer-group.expanded h5:after {
-            top: 30px;
-        }
-        .faq_system .right-col .question-answer .question-answer-group .answer p{
-            margin: 0;
-            padding: 0 0 22px 42px;
-        }
+
     }
 
 
     /*==================================================================
-    End Of  Faq System Styling
-    =====================================================================*/
+   End Of  Faq System Styling
+=====================================================================*/
 </style>
-<script>
-    $(document).ready(function(){
 
-        $('.faq_system .all-questions h5').click(function(){
-            var tab_id = $(this).attr('data-tab');
-            var heading = $('.faq_system .single-question h2');
-            console.log($(this).text());
-            heading.text($(this).text());
-            $('.faq_system .all-questions h5').removeClass('current');
-            $('.single-question').removeClass('current');
-
-            $(this).addClass('current');
-            $("#"+tab_id).addClass('current');
-        });
-
-        var hideText = $('.faq_system .hide-text');
-        $('.faq_system .single-question .question h5').each(function(){
-            $(this).attr('data-search-term', $(this).text().toLowerCase());
-        });
-        hideText.hide();
-        $('.search-box').on('keyup', function(){
-//   hideText.hide();
-            var searchTerm = $(this).val().toLowerCase();
-            $('.faq_system .single-question .question h5').each(function(){
-                if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1 ) {
-                    $(this).show(200);
-                    $(this).parent().parent().show();
-                }
-                else {
-                    console.log('else part');
-                    $(this).hide(200);
-                    $(this).parent().parent().hide();
-                }
-            });
-
-            var lengthAnswer = $('.question-answer-group:visible').length;
-            if(lengthAnswer === 0){
-                $('.hide-text').addClass('show');
-                $('.hide-text').show();
-            }
-            else{
-                $('.hide-text').removeClass('show');
-                $('.hide-text').hide();
-            }
-
-        });
-
-    });
-
-
-    var quesitonAnswer = $('.question-answer');
-    // Initially hide all accordion content
-    quesitonAnswer.find('.answer').hide();
-    // Initially display the accordion content with .expanded class
-    quesitonAnswer.find('.question-answer-group.expanded .answer').show();
-    quesitonAnswer.find('.question').click(function(){
-// Hide the displayed sibling accordion content so only one appears at a time
-        quesitonAnswer.find(".question").not(this).parent(".question-answer-group.expanded").removeClass('expanded').children('.answer').stop(true,true).slideUp();
-        if(!$(this).parent('.question-answer-group').hasClass('expanded')){
-// Display the accordion content if it is not displayed
-            $(this).parent(".question-answer-group").addClass('expanded').children('.answer').stop(true,true).slideDown();
-        }
-        else{
-// Hide the accordion content if it is displayed
-            $(this).parent(".question-answer-group").removeClass('expanded').children('.answer').stop(true,true).slideUp();
-        }
-    });
-
-
-
-
-</script>
