@@ -1,9 +1,39 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+/*==================================================================
+   Hero Section WD 1 Styling
+=====================================================================*/
+
+
+/* css variable for mobile padding */
 :root {
     --mobile-padding: 0 0 40px;
 }
+/* for section heading paragraph */
+@media (max-width: 767px){
+    .section-heading p {
+        font-size: 16px;
+    }
+}
 .hero_section_wd_1.our-clients .wrapper .logo-section {
     position: relative;
-
 }
 .hero_section_wd_1 .wrapper .logo-section:before {
     content: '';
@@ -15,23 +45,21 @@
     width: 100%;
     margin: 0 auto;
     top: 0;
-
 }
-/* button styling */
+/* button spacing */
 .hero_section_wd_1 .wrapper .button .left-button .cta_button {
     margin: 0 26px 0 0;
 }
-.hero_section_wd_1 .wrapper .button .right-button .cta_button {
-    color: #000;
-    background: #fff;
-    border: 1px solid #000;
-
-}
-.hero_section_wd_1 .wrapper .button .right-button  .cta_button:hover {
-    color: #fff;
-    background: #000;
-    border: 1px solid #fff;
-
+@media (min-width: 1025px) {
+    .hero_section_wd_1 .left-col h1{
+        margin: 0;
+        padding: 0 0 26px;
+    }
+    .hero_section_wd_1 .left-col p{
+        margin: 0;
+        padding: 0 0 30px;
+        max-width: 525px;
+    }
 }
 @media (min-width: 768px) {
     .hero_section_wd_1.our-clients .logo-section {
@@ -47,7 +75,7 @@
         padding: 17px 59px 0 0;
     }
     .hero_section_wd_1.our-clients{
-        padding: 0 0 64px;
+        padding: 100px 0 64px;
     }
     .hero_section_wd_1{
         position: relative;
@@ -64,7 +92,6 @@
         margin: 0 0 40px;
         min-height: 324px;
         max-width: 75%;
-
     }
     .hero_section_wd_1.our-clients{
         padding: 0 0 60px;
@@ -81,10 +108,8 @@
     .hero_section_wd_1.our-clients .wrapper .logo-section{
         text-align: center;
     }
-
     .hero_section_wd_1.our-clients .wrapper .logo-section .each-logo{
         padding: 20px 0 0;
-
         flex-basis: 50%;
         -webkit-flex-basis: 50%;
         margin: 0;
@@ -93,8 +118,6 @@
         top: 0;
         left: 0;
     }
-
-
 }
 @media (max-width: 567px) {
     .hero_section_wd_1.our-clients .wrapper .logo-section {
@@ -103,19 +126,14 @@
         margin: 0 auto;
     }
     body .container-fluid .row-fluid .hero_section_wd_1 .right-col {
-
         max-width: 80%;
-
     }
 }
 @media (max-width: 480px) {
     .hero_section_wd_1 .wrapper .button .left-button  .cta_button {
         margin: 0 0 20px;
-
     }
 }
-
-
 
 /*==================================================================
    End Of Hero Section WD 1 Styling
@@ -125,11 +143,8 @@
 /*==================================================================
    Hero Section WD 2 Styling
 =====================================================================*/
-
-
-
-.slick-slide:focus{
-    outline:none;
+.hero_section_wd_2 .slick-slide:focus{
+    outline: none;
 }
 .hero_section_wd_2 ul.slick-dots {
     text-align: center;
@@ -139,11 +154,13 @@
     flex-direction: column;
     position: absolute;
     right: 0;
+    top: 17px;
     border-radius: 20px;
-    padding: 16px 0;
+    padding: 20px 0 30px;
 }
 .hero_section_wd_2 .slick-dots li{
-    margin: 1px 0;
+    margin-bottom: -9px ;
+    margin-left: 0;
     padding: 0 18px;
 }
 .hero_section_wd_2 .slick-dots li.slick-active button {
@@ -155,7 +172,6 @@
 .hero_section_wd_2 .slick-dots li button:hover{
     background: #8f8f8f;
 }
-
 .hero_section_wd_2 .slick-dots li button {
     font-size: 1px;
     color: transparent;
@@ -169,10 +185,8 @@
     cursor: pointer;
 }
 
-button.slide-arrow.prev-arrow1.slick-arrow{
-
+.hero_section_wd_2 button.slide-arrow.prev-arrow1.slick-arrow{
     background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/up%20arrow.svg') no-repeat;
-
     font-size: 1px;
     color: transparent;
     padding: 0;
@@ -183,14 +197,12 @@ button.slide-arrow.prev-arrow1.slick-arrow{
     cursor: pointer;
     position: absolute;
     right: 16px;
-    top: 86px;
+    top: 47px;
     outline: none;
     z-index: 1;
 }
-button.slide-arrow.next-arrow1.slick-arrow{
+.hero_section_wd_2 button.slide-arrow.next-arrow1.slick-arrow{
     background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/down%20arrow.svg') no-repeat;
-
-
     font-size: 1px;
     color: transparent;
     padding: 0;
@@ -201,54 +213,55 @@ button.slide-arrow.next-arrow1.slick-arrow{
     cursor: pointer;
     position: absolute;
     right: 17px;
-    top: 205px;
+    top: 122px;
     z-index: 1;
     outline: none;
-
 }
-
 .hero_section_wd_2 .slick-dots li:focus,.hero_section_wd_2 .slick-dots li.slick-active button:focus {
     outline: none;
 }
-.slick-dots li:before {
+.hero_section_wd_2 .slick-dots li:before {
     display: none;
 }
 .hero_section_wd_2 .inner-layer {
-    max-width: 674px;
-}
-.hero_section_wd_2 .wrapper .button-section .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button {
-    color: #000;
-    background: #fff;
+    max-width: 586px;
+    width: 100%;
 
 }
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
     .hero_section_wd_2 ul.slick-dots {
-        top: 56px;
-
-
+        top: 78px;
+        right: -49px;
+    }
+    .hero_section_wd_2 button.slide-arrow.prev-arrow1.slick-arrow{
+        right: -32px;
+        top: 115px;
+    }
+    .hero_section_wd_2 button.slide-arrow.next-arrow1.slick-arrow{
+        right: -32px;
+        top: 197px;
     }
 }
-@media (max-width: 1023px) {
-    button.slide-arrow.prev-arrow1.slick-arrow{
-        top: 46px;
-
-    }
-    button.slide-arrow.next-arrow1.slick-arrow{
-        top: 153px;
-
-    }
+@media (min-width: 1025px) and (max-width: 1299px) {
     .hero_section_wd_2 ul.slick-dots {
-        top: 17px;
-
-
+        top: 76px;
+    }
+    .hero_section_wd_2 button.slide-arrow.prev-arrow1.slick-arrow{
+        top: 112px;
+    }
+    .hero_section_wd_2 button.slide-arrow.next-arrow1.slick-arrow{
+        top: 195px;
     }
 }
 @media (min-width: 768px) {
     .hero_section_wd_2 .slick-slider-loop .inner-layer .text-section h1{
-        margin: 0 0 30px;
+        padding: 0 0 30px;
+        margin: 0;
     }
     .hero_section_wd_2 .slick-slider-loop .inner-layer .text-section p{
-        margin: 0 0 36px;
+        padding: 0 0 36px;
+        margin: 0;
+        max-width: 541px;
     }
 }
 @media (max-width: 720px) {
@@ -262,38 +275,29 @@ button.slide-arrow.next-arrow1.slick-arrow{
 =====================================================================*/
 
 /*==================================================================
-   Hero Section WD 23 Styling
+    Hero Section WD 23 Styling
 =====================================================================*/
-.hero_section_wd_23 .single-col h1, .hero_section_wd_23 .single-col p, .hero_section_wd_23 .single-col hr {
-    max-width: 919px;
+.hero_section_wd_23 .single-col {
+    max-width: 963px;
     margin: 0 auto;
-
 }
 .hero_section_wd_23 .single-col h1{
     padding: 0 0 20px;
+    margin: 0;
 }
 .hero_section_wd_23 .single-col p{
     padding: 0 0 35px;
-    font-size: 20px;
-}
-.hero_section_wd_23 .single-col a.cta_button{
-    border: none;
-    background: transparent;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    text-decoration: underline;
+    margin: 0;
 }
 .hero_section_wd_23 .single-col hr{
-    border: 1px solid;
+    border-top: 2px solid #bcbaba;
+    margin: 0;
 }
 .hero_section_wd_23 .single-col .video-section {
     padding: 31px 0 20px;
-
 }
 .hero_section_wd_23 .single-col .video-section  img{
     cursor: pointer;
-
 }
 .hero_section_wd_23 .single-col .down-arrow{
     padding: 133px 0 0;
@@ -301,90 +305,73 @@ button.slide-arrow.next-arrow1.slick-arrow{
 .hero_section_wd_23 .single-col .down-arrow img{
     cursor: pointer;
 }
-/* video button styling */
-.hero_section_wd_23 .single-col .video-button a{
-    text-decoration: underline;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
+@media (min-width: 1025px) {
+    .hero_section_wd_23 .single-col hr{
+        margin: 0;
+    }
 }
-
-
-
+@media (max-width: 767px) {
+    .hero_section_wd_23 .single-col .video-section {
+        padding: 20px 0;
+    }
+    .hero_section_wd_23 .single-col .down-arrow{
+        padding: 65px 0 0;
+    }
+}
 /*==================================================================
    End Of  Hero Section WD 23 Styling
 =====================================================================*/
 
 /*==================================================================
-   Hero Section WD 24 Styling
+Hero Section WD 24 Styling
 =====================================================================*/
-
-
 .hero_section_wd_24 .left-col .text-section h1{
-    margin: 0 0 30px;
+    padding: 0 0 30px;
+    margin: 0;
 }
 .hero_section_wd_24 .left-col .text-section p{
-    margin: 0 0 39px;
+    padding: 0 0 39px;
+    margin: 0;
 }
 .hero_section_wd_24 .left-col  .hero-section-button{
-    margin: 0 0 30px;
-
+    padding: 0 0 30px;
+    margin: 0;
 }
-/* cta button */
-
-.hero_section_wd_24 .left-col  .hero-section-button .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button {
-    font-size: 16px;
-    font-weight: normal;
-
-}
-
-
 /* play button styling  right arrow  */
-.hero_section_wd_24 .left-col .play-button a{
-    font-size: 16px;
-    text-decoration: underline;
-    font-weight: 500;
-
+.hero_section_wd_24 .left-col .simple-cta a{
     background: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/right%20arrow.svg);
     background-repeat: no-repeat;
     background-position: 99.6%;
     padding: 10px 32px;
 }
-@media (min-width: 768px) {
-
-    .hero_section_wd_24 .right-col .image-section{
-        float: right;
+@media (min-width: 1025px){
+    .hero_section_wd_24 .left-col .section-heading{
+        max-width: 593px;
     }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-    background-position: 60.6%;
-
+@media (min-width: 768px) {
+    .hero_section_wd_24 .right-col .image-section{
+        text-align: center;
+    }
 }
 @media (max-width: 767px) {
-
-    .hero_section_wd_24 .wrapper  .right-col{
+    .hero_section_wd_24 .right-col{
         padding: 0 0 40px;
-
     }
-    .hero_section_wd_24 .wrapper .right-col .image-section img{
+    .hero_section_wd_24 .right-col .image-section img{
         display: block;
         margin: 0 auto;
-
-
+    }
+    .hero_section_wd_24 .left-col .text-section h1{
+        padding: 0 0 20px;
+    }
+    .hero_section_wd_24 .left-col .text-section p{
+        padding: 0 0 20px;
+    }
+    .hero_section_wd_24 .left-col  .hero-section-button{
+        padding: 0 0 20px;
     }
 }
-@media (min-width: 1024px){
-    .hero_section_wd_24 .left-col .section-heading{
-        max-width: 599px;
-
-    }
-}
-
-
-/*==================================================================
-   End Of Hero Section WD 24 tyling
-=====================================================================*/
-
 /*==================================================================
   Hero Section WD 34  Styling
 =====================================================================*/
@@ -395,12 +382,20 @@ button.slide-arrow.next-arrow1.slick-arrow{
 body .row-fluid .hubspot-link__container.sproket{
     display: none;
 }
-.hero_section_wd_34 .left-col .form-section .hs_cos_wrapper  form .hs_submit .actions .hs-button.primary{
+.hero_section_wd_34 .left-col .form-section form .hs-button.primary{
     width: 100%;
+    margin: 0;
 }
 @media (min-width: 1024px) {
     .hero_section_wd_34 .left-col .text-section {
-        padding: 63px 0 37px;
+        padding: 63px 0 55px;
+    }
+    .hero_section_wd_34 .text-section h1{
+        margin: 0;
+        padding: 0 0 20px;
+    }
+    .hero_section_wd_34 .text-section p{
+        margin: 0;
     }
 }
 @media (min-width: 768px) {
@@ -408,10 +403,21 @@ body .row-fluid .hubspot-link__container.sproket{
     .hero_section_wd_34 {
         position: relative;
     }
-    .hero_section_wd_34 .right-col .image-section{
+    .hero_section_wd_34 .right-col{
         position: absolute;
+        top: 0;
+        bottom: 0;
         right: 0;
-        max-width: 50%;
+        max-width: 50vw;
+    }
+    .hero_section_wd_34 .left-col .form-section form input {
+        margin: 0 0 11px;
+    }
+    .hero_section_wd_34 .left-col .form-section form .field>label{
+        margin: 0;
+    }
+    .hero_section_wd_34 .left-col .form-section p {
+        text-align: center;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -427,13 +433,9 @@ body .row-fluid .hubspot-link__container.sproket{
 
 
 @media (max-width: 767px) {
-    .hero_section_wd_34 .right-col .image-section{
-        max-width: 50%;
-        margin: 0 auto;
-        display: block;
-    }
-    .hero_section_wd_34 .right-col .image-section{
-        padding: 0 0 40px;
+    body .container-fluid .row-fluid .hero_section_wd_34 .right-col {
+        margin: var(--mobile-padding);
+        min-height: 50vh;
     }
 }
 /*==================================================================
@@ -443,31 +445,40 @@ body .row-fluid .hubspot-link__container.sproket{
     Hero Section WD 30 Styling
 =====================================================================*/
 
+
 @media (min-width: 768px) {
     .hero_section_wd_30 .single-col .form-section{
         position: relative;
+        left: 6%;
     }
-    .hero_section_wd_30 .single-col .form-section input{
+    .hero_section_wd_30 .single-col .form-section form .hs_firstname, .hero_section_wd_30 .single-col .form-section form .hs_email {
         float: left;
         width: 35.4%;
         margin-right: 25px;
     }
     .hero_section_wd_30 .single-col .form-section .hs-button.primary.large{
-        margin: 0;
+        margin: 15px 0 0;
         width:13%;
         font-size: 11px;
         padding: 15px 24px;
+        position: relative;
+        float: left;
+    }
+    .hero_section_wd_30 .single-col .text-section p{
+        max-width: 711px;
+        margin: 0 auto;
     }
     .hero_section_wd_30 .image-container{
         margin: 222px 0 0;
     }
     .hero_section_wd_30 .image-container .image-section{
         margin: -150px 0 0;
-
     }
-
-
-
+    .hero_section_wd_30 .hs_error_rollup .hs-error-msgs .hs-main-font-element{
+        display: inline;
+        position: relative;
+        top: 87px;
+    }
 }
 @media (max-width: 767px) {
     .hero_section_wd_30.section-padding.change-mobile{
@@ -492,71 +503,59 @@ body .row-fluid .hubspot-link__container.sproket{
     Content Section WD 3 Styling
 =====================================================================*/
 
-.content_section_wd_3 .inner-layer .single-card{
+.content_section_wd_3  .single-card{
     box-sizing: border-box;
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
-    margin:0 0 29px 29px;
+    /*     margin:0 0 29px 29px; */
     position: relative;
 
 
 }
-.content_section_wd_3 .inner-layer .single-card hr {
-    border: 1px solid;
+.content_section_wd_3  .single-card hr {
+    border-top: 1px solid;
     margin-bottom:13px;
 
 }
-.content_section_wd_3 .inner-layer .single-card .image-text{
+.content_section_wd_3  .single-card .image-text{
     padding: 55px 16px 0 25px;
 
 }
-.content_section_wd_3 .inner-layer .single-card .button-section a{
-    text-decoration: underline;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-
-}
-.content_section_wd_3 .inner-layer .single-card .button-section {
+.content_section_wd_3  .single-card .simple-cta {
     text-align: center;
     padding: 0 0 17px;
     position: absolute;
     bottom: 0;
     width: 100%;
+
+
+}
+.content_section_wd_3  .single-card .simple-cta  a{
+    text-decoration: underline #7f7f7f;
+    /*   border-bottom: 2px solid #7f7f7f;
+      text-decoration:none; */
 }
 
 
-.content_section_wd_3 .inner-layer .single-card .text-section{
+.content_section_wd_3  .single-card .text-section{
     padding: 32px 0 75px;
 }
-.content_section_wd_3 .inner-layer .single-card .image-section img{
+.content_section_wd_3  .single-card .image-section img{
     height: 38px;
     width: 38px;
 }
-@media (min-width: 1024px) {
-    .content_section_wd_3 .inner-layer .single-card{
-        flex-basis: 22.7%;
-        -webkit-flex-basis:  22.7%;
-        float: left;
-        box-sizing: border-box;
-        position: relative;
-    }
-    .content_section_wd_3 .inner-layer .single-card:nth-child(4n+1){
+/* @media (min-width: 1025px) {
+   body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
+    margin-right: 0;
+     margin-top: 0;
+   }
+    .content_section_wd_3  .single-card:nth-child(4n+1){
         margin-left: 0;
     }
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .content_section_wd_3 .inner-layer .single-card{
-        flex-basis: 30.5%;
-        -webkit-flex-basis:  30.5%;
-        float: left;
-    }
-    .content_section_wd_3 .inner-layer .single-card:nth-child(3n+1){
-        margin-left: 0;
-    }
-}
+
 @media (min-width: 576px) {
     .content_section_wd_3 .inner-layer {
         display: -webkit-box;
@@ -579,22 +578,18 @@ body .row-fluid .hubspot-link__container.sproket{
         margin-right: -2.565%;
         width: 100%;
     }
-}
-@media (min-width: 576px) and (max-width: 767px){
-    .content_section_wd_3 .inner-layer .single-card{
-        flex-basis: 46.9%;
-        -webkit-flex-basis:  46.9%;
+} */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
+        flex-basis: 30.9%;
+        -webkit-flex-basis: 30.9%;
         float: left;
+        margin-right: 2.43%;
+        margin-top: 2.43%;
     }
-    .content_section_wd_3 .inner-layer .single-card:nth-child(2n+1){
+    .content_section_wd_3 .inner-layer .single-card:nth-child(3n+1){
         margin-left: 0;
     }
-}
-@media (max-width: 575px){
-    .content_section_wd_3 .inner-layer .single-card{
-        margin: 0 0 30px;
-    }
-
 }
 /*==================================================================
    End Of  Content Section WD 3 Styling
@@ -613,7 +608,12 @@ body .row-fluid .hubspot-link__container.sproket{
     border-radius: 50%;
 
 }
-
+.content_section_wd_7 .button-section {
+    padding: 23px 0 0;
+}
+.content_section_wd_7 ul{
+    padding: 0 0 0 15px;
+}
 @media (min-width: 768px) {
     .content_section_wd_7{
         position: relative;
@@ -634,30 +634,39 @@ body .row-fluid .hubspot-link__container.sproket{
 }
 @media (min-width: 768px) and (max-width: 1024px){
     .content_section_wd_7:before{
-
         width: 22%;
-
     }
+}
+@media (min-width: 1024px){
+    .content_section_wd_7 .image-section {
+        padding: 0 73px 0 0;
+    }
+    .content_section_wd_7 .text-section h2{
+        margin: 0;
+        padding: 0 0 28px;
+    }
+    .content_section_wd_7 .text-section p{
+        margin: 0;
+        padding: 0 0 30px;
+    }
+    .content_section_wd_7 ul{
+        margin: 0;
+    }
+
 }
 @media (min-width: 1024px) and (max-width: 1399px){
     .content_section_wd_7:before{
-
         width: 22%;
-
     }
 }
 @media (min-width: 2000px) {
     .content_section_wd_7:before{
-
         width: 36%;
-
     }
 }
 @media (min-width: 3000px) {
     .content_section_wd_7:before{
-
         width: 40%;
-
     }
 }
 @media (max-width: 767px) {
@@ -675,9 +684,6 @@ body .row-fluid .hubspot-link__container.sproket{
         padding: 0 0 40px;
     }
 }
-
-
-
 
 /*==================================================================
    End Of Content Section WD 7Styling
@@ -697,29 +703,17 @@ body .row-fluid .hubspot-link__container.sproket{
     padding: 39px 33px 31px 36px;
     transition: all 0.2s linear;
     -webkit-transition: all .2s linear;
-
-
 }
 
 .content_section_wd_18 .inner-layer .single-card .hover-text .text-highlight .text-section{
-
-    padding: 33px 0 20px;
+    padding: 30px 0 20px;
 }
 .content_section_wd_18 .inner-layer .single-card .hover-text .text-highlight .text-section h4{
     margin-bottom: 17px;
 }
-body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .text-highlight .button-section .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node a.cta_button {
-    background: #fff;
-    color: #000;
-}
-body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .text-highlight .button-section-hover .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button  {
-    background: #fff;
-    color: #000;
-}
 .content_section_wd_18 .inner-layer .single-card .image-text .text-section{
     padding: 27px 0 18px;
 }
-
 .content_section_wd_18 .inner-layer .hover-text{
     color: #fff;
     position: absolute;
@@ -745,15 +739,21 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 .content_section_wd_18 .inner-layer .hover-text:hover{
     opacity: 1;
 }
+.content_section_wd_18 .transparent-cta a.cta_button {
+    background: #fff;
+}
 
 .content_section_wd_18 .inner-layer .single-card .image-section img{
     height: 38px;
     width: 38px;
+    background: #fff;
+    border-radius: 50%;
 }
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     .content_section_wd_18 .inner-layer .single-card{
         flex-basis: 28.5%;
         -webkit-flex-basis:  28.5%;
+      -ms-flex-preferred-size: 23.3%;
         float: left;
         margin:0 0 0 71px;
 
@@ -761,22 +761,23 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     .content_section_wd_18 .inner-layer .single-card:nth-child(3n+1){
         margin-left: 0;
     }
-
-
-
-
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .content_section_wd_18 .inner-layer .single-card{
         flex-basis: 45%;
         -webkit-flex-basis:  45%;
+      -ms-flex-preferred-size: 30%;
         float: left;
         margin: 0 0 40px 71px;
 
     }
     .content_section_wd_18 .inner-layer .single-card:nth-child(2n+1){
         margin-left: 0;
+    }
+      .content_section_wd_18 .inner-layer .single-card:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
     }
 }
 @media (min-width: 768px) {
@@ -798,19 +799,16 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
         width: 100%;
     }
     /* hover on each card */
-    .content_section_wd_18 .inner-layer .single-card:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-    }
+.content_section_wd_18 .inner-layer .single-card:hover {
+    transform: scale(1.29, 1.1);
+    -webkit-transform: scale(1.29, 1.1);
 }
-
+}
 @media (max-width: 767px){
     .content_section_wd_18 .inner-layer .single-card{
-
         margin: 0 0 40px;
     }
-
-}
+} */
 /*==================================================================
    End Of  Content Section WD 18Styling
 =====================================================================*/
@@ -820,6 +818,7 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 
 .content_section_wd_15 .text-section .two-col-text ul li{
     position: relative;
+    padding-left: 13px;
 }
 .content_section_wd_15 .text-section .two-col-text ul li:before {
     position: absolute;
@@ -827,45 +826,59 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     content: '';
     width: 14px;
     height: 14px;
-    left: -20px;
+    left: -11px;
     top: 4px;
 
 }
-.content_section_wd_15 .button-section a {
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: underline;
+.content_section_wd_15 .image-section img{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
 }
-@media (min-width: 1024px) {
-    .content_section_wd_15 .text-section h2 {
-        max-width: 203px;
+.content_section_wd_15 .button-section a{
+    text-decoration: underline #7f7f7f;
+}
+.content_section_wd_15 .span6.vertical-center{
+    margin: 0;
+}
+@media (min-width: 1200px) {
+    .content_section_wd_15 .image-section img{
+        position: relative;
+        left: 28px;
     }
-
+}
+@media (min-width: 768px) {
+    .content_section_wd_15 .text-section h2 {
+        max-width: 208px;
+    }
     .content_section_wd_15 .text-section .two-col-text{
-        width: 80%;
+        width: 78%;
     }
     .content_section_wd_15 .text-section .two-col-text {
-        padding: 38px 0 44px;
-
-
+        padding: 25px 0 34px;
+    }
+    .content_section_wd_15 .two-col-text ul{
+        margin: 0;
+    }
+    .content_section_wd_15  p{
+        margin: 0;
     }
     .content_section_wd_15 .button-section {
-        padding: 41px 0 0;
-
+        padding: 37px 0 0;
     }
+
 }
-@media (max-width: 768px) {
-
-    /*     .content_section_wd_15 .text-section{
-            text-align: center;
-
-        } */
+@media (max-width: 767px) {
     .content_section_wd_15 .image-section{
         text-align: center;
         margin: 0 auto;
         display: block;
         padding: 0 0 40px;
-
+    }
+    .content_section_wd_15 .text-section .two-col-text {
+        padding: 10px 0;
+    }
+    .content_section_wd_15 .button-section {
+        padding: 20px 0 0;
     }
 }
 /*==================================================================
@@ -877,7 +890,7 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 =====================================================================*/
 .content_section_wd_23 .outer-layer .single-card{
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
-    border: solid 1px #000000;
+    border: solid 1px #c2c2c2;
     background-color: #ffffff;
     margin: 0 0 35px 35px;
     padding: 44px 16px;
@@ -890,13 +903,12 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     margin: 0 0 33px 0;
 }
 .content_section_wd_23 .single-col-card-section{
-
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
-    border: solid 1px #000000;
+    border: solid 1px #c2c2c2;
     background-color: #ffffff;
     padding: 44px 0 44px 60px;
+    width: 99%;
 }
-
 @media (min-width:576px ){
     .content_section_wd_23 .outer-layer {
         display: -webkit-box;
@@ -921,6 +933,7 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     .content_section_wd_23 .outer-layer .single-card {
         flex-basis: 17.1%;
         -webkit-flex-basis: 17.1%;
+        -ms-flex-preferred-size: 14%;
         float: left;
 
     }
@@ -956,12 +969,11 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 
     .content_section_wd_23 .single-col-card-section .span5{
         position: relative;
-        top: 22%;
     }
-    .content_section_wd_23 .single-col-card-section .span5 .button-section{
+    .content_section_wd_23 .single-col-card-section .button-section{
         position: absolute;
         right: 12%;
-        top: inherit;
+        top: 38px;
     }
 }
 @media (max-width: 768px) {
@@ -988,12 +1000,6 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     Content Section WD 40 Styling
 =====================================================================*/
 
-.content_section_wd_40 .button-section a {
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: underline;
-
-}
 .content_section_wd_40 .span6.align-center .text-section{
     padding: 20px 0 0;
 }
@@ -1006,7 +1012,7 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 }
 @media (min-width: 768px) {
     .content_section_wd_40 .span6.align-center:first-child:after{
-        border-right: 1px solid;
+        border-right: 1px solid #e0e0e0;
         content: '';
         position: absolute;
         top: 25%;
@@ -1037,8 +1043,6 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 .content_section_wd_39 .inner-layer .single-card{
     box-sizing: border-box;
     padding:40px 15px 50px;
-
-
 }
 .content_section_wd_39 .inner-layer .single-card .text-section{
     padding: 29px 0 0;
@@ -1047,10 +1051,15 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     height: 38px;
     width: 38px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
+    .content_section_wd_39 .inner-layer {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
     .content_section_wd_39 .inner-layer .single-card{
         flex-basis: 25%;
         -webkit-flex-basis:  25%;
+        -ms-flex-preferred-size: 22.6%;
         float: left;
         border-right: 2px solid #e7e7e7;
         border-bottom: 2px solid #e7e7e7;
@@ -1063,23 +1072,19 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     }
     .content_section_wd_39 .inner-layer .single-card:nth-last-child(1) {
         border-bottom: none;
-        margin: 0 auto;
-        margin-left: 0
-
-
     }
     .content_section_wd_39 .inner-layer .single-card:nth-last-child(2) {
         border-bottom: none;
-        margin: 0 auto;
-        margin-right: 0;
-        border-left: 2px solid #e7e7e7;
+        box-shadow: -2px 0 #e7e7e7;
         padding-left: 15px;
-
+    }
+    body .row-fluid .content_section_wd_39 .section-heading.align-center{
+        margin-bottom: 63px;
     }
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .content_section_wd_39 .inner-layer .single-card{
         flex-basis: 33.3%;
         -webkit-flex-basis:  33.3%;
@@ -1119,6 +1124,7 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
         flex-direction: row;
         -webkit-flex-direction: row;
         width: 100%;
+
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
@@ -1126,7 +1132,6 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
         flex-basis: 50%;
         -webkit-flex-basis:  50%;
         float: left;
-
         border-right: 2px solid #e7e7e7;
         border-bottom: 2px solid #e7e7e7;
     }
@@ -1159,24 +1164,6 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
    End Of  Content Section WD 39 Styling
 =====================================================================*/
 
-/* own anchor tag button styling */
-.content_section_wd_3 .inner-layer .single-card .button-section a:hover,
-.content_section_wd_15 .button-section a:hover {
-    color: #fff;
-    background: #000;
-    padding: 14px 25px;
-}
-.hero_section_wd_23 .single-col .video-button a:hover, .hero_section_wd_24 .left-col .play-button a:hover{
-    color: #ffa500;
-}
-
-.hero_section_wd_23 .single-col .video-button a:active, .hero_section_wd_24 .left-col .play-button a:active{
-    color: #228b22;
-}
-/* .hero_section_wd_23 .single-col .video-button a:visited, .hero_section_wd_24 .left-col .play-button a:visited{
-  color: #0000ff;
-} */
-
 /*==================================================================
  Content Section WD 33 Styling
  =====================================================================*/
@@ -1191,14 +1178,12 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     display: block;
 }
 .content_section_wd_33 .right-col form input {
-
     height: 14px;
     width: 14px;
     border-radius: 50%;
     padding: 0;
     margin: 0;
     border: 1px solid;
-
     margin-right: 12px;
 }
 .content_section_wd_33 .right-col form input[type="radio"]:checked{
@@ -1216,9 +1201,45 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
     width: 1px;
     font-size: 12px;
 }
+.content_section_wd_33 .right-col ul li form p{
+    font-size: 14px;
+    display: inline;
+}
 @media (min-width: 768px) {
     .content_section_wd_33 .button-section{
         margin: 0 auto;
+    }
+    .content_section_wd_33 .right-col h4, .content_section_wd_33 .right-col p{
+        margin: 0;
+    }
+    .content_section_wd_33 .right-col{
+        margin: 0 0 0 50px;
+    }
+    .content_section_wd_33 .right-col h4{
+        padding: 0 0 20px;
+    }
+    .content_section_wd_33 .right-col p{
+        padding: 0 0 20px;
+    }
+    .content_section_wd_33 .right-col ul li form p{
+        padding: 0 0 20px;
+    }
+    .content_section_wd_33 .right-col ul{
+        margin: 0;
+    }
+    .content_section_wd_33 .left-col .text-section h4{
+        margin: 0;
+        padding: 0 0 18px;
+    }
+    .content_section_wd_33 .left-col .text-section p{
+        margin: 0;
+        padding: 0 0 40px;
+    }
+    .content_section_wd_33 .section-heading{
+        max-width: 959px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 0 117px;
     }
 }
 @media (min-width: 1024px) {
@@ -1228,20 +1249,12 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
         text-align: center;
         padding: 0 0 117px;
     }
-    .content_section_wd_33 .left-col .text-section h4{
-        margin: 0;
-        padding: 0 0 18px;
 
-    }
-    .content_section_wd_33 .left-col .text-section p{
-        margin: 0;
-        padding: 0 0 50px;
-
-    }
     body .row-fluid .content_section_wd_33 .left-col .image-section img{
-
-        margin-top: 10px;
+        margin-top: 7px;
+        margin-right: 19px;
     }
+
 }
 @media (max-width: 767px) {
     .content_section_wd_33 .left-col .image-section {
@@ -1260,20 +1273,16 @@ body .row-fluid .content_section_wd_18 .inner-layer .single-card .hover-text .te
 .team_section_wd_20 .vertical-center .social-icons i {
     margin: 0 16px 0 0;
     font-size: 24px;
-
 }
 
 @media (min-width: 768px) {
-
     .team_section_wd_20 .vertical-center h5{
         margin: 0;
     }
-
     .team_section_wd_20 .vertical-center p{
         padding: 38px 0 29px;
         margin: 0;
     }
-
 }
 @media (max-width: 767px) {
     body .container-fluid .row-fluid  .team_section_wd_20.change-mobile .wrapper .row-fluid-wrapper>.row-fluid {
@@ -1363,12 +1372,10 @@ body .row-fluid .team_section_wd_18 .section-heading.align-center {
         -webkit-flex-basis: 30.8%;
         float: left;
         margin: 0 0 34px 37px;
-
     }
     .team_section_wd_18 .outer-layer .inner-layer:nth-child(3n+1) {
         margin-left: 0;
     }
-
 }
 @media (min-width: 768px) {
     .team_section_wd_18 .outer-layer{
@@ -1396,7 +1403,6 @@ body .row-fluid .team_section_wd_18 .section-heading.align-center {
     }
     .team_section_wd_18 .outer-layer .inner-layer .hover-text {
         padding: 97px 34px 102px;
-
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1421,7 +1427,6 @@ body .row-fluid .team_section_wd_18 .section-heading.align-center {
         -webkit-flex-basis:  47.4%;
         float: left;
         margin: 0 0 34px 37px;
-
     }
     .team_section_wd_18 .outer-layer .inner-layer:nth-child(2n+1) {
         margin-left: 0;
@@ -1443,9 +1448,6 @@ body .row-fluid .team_section_wd_18 .section-heading.align-center {
     .team_section_wd_18 .outer-layer .inner-layer .hover-text .text-highlight .social-icons{
         padding:10px 0;
     }
-    /*             .team_section_wd_18 .outer-layer .inner-layer .hover-text {
-                    padding: 97px 34px 102px;
-      } */
 }
 @media (max-width: 575px) {
     .team_section_wd_18 .outer-layer .inner-layer .hover-text {
@@ -1462,7 +1464,11 @@ End Of  Team Section WD 18 Styling
 /*==================================================================
 Client Section WD 4 Styling
 =====================================================================*/
-@media (min-width: 576px) {
+.clients_section_wd_8 .outer-layer .inner-layer h6{
+    margin: 0;
+    padding: 0 0 10px;
+}
+@media (min-width: 480px) {
     .clients_section_wd_8 .outer-layer .row-fluid{
         display: -webkit-box;
         display: -moz-box;
@@ -1482,25 +1488,20 @@ Client Section WD 4 Styling
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        width: 100%;
+        width: 98%;
     }
 
 }
 @media (min-width: 576px){
     .clients_section_wd_8 .outer-layer .inner-layer{
-        /*             -ms-flex-preferred-size: 33%; */
         -webkit-flex-basis: 33%;
         flex-basis: 33%
-
     }
-    /*         .clients_section_wd_8 .outer-layer .inner-layer:nth-child(1n){
-                text-align: start;
-            }  */
     .clients_section_wd_8 .outer-layer .inner-layer:nth-child(3n-1){
         text-align: center;
     }
     .clients_section_wd_8 .outer-layer .inner-layer:nth-child(3n){
-        text-align: end;
+        text-align: right;
     }
 
     .clients_section_wd_8 h5 {
@@ -1516,10 +1517,19 @@ Client Section WD 4 Styling
     }
 
 }
-@media (max-width: 575px){
+@media (max-width: 479px){
     .clients_section_wd_8  {
         text-align: center;
 
+    }
+}
+@media (max-width: 575px) and (min-width: 480px){
+    .clients_section_wd_8 .outer-layer .inner-layer{
+        -webkit-flex-basis: 50%;
+        flex-basis: 50%
+    }
+    .clients_section_wd_8 .outer-layer .inner-layer:nth-child(2n){
+        text-align: right;
     }
 }
 
@@ -1558,8 +1568,9 @@ Client Section WD 12 Styling
 }
 @media (min-width: 1024px)  {
     .clients_section_wd_12 .outer-layer .inner-layer {
-        flex-basis: 25%;
-        -webkit-flex-basis:  25%;
+        flex-basis: 24%;
+        -webkit-flex-basis:  24%;
+        -ms-flex-preferred-size: 24%;
         float: left;
         border-right: 2px solid #e7e7e7;
         border-bottom: 2px solid #e7e7e7;
@@ -1660,13 +1671,18 @@ Client Section WD 17 Styling
     }
 
 }
-@media (min-width: 1024px)  {
+@media (min-width: 1025px)  {
     .clients_section_wd_17 .outer-layer .inner-layer {
-        flex-basis: 20%;
-        -webkit-flex-basis:  20%;
+        flex-basis: 19.9%;
+        -webkit-flex-basis:  19.9%;
+        -ms-flex-preferred-size: 19.9%;
         float: left;
         border-right: 1px solid #e0e0e0;
         border-bottom: 1px solid #e0e0e0;
+
+    }
+    .clients_section_wd_17 .outer-layer .inner-layer:nth-child(5n) {
+        border-right: none;
 
     }
     .clients_section_wd_17 .outer-layer{
@@ -1676,7 +1692,7 @@ Client Section WD 17 Styling
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .clients_section_wd_17 .outer-layer .inner-layer {
         flex-basis: 33.3%;
         -webkit-flex-basis:  33.3%;
@@ -1722,6 +1738,14 @@ Client Section WD 18 Styling
     padding: 70px 24px;
     margin: 0 auto;
 }
+.client_section_wd_18 .two-col-text-card h3{
+    margin: 0;
+    padding: 0 0 22px;
+}
+.client_section_wd_18 .two-col-text-card p{
+    margin: 0;
+    padding: 0 0 30px;
+}
 @media (min-width: 768px) {
     .client_section_wd_18 .two-col-text-card{
         display: -webkit-box;
@@ -1729,6 +1753,7 @@ Client Section WD 18 Styling
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
+        width: 100%;
     }
     .client_section_wd_18 .two-col-text-card .left-col{
         flex-basis: 30.4%;
@@ -1749,27 +1774,26 @@ Client Section WD 18 Styling
 }
 @media (min-width: 1024px) {
     .client_section_wd_18 .two-col-text-card .right-col .single-card{
-        flex-basis:21.9%;
-        -webkit-flex-basis: 21.9%;
+        flex-basis:22.6%;
+        -webkit-flex-basis: 22.6%;
         margin: 0 24px 28px 0;
-
     }
-    .client_section_wd_18 .two-col-text-card .right-col .single-card:nth-child(4n){
-        margin-right: 0;
 
-    }
 
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1210px) {
+    .client_section_wd_18 .two-col-text-card .right-col .single-card:nth-child(4n){
+        margin-right: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
     .client_section_wd_18 .two-col-text-card .right-col .single-card{
         flex-basis:28%;
         -webkit-flex-basis: 28%;
         margin: 0 24px 28px 0;
-
     }
     .client_section_wd_18 .two-col-text-card .right-col .single-card:nth-child(3n){
         margin-right: 0;
-
     }
 }
 @media (max-width: 767px) and (min-width: 576px) {
@@ -1794,8 +1818,6 @@ Client Section WD 18 Styling
     .client_section_wd_18 .two-col-text-card .right-col .single-card:nth-child(2n){
         margin-right: 0;
     }
-
-
 }
 @media (max-width: 575px) {
     .client_section_wd_18 .two-col-text-card .right-col .single-card .image-section img{
@@ -1808,10 +1830,7 @@ Client Section WD 18 Styling
     }
     .client_section_wd_18 .two-col-text-card .left-col{
         padding: 0 0 40px;
-
     }
-
-
 }
 /*==================================================================
 End of Client Section WD 18 Styling
@@ -1822,13 +1841,15 @@ Client Section WD 20 Styling
 .client_section_wd_20{
     position: relative;
 }
-
+.client_section_wd_20 .outer-layer-slick button img{
+    width: 13px;
+}
 .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
     outline: none;
     border: none;
     background: none;
     position: absolute;
-    left: -5%;
+    left: 0;
     top: 9%;
 
 }
@@ -1837,7 +1858,7 @@ Client Section WD 20 Styling
     border: none;
     background: none;
     position: absolute;
-    right: -2.2%;
+    right: 0;
     top: 9%;
 }
 .client_section_wd_20 .outer-layer-slick{
@@ -1856,27 +1877,25 @@ Client Section WD 20 Styling
     }
 
 }
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1280px) {
     .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
-        left: -2%;
+        left: -4%;
         top: 9%;
 
     }
     .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
 
-        right: -2.2%;
+        right: -3.2%;
         top: 9%;
     }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1200px) and (max-width: 1279px) {
     .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
-        left: -2%;
+        left: -1%;
         top: 9%;
-
     }
     .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
-
-        right: -2.2%;
+        right: -1.2%;
         top: 9%;
     }
 }
@@ -1898,6 +1917,9 @@ Testimonial Section WD 2 Styling
 .testimonial_section_wd_2 .slick-dots li{
     margin: 0 5px;
     display: inline-block;
+}
+.testimonial_section_wd_2 .slick-dots li:before{
+    content: '';
 }
 .testimonial_section_wd_2 .slick-dots li.slick-active button {
     width: 18px;
@@ -1941,10 +1963,23 @@ Testimonial Section WD 2 Styling
     width: 69px;
     height: 69px;
 }
+.testimonial_section_wd_2 .outer-layer-slick1 .slick-list.draggable{
+    box-sizing: initial;
+    padding: 25px 0 25px 25px;
+    margin: 0 auto;
+}
+
+.testimonial_section_wd_2 .outer-layer-slick1 .slick-slide {
+    box-shadow: none;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.testimonial_section_wd_2 .outer-layer-slick1 .slick-slide.slick-active {
+    box-shadow: 0 2px 34px 0 rgba(0,0,0,0.12);
+}
 .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1{
-    /*     box-shadow: 0 2px 34px 0 rgba(0,0,0,0.12); */
-    /*     width: 40%; */
-    /*     margin: 0 61px 0 0; */
+
+    margin: 0 61px 0 0;
 }
 .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section{
     padding: 40px 85px 68px;
@@ -1952,11 +1987,8 @@ Testimonial Section WD 2 Styling
 .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section .headline h6 ,
 .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section .headline p{
     display: inline;
-    /*     vertical-align: top; */
 }
-/* .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section .headline p{
-    vertical-align: -webkit-baseline-middle;
-} */
+
 @media (min-width: 1024px) {
     .testimonial_section_wd_2 .section-heading h2{
         padding: 0 0 100px;
@@ -2000,199 +2032,3 @@ End of  Testimonial Section WD 2 Styling
     }
 }
 
-@media (min-width: 1024px) {
-    .hero_section_wd_1 .left-col h1{
-        margin: 0;
-        padding: 0 0 26px;
-    }
-    .hero_section_wd_1 .left-col p{
-        margin: 0;
-        padding: 0 0 30px;
-    }
-}
-
-
-
-==================
-
-/* @import url('http://example.com/example_style.css'); */
-
-/***********************************************/
-/* CSS @imports must be at the top of the file */
-/* Add them above this section                 */
-/***********************************************/
-
-/****************************************/
-/* HubSpot Style Boilerplate            */
-/****************************************/
-
-/* These includes are optional, but helpful. */
-
-
-
-/*****************************************/
-/* Start your style declarations here    */
-/*****************************************/
-/* .content_section_psd .top-background-img{
-min-height: 275px;
-} */
-.content_section_psd {
-    position: relative
-}
-.content_section_psd:before{
-    position: absolute;
-    content: '';
-    background: url("https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/p2h/content%20top%20background.svg") no-repeat;
-    background-size: cover;
-    background-position: top center;
-    top:0;
-    /*         bottom: 0; */
-    left: 0;
-    width: 100%;
-    min-height: 279px;
-
-
-}
-
-
-.content_section_psd .left-col .outer-layer h5{
-    border-bottom: 1px solid #3c3c3c;
-    padding: 21px 0;
-    margin: 0;
-
-}
-.content_section_psd .left-col .outer-layer {
-    padding: 21px;
-    position: relative;
-    z-index: 1;
-}
-.content_section_psd .left-col .outer-layer:before {
-    position: absolute;
-    content: '';
-    top: 3.4%;
-    bottom: 0;
-    right: 0;
-    left: -3.4%;
-    height: 579px;
-    width: 543px;
-    background: #c1c2c6;
-    z-index: -1;
-
-}
-.content_section_psd .left-col .outer-layer:after {
-    position: absolute;
-    content: '';
-    top: 6.8%;
-    bottom: 0;
-    right: 0;
-    left: -6.8%;
-    height: 579px;
-    width: 543px;
-    background: #dbdcde;
-    z-index: -1;
-
-}
-.content_section_psd .left-col .outer-layer h5:last-child{
-    border-bottom: none;
-}
-
-@media (min-width: 768px) {
-    .content_section_psd .right-col .text-section{
-        max-width: 429px;
-    }
-    .content_section_psd .right-col .text-section h2{
-        padding: 0 0 20px;
-        margin: 0;
-    }
-    .content_section_psd .right-col .text-section p{
-        padding: 0 0 30px;
-        margin: 0;
-    }
-    .content_section_psd .left-col{
-        margin: 100px 0;
-    }
-    .content_section_psd .right-col{
-        margin: 0 0 0 83px;
-    }
-    .content_section_psd .right-col .button-section a.cta_button{
-        padding: 22px 33px;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    .content_section_psd .right-background-image {
-        position: relative;
-        margin: 173px 0 0;
-    }
-    @media (max-width: 1260px){
-        .content_section_psd .wrapper .row-fluid:before{
-            margin-left: 15px;
-        }
-    }
-    @media (min-width: 768px) and (max-width: 1199px) {
-        .content_section_psd .left-col{
-           max-width: 400px;
-        }
-
-    }
-
-}
-
-
-@media (min-width: 1024px) {
-    .sjpc-form-cm form{
-        width: 100%;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        -ms-flex-align: center;
-        align-items: center;
-        float: right;
-    }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-    body .row-fluid .sjpc-form-cm .row-fluid form select{
-
-    }
-}
-@media (min-width: 768px){
-
-    .affordable-pest-services .right-col-sec {
-        flex-basis: 50%;
-        -webkit-flex-basis: 50%;
-        float: left;
-        margin: 0 auto;
-        margin-right: 0px;
-        margin-top: 0px;
-    }
-    .right-col-section .row-fluid{
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-align: stretch;
-        -moz-box-align: stretch;
-        -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-        align-items: stretch;
-        flex-wrap: wrap;
-        -wevkit-flex-wrap: wrap;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        margin-right: -2.5%;
-    }
-
-}
-@media (max-width: 960px) {
-.sjpc-service-areas .find-us-on-map iframe{
-    max-width: 700px;
-}
-}
-@media (max-width: 820px) {
-.sjpc-service-areas .find-us-on-map iframe{
-    max-width: 700px;
-}
-}

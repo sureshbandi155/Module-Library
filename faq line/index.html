@@ -1,0 +1,29 @@
+<div class="span12 faqs-wd-5 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6">
+                    <div class="question-flex">
+
+                        {% for item in module.add_questions_group %}
+                        <a href="#{{ item.add_id }}"><p  data-sidelist="{{ loop.index0 }}">
+                            Q. {{ item.add_question }} ?
+                        </p></a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="span6">
+                    <div class="questions-answers-flex">
+                        {% for item in module.add_question_and_answer_group %}
+                        <div class="question-answer-section"  data-offset="{{ loop.index0 }}" id="{{ item.add_id }}">
+                            <h5>{{ item.add_question }}</h5>
+                            <p>{{ item.add_answer }}</p>
+                            <hr>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

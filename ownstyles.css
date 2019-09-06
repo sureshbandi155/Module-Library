@@ -1979,3 +1979,295 @@ End of  Testimonial Section WD 2 Styling
     }
 }
 
+
+
+
+
+
+
+/* @import url('http://example.com/example_style.css'); */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. */
+
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+
+
+/*--------- Theme Base Colors ----------*/
+
+{% set baseColor = '#000000' %}
+{% set baseFontColor = '#808080' %}
+{% set headingFontColor = '#000000' %}
+{% set buttonTextColor = '#ffffff' %}
+{% set buttonBackgroundColor = '#000000' %}
+{% set buttonHoverTextColor = '#ffffff' %}
+{% set buttonHoverBackgroundColor = '#000000' %}
+{% set headingFontColor = '#000000' %}
+{% set navColor = '#fff' %}
+
+
+
+/*--------- Font Family ----------*/
+
+{% set baseFontFamily = "'Rubik', sans-serif;" %}
+body{
+    padding:0;
+    font-size: 16px;
+    line-height: 1.63;
+    font-weight:400;
+    letter-spacing: 0.3px;
+font-family:{{ baseFontFamily }};
+color:{{ baseFontColor }};
+overflow-x:hidden;
+-webkit-font-smoothing: antialiased;
+width:100%;
+margin:0 auto;
+max-width:100%;
+}
+
+body  .wrapper{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    float: none;
+    padding-left:15px;
+    padding-right:15px;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    text-transform:initial;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    margin-bottom:15px;
+    color:#000;
+}
+
+h1,h2,h3,h4,h5,h6{
+color:{{ headingFontColor }};
+}
+
+.section-padding{
+    padding:100px 0;
+}
+h1{
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 1.23;
+    letter-spacing: -1.88px;
+    margin-bottom: 10px;
+}
+.section-heading p{
+    font-size:20px;
+    font-weight:400;
+    color: #808080
+
+
+}
+body a.cta_button,
+body .container-fluid .row-fluid .hs-button{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #ffffff;
+    padding:13px 34px;
+    cursor: pointer;
+    font-family:'Rubik', sans-serif;
+    text-align: center;
+    display: inline-block;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    border-radius:0px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    border:1px solid transparent;
+    background:#000000;
+}
+
+body a.cta_button:hover,
+body .container-fluid .row-fluid .hs-button:hover{
+    background:transparent;
+    border-color:#000000;
+    color:#000000;
+
+}
+
+body .transparent-cta a.cta_button{
+    background:transparent;
+    border-color:#000000;
+    color:#000000;
+}
+
+body .transparent-cta a.cta_button:hover{
+    background:#000000;
+    color: #ffffff;
+}
+
+.simple-cta a.cta_button,
+.simple-cta a{
+    background:transparent;
+    border:0;
+    padding:0;
+    position:relative;
+color: {{ baseColor }};
+font-weight:500;
+}
+
+.simple-cta a.cta_button:hover:before{
+    display:none;
+}
+
+
+.slick-slide:focus{
+    outline:none;
+}
+.hero_section_wd_25 ul.slick-dots {
+
+    padding-left: 0px;
+}
+.hero_section_wd_25 .slick-dots li{
+    margin: 0 5px;
+    display: inline-block;
+}
+.hero_section_wd_25 .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background:#000;
+}
+.hero_section_wd_25 .slick-dots li button:hover{
+    background: #000;
+}
+
+.hero_section_wd_25 .slick-dots li button {
+    font-size: 1px;
+    color: transparent;
+    padding: 0;
+    border: 0;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #294D5C;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+.hero_section_wd_25 .slick-dots li:focus,.office-slide .slick-dots li.slick-active button:focus {
+    outline: none;
+}
+.slick-dots li button:before {
+    display: none;
+}
+img{
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: bottom;
+}
+@media (min-width: 1024px) {
+    .hero_section_wd_25 ul.slick-dots {
+        position: absolute;
+        top: 94%;
+    }
+}
+
+@media (min-width: 768px) {
+    body .row-fluid .vertical-center{
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .hero_section_wd_25 .button-section{
+        display: flex;
+    }
+    .hero_section_wd_25 .button-section .left-button{
+        margin: 0 30px 0 0;
+    }
+    .hero_section_wd_25 .slider-section3 .inner-layer .section-heading{
+        padding: 44px 0 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .section-padding {
+        padding: 60px 0;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    .section-heading p {
+        font-size: 18px;
+    }
+    .hero_section_wd_25 ul.slick-dots {
+        position: absolute;
+        top: 94%;
+    }
+}
+@media (min-width:768px) and (max-width:830px){
+
+    .hero_section_wd_25 ul.slick-dots {
+        position: absolute;
+        bottom: 4%;
+    }
+}
+@media (min-width:831px) and (max-width:1023px){
+
+    .hero_section_wd_25 ul.slick-dots {
+        position: absolute;
+        bottom: 6%;
+        top: auto;
+    }
+}
+@media (max-width:767px){
+    .hero_section_wd_25 .slider-section3 .inner-layer {
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .hero_section_wd_25 .slider-section3 .inner-layer .section-heading, .hero_section_wd_25 ul.slick-dots{
+        text-align: center;
+    }
+    .hero_section_wd_25 .slider-section3 .inner-layer .image-section img{
+        margin: 0 auto;
+        display: block;
+    }
+    .hero_section_wd_25 .slider-section3 .inner-layer .image-section {
+        margin: 0 0 40px;
+    }
+
+}
+@media (max-width: 480px){
+    .body-container-wrapper a.cta_button, body .container-fluid .row-fluid .hs-button {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+}

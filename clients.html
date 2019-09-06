@@ -67,3 +67,70 @@
     }
 
 </style>
+
+
+<div class="span12 content_section_wd_33 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading">
+                    <h1>
+                        {{ module.add_heading }}
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span7 left-col">
+                    {% for item in module.add_left_col_group %}
+                    <div class="row-fluid-wrapper">
+                        <div class="row-fluid">
+                            <div class="span2">
+                                <div class="image-section">
+                                    <img src="{{ item.add_image.src }}"
+                                         alt="{{ item.add_image.alt }}">
+                                </div>
+                            </div>
+                            <div class="span10">
+                                <div class="text-section">
+                                    <h4>
+                                        {{ item.add_heading_left_col }}
+                                    </h4>
+                                    <p>{{ item.add_description_left_col }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="span5 right-col">
+                    <div>
+                        <h4>{{ module.add_heading_right_col }}</h4>
+                        <p>{{ module.add_description_right_col }}</p>
+                        <ul>
+                            {% for item in module.add_right_col_list_group %}
+                            <li>
+                                <form>
+                                    <input type="radio" id="radio">{{ item.add_right_col_list }}
+                                    <label for="radio"></label>
+                                </form>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="button-section">
+                    {% cta guid="{{ module.add_button }}" %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+

@@ -1,0 +1,1916 @@
+/*====================
+ * Font Import Url
+ * ==================*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap'); /*  Merriweather Font  */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');  /*  Source Sans Pro Font  */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/*=============================
+ * Fancy Box CDN Start
+ * ===========================*/
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+                                                      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+                                                                                                                                                                       <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+                                                                                                                                                                                                                                                                        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                                                                                                                                                                                                                                                                                                                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                       /*=============================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * Fancy Box CDN End
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * ===========================*/
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                       /*=============================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * Fontawesome Box CDN Start
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        * ===========================*/
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /*=============================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * Fontawesome Box CDN End
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * ===========================*/
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /*=============================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * Slick Slider CDN Start
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * ===========================*/
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /*=============================
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * Slick Slider CDN End
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         * ===========================*/
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /****************************************/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /* HubSpot Style Boilerplate            */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /****************************************/
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /* These includes are optional, but helpful. */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    {% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+
+
+/* Font Family and Colors */
+{% set baseColor              = "#5d5d5d" %}    /* {# black |  Used on 'CTA' in 'Base'  |  Ex. "color: {{ baseColor }};" #} */
+{% set backgroundOverlay      = " linear-gradient(45deg, #0a2360ad, #222222ba)" %}    /* {  Used on global 'Background Overlay Color '  |  Ex. "color: {{ baseColor }};" #} */
+{% set backgroundGradient     = " linear-gradient(45deg, #0a2360ad, #222222ba)" %}    /* {  Used on global 'Background gradient Color '  |  Ex. "color: {{ baseColor }};" #} */
+{% set gradientColor          = "linear-gradient(to right, #0072ff, #00b6ea)" %} /* { DarkBlue  | EX "color: {{ headColor }};" } */
+
+
+
+
+
+{% set fakebodycolor          = "#ffffff" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "background: {{ fakebodycolor }};" #} */
+{% set baseFontSize           = "16px" %}                         /* {# Used on 'body' in 'Base'  |  Ex. "font-size: {{ baseFontSize }};" #} */
+{% set baseLineHeight         = "1.4" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "line-height: {{ baseLineHeight }};" #} */
+{% set baseFontFamily         = "'Rubik', sans-serif;" %}            /* {# Used on 'body' in 'Base'  |  Ex. "font-family: {{ baseFontFamily }};" #} */
+{% set headingfont            = "'Open Sans', sans-serif;" %}            /* {# Used on 'body' in 'Base heading'  |  Ex. "font-family: {{ headingfont }};" #} */
+{% set headinglineheight      = "1.23" %}
+{% set headingColor           = "#4842b7"%}
+
+
+/* Wrappers */
+
+{% set fakebody               = "100%" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "max-width: {{ fakebody }};" #} */
+{% set wrappersize            = "1180px" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "max-width: {{ wrappersize }};" #} */
+{% set smallwrapper           = "1100px" %}                          /* {# Used on 'body' in 'Base'  |  Ex. "max-width: {{ smallwrapper }};" #} */
+{% set hedingH1size            = "62px" %}
+{% set hedingH2size            = "38px" %}
+{% set hedingH3size            = "36px" %}
+{% set hedingH4size            = "24px" %}
+{% set hedingH5size            = "20px" %}
+{% set hedingH6size            = "15px" %}
+{% set hedingH1fontweight      = "900" %}
+{% set hedingH2fontweight      = "700" %}
+{% set hedingH3fontweight      = "500" %}
+{% set hedingH4fontweight      = "900" %}
+{% set hedingH5fontweight      = "300" %}
+{% set hedingH6fontweight      = "600" %}
+{% set paragraphSize           = "16px" %}
+{% set paragraphLineheight     = "1.56" %}
+{% set paragraphcolor          = "#808080"%}
+{% set paragraphfont          = "'Open Sans', sans-serif;" %}
+{% set paragraphFontweight      = "400" %}
+
+
+
+@media (max-width: 1440px) {
+    .row-fluid [class*="span"].wrapper{
+        width: 100%;
+    max-width: {{ smallwrapper }};
+margin: 0 auto;
+float: none;
+padding: 0 20px;
+}
+}
+
+
+
+
+body{
+    padding:0;
+font-size: {{ baseFontSize }};
+line-height:{{ baseLineHeight }};
+overflow-x:hidden;
+-webkit-font-smoothing: antialiased;
+font-family:{{ baseFontFamily }};
+width:100%;
+background:{{ fakebodycolor }};
+margin:0 auto;
+max-width:{{ fakebody }};
+color: {{ baseColor }};
+}
+
+.row-fluid [class*="span"].wrapper{
+    width: 100%;
+max-width: {{ wrappersize }};
+margin: 0 auto;
+float: none;
+padding: 0 20px;
+}
+
+
+/*======Heading,Para & List Items Styling=======*/
+
+h1,h2,h3,h5,h6{
+font-family:{{ headingfont }};
+color: {{  headingColor }};
+line-height: {{ headinglineheight }};
+}
+
+
+h4{
+font-family:{{ headingfont }};
+color: {{  headingColor }};
+line-height:1.67;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,a{
+    text-transform:initial;
+    margin:0;
+
+}
+
+a{
+    margin-bottom:0;
+
+}
+
+h1{
+font-size: {{ hedingH1size }};
+font-weight: {{ hedingH1fontweight }};
+
+}
+
+h2{
+font-size: {{ hedingH2size }};
+font-weight: {{ hedingH2fontweight }};
+}
+
+h3{
+font-size:{{ hedingH3size }};
+font-weight: {{ hedingH3fontweight }};
+}
+
+h4{
+font-size:{{ hedingH4size }};
+font-weight: {{ hedingH4fontweight }};
+}
+
+h5{
+font-size: {{ hedingH5size }};
+font-weight: {{ hedingH5fontweight }};
+}
+
+h6{
+font-size: {{ hedingH6size }};
+font-weight: {{ hedingH6fontweight }};
+}
+
+p{
+font-size: {{ paragraphSize  }};
+line-height: {{ paragraphLineheight }};
+color: {{ paragraphcolor }} ;
+font-family: {{ paragraphfont }};
+font-weight: {{paragraphFontweight }}
+}
+
+body img{
+    vertical-align: middle;
+}
+
+ul{
+
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header-container-wrapper .row-fluid [class*="span"]{
+    min-height:0;
+}
+
+body .container-fluid .row-fluid [class*="span"]{
+    min-height:0;
+}
+
+.body-container-wrapper {
+    background:#fff;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+}
+
+.body-container-wrapper ul, .body-container-wrapper ol {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /* margin: 20px 0;*/
+    margin: 0px;
+}
+
+.body-container-wrapper li{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    letter-spacing:.2px;
+    /*  margin-bottom: 8px;*/
+    margin-bottom: 0px;
+    color: #474344;
+
+
+}
+
+.body-container-wrapper .all-text-white li:before{
+    background:#fff;
+}
+
+a {
+    color: #474344;
+    text-decoration: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+a:hover {
+    color: #5ab6cd;
+    text-decoration: none;
+}
+
+.fa{
+    color:#333;
+}
+
+/*======Blockquote Styling======*/
+
+blockquote{
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    color:#b2b2b2;
+    font-weight: 300;
+    padding-left: 18px;
+    margin-left: 4px;
+    margin-top:25px
+}
+
+
+
+/*========CTA Styling========*/
+
+.widget-type-cta{
+    margin-top:15px;
+}
+
+a.cta_button,
+body .row-fluid form .hs-button{
+    font-size: 16px;
+    padding: 14px 24px;
+font-family: {{ baseFontFamily }};
+text-align: center;
+display: inline-block;
+border-radius: 5px;
+transition: all .3s ease-in;
+-webkit-transition: all .3s ease-in;
+position: relative;
+z-index: 1;
+box-shadow: none;
+color: #fff;
+background: #5ab6cd;
+border: 1px solid #5ab6cd;
+transition: .3s all ease-in-out;
+font-weight: 700;
+}
+
+a.cta_button:hover {
+    transition: .3s all ease-in-out;
+    transform:scale(1.06);
+    -webkit-transform: scale(1.06);
+
+}
+
+
+
+body  a.cta_button:hover:before,
+body .container-fluid .row-fluid .hs-button:hover:before{
+    width: 100%;
+}
+
+
+.transparent-button a.cta_button,
+body .row-fluid .transparent-button form .hs-button{
+    color: #fff;
+    background: transparent;
+    border-color: #3aae1f;
+}
+
+.transparent-button a.cta_button:hover,
+body .row-fluid .transparent-button form .hs-button:hover{
+    background: #3aae1f;
+}
+
+/**Black CTA**/
+
+.black-cta a.cta_button {
+    color: #fff;
+    background-color: #474344;
+    border-color: #474344;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.black-cta a.cta_button:hover {
+    background-color: #000;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+}
+
+/***Transparent CTA**/
+
+.transparent-cta a.cta_button {
+    background-color: transparent;
+    color: #5ab6cd;
+    transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    padding: 11px 24px;
+    cursor:pointer;
+}
+.transparent-cta a.cta_button:hover {
+    background-color: #5ab6cd;
+    color: #474344;
+    transition: .3s all ease-in-out;
+    -webkit-transition: .3s all ease-in-out;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+
+}
+
+
+
+
+
+/*====End of CTA Styling=====*/
+
+
+
+/*======Text Alignment ========*/
+
+.align-center {
+    text-align:center;
+}
+
+.align-left {
+    text-align:left;
+}
+
+.align-right {
+    text-align:right;
+}
+
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+
+
+
+
+/*=======End of Text Alignment=======*/
+
+
+.overlay{
+    position:relative;
+    z-index:1;
+}
+
+.overlay:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+
+}
+
+body .container-fluid .row-fluid .center-heading{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 660px;
+    float: none;
+    margin-bottom: 30px;
+    text-align:center;
+}
+
+
+
+/*=====Background Color========*/
+
+
+.white-bg{
+    background:#fff;
+}
+
+.gray-bg{
+    background: #e9eff4;
+}
+
+.black-bg{
+    background:#333;
+}
+
+.base-color-bg .fa{
+    color:#4a4a4a;
+}
+
+.dark-green-bg{
+    background: #0d1b09;
+}
+
+
+/*======End of Background Color======*/
+
+
+/*======List Style Styling========*/
+
+.no-list-style ul{
+    list-style: none;
+}
+
+.no-list-style li{
+    margin:0;
+}
+
+.no-list-style li:before{
+    display:none;
+}
+
+
+/*========Text Color with Spacing 0px Styling=====*/
+
+.body-container-wrapper .all-text-white li:before{
+    background:#fff;
+}
+
+
+.form-white,
+.all-text-uppercase,
+.all-text-uppercase h1,
+.all-text-uppercase h2,
+.all-text-uppercase h3,
+.all-text-uppercase p,
+.all-text-uppercase h4,
+.all-text-uppercase h5,
+.all-text-uppercase h6,
+.all-text-uppercase li,
+.all-text-uppercase a,
+.all-text-uppercase p{
+    text-transform: uppercase;
+}
+.form-white,
+.all-text-bold,
+.all-text-bold h1,
+.all-text-bold h2,
+.all-text-bold h3,
+.all-text-bold p,
+.all-text-bold h4,
+.all-text-uppercase h5,
+.all-text-bold h6,
+.all-text-bold li,
+.all-text-bold a,
+.all-text-bold p{
+    font-weight: 700;
+}
+
+
+
+.form-white,
+.all-text-white,
+.all-text-white h1,
+.all-text-white h2,
+.all-text-white h3,
+.all-text-white p,
+.all-text-white h4,
+.all-text-white h5,
+.all-text-white h6,
+.all-text-white li,
+.all-text-white a,
+.all-text-white p,
+.all-text-white i{
+    color:#fff;
+}
+
+.letter-spacing-four h6,
+.letter-spacing-four h5,
+.letter-spacing-four h3,
+.letter-spacing-four h2,
+.letter-spacing-four h1{
+    letter-spacing: 4px;
+}
+
+.letter-spacing-two h6,
+.letter-spacing-two h5,
+.letter-spacing-two h3,
+.letter-spacing-two h2,
+.letter-spacing-two h1,
+.letter-spacing-two p {
+    letter-spacing: 2px;
+}
+
+.body-container-wrapper .all-text-white .fa{
+    -webkit-text-fill-color: #fff;
+}
+
+.text-margin-zero h1,
+.text-margin-zero h2,
+.text-margin-zero h3,
+.text-margin-zero p,
+.text-margin-zero h4,
+.text-margin-zero h5,
+.text-margin-zero h6,
+.text-margin-zero .fa,
+.text-margin-zero a{
+    margin:0;
+}
+
+.base-color-text h1,
+.base-color-text h2,
+.base-color-text h3,
+.base-color-text p,
+.base-color-text h4,
+.base-color-text h5,
+.base-color-text h6,
+.base-color-text .fa,
+.base-color-text a{
+color:{{ baseColor }};
+}
+
+/*========End==================*/
+
+
+
+/*========Wrapper Size============*/
+
+body .container-fluid .row-fluid .small-wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    float: none;
+    padding: 0px 20px;
+}
+
+
+
+/*========Basic Section Styling=========*/
+
+.section-bg{
+    background-size: cover!important;
+    background-position:center center!important;
+    background-repeat: no-repeat!important
+}
+
+.section-bg .bg-image{
+    display:none!important;
+}
+
+
+.slick-slide:focus{
+    outline: 0px;
+}
+
+
+
+/*=======End of Basic Section Styling=======*/
+
+
+
+
+@media (min-width: 768px) {
+    .equal-height-container > .row-fluid-wrapper > .row-fluid {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: stretch;
+        -moz-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+
+
+    body .row-fluid .vertical-center{
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+
+}
+
+
+@media (max-width:1024px){
+
+
+    h1 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    body .container-fluid .row-fluid .section-heading.align-center {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media(max-width: 767px) and (min-width: 500px){
+
+    .row-fluid [class*="span"].wrapper{
+        padding: 0px 30px;
+    }
+
+}
+
+
+
+
+@media (max-width:767px){
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    h2{
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+
+
+    a.cta_button, .hs-button {
+        padding: 16px 34px;
+        font-size: 18px;
+    }
+
+    .row-fluid .jumbo1-home-primary-banner p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .section-pad{
+        padding:45px 0;
+    }
+
+    body .container-fluid .row-fluid .section-heading.align-center{
+        margin-bottom: 30px;
+    }
+
+    .primary-banner {
+        padding: 120px 0 40px;
+    }
+
+    .align-left,
+    .align-right{
+        text-align:center;
+    }
+
+
+    .align_center .heading{
+        padding-bottom:30px;
+    }
+
+
+    .pad-btm{
+        padding-bottom:30px;
+    }
+
+}
+
+
+
+@media(max-width: 480px){
+
+    h1 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+
+}
+
+
+
+/*=========================================================
+                    FORM STYLE
+=========================================================*/
+
+::-webkit-input-placeholder {
+    color: #989898;
+}
+
+:-moz-placeholder {
+    color: #989898;
+}
+
+::-moz-placeholder {
+    color: #989898;
+}
+
+:-ms-input-placeholder {
+    color: #989898;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.row-fluid form li{
+    margin:0;
+}
+
+.row-fluid  form li:before{
+    display:none;
+}
+
+.hs-error-msgs li label{
+    color: #FD2727;
+    font-size: 12px;
+}
+
+form li:before{
+    display:none;
+}
+
+
+.row-fluid  form input,
+.row-fluid  form select,
+.row-fluid  form textarea{
+    height: 54px;
+font-family:{{ baseFontFamily }};
+border: 0;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 1px;
+padding: 0;
+margin-bottom: 8px;
+border-radius: 0;
+background:#f5f7fa;
+padding:10px 20px;
+color: #000;
+font-weight:400;
+border:1px solid #e7e7e7;
+box-sizing: border-box;
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+}
+
+
+.row-fluid  form input:focus,
+.row-fluid  form select:focus,
+.row-fluid  form textarea:focus{
+    outline:0;
+border:1px solid {{ baseColor}};
+}
+
+.row-fluid  form textarea{
+    height:130px;
+    resize: none;
+}
+
+.row-fluid  form .hs_file_upload input,
+.row-fluid  form .hs-form-checkbox input,
+.row-fluid  form .hs-form-radio input,
+.row-fluid  form .hs-form-booleancheckbox input{
+    height:auto;
+    padding:0;
+    border:0;
+}
+
+.row-fluid  form .hs-form-checkbox input,
+.row-fluid  form .hs-form-radio input,
+.row-fluid  form .hs-form-booleancheckbox input{
+    height:auto;
+    padding:0;
+    border:0;
+    margin-bottom:0;
+}
+
+.row-fluid form .field>label{
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 300;
+    display:block;
+    margin-bottom:6px;
+    margin-top:14px;
+}
+
+.row-fluid form .hs-button.primary{
+    height: auto;
+    margin-top: 24px;
+    cursor:pointer;
+}
+
+form .hs-error-msgs{
+    margin:0;
+    padding:0;
+}
+
+form .hs-error-msgs li{
+    line-height: 1;
+    color: red;
+    font-weight: 500;
+    font-size: 11px;
+    position: relative;
+    top: -4px;
+    letter-spacing: 0.3px;
+}
+
+.row-fluid .hs-form fieldset.form-columns-1 .hs-input {
+    width: 100%;
+}
+
+body .row-fluid .hs-form fieldset {
+    max-width: 100%;
+}
+
+form .hs-form-required{
+    display:none;
+}
+
+.body-container-wrapper form ul,
+.body-container-wrapper form li{
+    margin:0;
+    padding:0;
+}
+
+.body-container-wrapper form ul,
+form ul{
+    list-style:none;
+}
+
+.body-container-wrapper form li:before{
+    display:none;
+}
+
+body form .hs-form-checkbox:last-child,
+body form .hs-form-radio:last-child,
+body form .hs-form-booleancheckbox{
+    margin-bottom:20px;
+}
+
+body .row-fluid .hs-form fieldset.form-columns-3 .hs-form-field {
+    width: 32%;
+    margin-right:2%;
+}
+
+body .row-fluid .hs-form fieldset.form-columns-2 .hs-form-field {
+    width: 49%;
+    margin-right:2%;
+}
+
+body .row-fluid .hs-form fieldset .hs-form-field:last-child{
+    margin-right:0;
+}
+
+body .row-fluid .hs-form fieldset.form-columns-2 .input,
+body .row-fluid .hs-form fieldset.form-columns-3 .input {
+    margin-right:0px;
+}
+
+body .container-fluid .row-fluid .hs-form fieldset .field:last-child .input{
+    margin-right:0;
+}
+
+body .row-fluid select{
+    background: #f5f5f5 url(//cdn2.hubspot.net/hubfs/2558848/Product-3-Pack/Select%20Arrow%20Small.png) no-repeat;
+    background-position: center right;
+    -webkit-appearance: none;
+}
+
+
+
+
+
+/*=======================================================
+            CHECKBOX AND RADIO BUTTONS STYLING
+=======================================================*/
+
+.row-fluid .hs-form .field .input input[type="checkbox"],
+.row-fluid .hs-form .field .input  input[type="radio"],
+body .row-fluid .checkbox-row input,
+body .row-fluid input[type="checkbox"]{
+    width:auto;
+}
+
+.row-fluid .hs-form .field .input input[type="checkbox"],
+.row-fluid .hs-form .field .input  input[type="radio"],
+body .row-fluid .checkbox-row input,
+body .row-fluid input[type="checkbox"]{
+    padding: 0;
+    border-radius: 4px;
+    background: transparent;
+    margin-left: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #cfd3d7;
+    -webkit-appearance: none;
+    border: none;
+    margin-right: 8px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.row-fluid .hs-form .field .input input[type="checkbox"]:checked:after,
+body .row-fluid .checkbox-row input:checked:after,
+body .row-fluid input[type="checkbox"]:checked:after{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    top: 3px;
+    left: 2px;
+border: 3px solid {{ baseColor }};
+border-top: 0;
+border-right: 0;
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+}
+
+
+.row-fluid .hs-form .field .input  input[type="radio"]{
+    border-radius: 50%;
+}
+
+.row-fluid .hs-form .field .input  input[type="radio"]:checked:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 3px;
+background: {{ baseColor }};
+left: 3px;
+border-top: 0;
+border-right: 0;
+border-radius: 50%;
+}
+
+
+@media (max-width:480px){
+
+
+    body form.hs-form .form-columns-2 .hs-form-field .hs-input,body form.hs-form .form-columns-3 .hs-form-field .hs-input{
+        width:100%;
+    }
+
+    body .row-fluid .hs-form fieldset .input{
+        margin:0;
+    }
+
+    body .row-fluid .hs-form fieldset.form-columns-3 .hs-form-field {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    body .row-fluid .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .row-fluid form .hs_submit .actions{
+        text-align:center;
+    }
+
+}
+
+
+
+
+
+
+
+/*===================================================
+    Two Col Adjust
+===================================================*/
+
+body .container-fluid .row-fluid .two-col-adjust>span {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    -wevkit-flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    margin-right: -2.5%;
+}
+
+body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-basis: 47.9%;
+    -webkit-flex-basis: 47.9%;
+    float: left;
+    margin-right: 2.43%;
+    margin-top: 30px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+@media(max-width: 767px){
+
+    body .container-fluid .row-fluid .two-col-adjust>span {
+        display: block;
+        margin-right: 0;
+    }
+
+    body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
+        display: block;
+        flex-basis: 100%;
+        width:100%;
+        -webkit-flex-basis: 100%;
+        margin:0;
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+/*==================================================
+            Three Col Adjust
+==================================================*/
+
+body .container-fluid .row-fluid .three-col-adjust>span {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    -wevkit-flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    margin-right: -2.5%;
+}
+
+body .row-fluid .three-col-adjust span>.hs_cos_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-basis: 30.9%;
+    -webkit-flex-basis: 30.9%;
+    float: left;
+    margin-right: 2.43%;
+    margin-top: 30px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+@media (max-width:767px){
+
+
+    body .container-fluid .row-fluid .three-col-adjust>span {
+        display: block;
+        margin-right: 0;
+    }
+
+    body .row-fluid .three-col-adjust span>.hs_cos_wrapper {
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        max-width: 379px;
+        width: 100%;
+        margin: 30px auto 0;
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*==================================================
+            Four Col Adjust
+==================================================*/
+
+body .container-fluid .row-fluid .four-col-adjust>span {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    -wevkit-flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    margin-right: -2.565%;
+}
+
+body .row-fluid .four-col-adjust span>.hs_cos_wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-basis: 22.5%;
+    -webkit-flex-basis: 22.5%;
+    float: left;
+    margin-right: 2.5%;
+    margin-top: 2.43%;
+    box-sizing:border-box;
+    position:relative;
+}
+
+@media (max-width:767px){
+
+    body .container-fluid .row-fluid .four-col-adjust>span {
+        display: block;
+        margin-right: 0;
+    }
+
+    body .row-fluid .four-col-adjust span>.hs_cos_wrapper {
+        display: block;
+        flex-basis: 100%;
+        width:100%;
+        -webkit-flex-basis: 100%;
+        margin:0;
+        margin-top: 20px;
+    }
+    .hero-taber .taber-content .details {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================
+ *              Home Styling
+ *================================================*/
+
+.service_first_section{
+    padding:286px 0px;
+    padding-bottom: 161px;
+}
+
+.service_first_section .text_mod h1{
+    font-weight: bold;
+    letter-spacing: -1.85px;
+}
+
+.service_second_section{
+    position:relative;
+    padding:129px 0px;
+    background-image: linear-gradient(to bottom, #f8f8fc, rgba(245, 245, 245, 0));
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom:0px;
+    z-index:1;
+}
+
+.service_second_section:before{
+    content: url(https://cdn2.hubspot.net/hubfs/434080/Design_studio/Single%20Service%20Landing%20Page/pentagon-1.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -983px;
+    right: 0;
+    z-index: -1;
+}
+
+.service_second_section .second_flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position:relative;
+}
+
+.service_second_section .second_flex .second_basis{
+    -webkit-flex-basis: 27%;
+    flex-basis: 27%;
+}
+.service_second_section .second_flex .second_basis .list{
+    padding-top: 100px;
+    width: 303px;
+}
+
+.service_second_section .second_flex .second_basis .list.fixed{
+    position: fixed!important;
+    top: 0;
+    z-index:2;
+}
+
+.service_second_section .second_flex .second_basis .list ul li a{
+    font-weight: normal;
+    letter-spacing: 0.02px;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #808080;
+}
+
+
+
+.service_second_section .second_flex .second_basis .list ul li{
+    padding-bottom:6px;
+}
+
+.service_second_section .second_flex .second_basis .list ul li.active a{
+    color: #4842b7;
+}
+
+.service_second_section .second_flex .second_basis .list ul li.active:before{
+    transform: translate(1px, 11px);
+    content: "";
+    position: absolute;
+    left: -378px;
+    height: 2px;
+    background-color: #4842b7;
+    width: 360px;
+}
+
+.service_second_section .second_flex .second_right_basis{
+    -webkit-flex-basis: 73%;
+    flex-basis: 73%;
+}
+.service_second_section .second_flex .second_right_basis .arrow_flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items:center;
+    padding-bottom: 66px;
+}
+
+.service_second_section .second_flex .second_right_basis .arrow_flex .arrow_basis{
+    -webkit-flex-basis: 3.5%;
+    flex-basis: 3.5%;
+}
+
+.service_second_section .second_flex .second_right_basis .arrow_flex .arrow_text_basis{
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+}
+
+.service_second_section .second_flex .second_right_basis .arrow_flex .arrow_text_basis p{
+    font-weight: 600;
+    letter-spacing: 0.02px;
+    color: #000000;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box{
+    padding-bottom: 142px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .right_head{
+    padding-bottom:18px;
+}
+
+/* .service_second_section .second_flex .second_right_basis .right_box .right_head:nth-child(4){
+padding-bottom:40px;
+} */
+
+.service_second_section .second_flex .second_right_basis .right_box .right_head h3{
+    line-height: normal;
+    letter-spacing: normal;
+}
+.service_second_section .second_flex .second_right_basis .right_box .right_sub_head{
+    padding-bottom:5px;
+    display:none;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .right_sub_head.subhead{
+    display:block;
+    padding-top:30px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .right_sub_head h4{
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.03px;
+    color: #000000;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .img_popup.video{
+    position:relative;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .img_popup{
+    display:none;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .img_popup.video{
+    display:block
+}
+
+
+
+.service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 119px;
+    height: 123px;
+    bottom: 215px;
+    left: 405px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 36px solid #4842b7;
+    top: 35px;
+    left: 48px;
+}
+.service_second_section .second_flex .second_right_basis .right_box .right_para{
+    padding-bottom:15px
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .img_popup.video{
+    padding-top:51px;
+    padding-bottom:25px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .right_para p{
+    font-weight: normal;
+    letter-spacing: 0.02px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .intro_list{
+    padding-top:5px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .intro_list ul{
+    padding-left: 36px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .intro_list ul li p.active::before{
+    content: "\2022";
+    color:#4842b7 ;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -16px;
+}
+.service_second_section .second_flex .second_right_basis .right_box .intro_list ul li p::before{
+
+    content: "\2022";
+    color:#89a6b1 ;
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+    margin-left: -16px;
+}
+.service_second_section .second_flex .second_right_basis .right_box .intro_list ul li p{
+    font-weight: normal;
+    letter-spacing: 0.02px;
+    max-width: 747px;
+}
+
+.service_second_section .second_flex .second_right_basis .right_box .intro_list ul li{
+    padding-bottom:10px;
+}
+
+.service_contact{
+    padding-top:92px;
+    padding-bottom:87px;
+}
+
+.service_contact .contact_head{
+    padding-bottom:15px;
+    background-image: linear-gradient(to bottom, #f8f8fc, rgba(245, 245, 245, 0));
+}
+
+.service_contact .contact_head h2{
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 0.05px;
+    color: #000000;
+}
+
+.service_contact .contact_subhead{
+    padding-bottom:28px;
+}
+
+.service_contact .contact_subhead h4{
+    font-weight: normal;
+    letter-spacing: normal;
+    color: #605e7e;
+}
+
+.service_contact .contact_button ul li{
+    display:inline-block;
+}
+
+.service_contact .contact_button ul li:last-child a.cta_button{
+    background-color: #ffcf59;
+    color:#1e0936;
+    border: 1px solid #ffcf59;
+    padding: 8px 37px;
+
+}
+
+.service_contact .contact_button ul li a.cta_button{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.33);
+    background-color: #4842b7;
+    padding: 8px 25px;
+    font-weight: bold;
+    letter-spacing: normal;
+    border-radius: 2px;
+    border: 1px solid #4842b7;
+}
+
+.service_contact .contact_button ul li:last-child{
+    margin-left:21px;
+}
+
+.option_dropdown{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================*/
+/*          Media query for Mobile      */
+/*======================================*/
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .option_dropdown{
+        display:block;
+    }
+
+    body .row-fluid  .option_dropdown select{
+        background-color: #fff;
+        border-radius: 4px;
+        border:2px solid #5d5d5d;
+        font-size: 16px;
+        outline:0;
+        min-height: 42px;
+    }
+
+    body .row-fluid .option_dropdown select:hover {
+        color: gray;
+    }
+
+    .option_dropdown  select option{
+        color: black;
+        background-color: #dddfe3;
+        font-size: 16px;
+        outline:0;
+    }
+
+    select option:active {
+        background: rgba(100, 100, 100, 0.3);
+    }
+
+
+    body .row-fluid select{
+        background: #fff url(https://cdn2.hubspot.net/hubfs/434080/down-arrow%20(2).png) no-repeat !important;
+        background-position: 96%!important;
+        -webkit-appearance: none;
+    }
+
+    .service_second_section .second_flex .second_basis .list{
+        display:none;
+    }
+
+    .service_first_section {
+        padding: 163px 0px;
+        padding-bottom: 103px;
+    }
+
+    .service_first_section .text_mod h1{
+        font-size:30px;
+    }
+
+    .service_second_section{
+        padding-top:86px;
+    }
+
+    .service_second_section .second_flex{
+        display:block;
+    }
+
+    .service_second_section .second_flex .second_basis .list {
+        padding-top: 0px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .service_second_section .second_flex .second_basis .list ul li.active:before{
+        left:-309px;
+    }
+
+    .service_second_section .second_flex .second_basis .list.fixed{
+        position:relative!important;
+        top:0!important;
+    }
+
+    .service_second_section .second_flex .second_basis .list{
+        top:0!important;
+    }
+
+    .service_second_section .second_flex .second_right_basis .arrow_flex{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 46px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .arrow_flex .arrow_basis{
+        -webkit-flex-basis: 30.5%;
+        flex-basis: 30.5%;
+    }
+
+
+
+    .service_second_section .second_flex .second_right_basis .right_box{
+        text-align:center;
+        padding-bottom: 76px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .intro_list{
+        text-align:left;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .right_head h3{
+        font-size:26px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .right_para p{
+        font-size:14px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .intro_list ul li p{
+        font-size:14px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video {
+        padding-top: 35px;
+        padding-bottom: 0;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video img{
+        width:100%;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button{
+        width: 58px;
+        height: 58px;
+        bottom: 27%;
+        left: 50%;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button:before{
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 18px solid #4842b7;
+        top: 18px;
+        left: 22px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .right_sub_head.subhead{
+        padding-top:0px;
+    }
+
+    .service_contact {
+        padding-top: 55px;
+    }
+
+    .service_contact .contact_head h2{
+        font-size:19px;
+    }
+
+    .service_contact .contact_subhead h4{
+        font-size:20px;
+    }
+
+    .service_contact .contact_button ul li{
+        padding-bottom: 20px;
+    }
+
+    .service_contact .contact_button ul li:last-child {
+        margin-left: 7px;
+    }
+
+    .service_contact .contact_button ul li a.cta_button{
+        font-size:15px;
+    }
+}
+
+
+/*======================================*/
+/*          Media query for Tablet      */
+/*======================================*/
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service_second_section .second_flex .second_right_basis .right_box{
+        max-width:100%;
+    }
+
+    /*   .service_second_section .second_flex .second_basis .list.fixed{
+      position:relative!important;
+        top:0!important;
+      } */
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*   .service_second_section .second_flex .second_basis .list{
+      width:139px;
+      } */
+
+    .service_second_section .second_flex .second_right_basis .right_box .intro_list ul li p{
+        max-width:100%;
+    }
+
+    .service_second_section .second_flex .second_right_basis .arrow_flex .arrow_basis {
+        -webkit-flex-basis: 6.5%;
+        flex-basis: 6.5%;
+    }
+
+    .service_first_section {
+        padding: 116px 0px;
+        padding-bottom: 116px;
+    }
+
+    .service_first_section .text_mod h1{
+        font-size:40px;
+    }
+
+    .service_second_section{
+        padding:75px 0px;
+        padding-bottom: 55px;
+    }
+
+    .service_second_section .second_flex .second_basis .list {
+        padding-top: 93px;
+        width: 100%;
+    }
+    .service_second_section .second_flex .second_right_basis .right_box .right_head h3{
+        font-size: 22px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .right_para p{
+        font-size:15px;
+    }
+
+    .service_second_section .second_flex .second_basis .list ul li.active:before{
+        left: -365px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .intro_list ul {
+        padding-left: 22px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .intro_list ul li p{
+        font-size:15px;
+    }
+
+    .service_second_section .second_flex .second_basis .list ul li a{
+        font-size:15px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box {
+        padding-bottom: 70px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video img{
+        width:500px;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button{
+        width: 97px;
+        height: 97px;
+        bottom: 35%;
+        left: 39%;
+    }
+
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button:before{
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 28px solid #4842b7;
+        top: 32%;
+        left: 41%;
+    }
+
+    .service_contact {
+        padding-top: 73px;
+        padding-bottom: 73px;
+    }
+
+    .service_contact .contact_head h2{
+        font-size:26px;
+    }
+
+    .service_contact .contact_subhead h4{
+        font-size:20px;
+    }
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .service_second_section .second_flex .second_basis .list ul li.active:before{
+        width:372px;
+    }
+
+    .service_second_section .second_flex .second_basis .list ul li a{
+        font-size:13px;
+    }
+}
+@media (min-width: 571px) and (max-width: 767px) {
+    .service_second_section .second_flex .second_right_basis .arrow_flex .arrow_text_basis{
+        -webkit-flex-basis: 29%;
+        flex-basis: 29%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+    .service_second_section .second_flex .second_right_basis .arrow_flex .arrow_text_basis{
+        -webkit-flex-basis: 53%;
+        flex-basis: 53%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1024px) {
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button {
+        width: 97px;
+        height: 97px;
+        bottom: 35%;
+        left: 28%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .service_second_section .second_flex .second_right_basis .right_box .img_popup.video .video_button {
+        width: 97px;
+        height: 97px;
+        bottom: 35%;
+        left: 39%;
+    }
+}

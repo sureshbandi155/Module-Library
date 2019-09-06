@@ -23,7 +23,15 @@
     </div>
 </div>
 
+<div class="span12 hero_section_wd_1 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
 
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div class="span12 hero_section_wd_1 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
@@ -127,6 +135,7 @@
 </div>
 
 
+<<<<<<< HEAD
 
 
 <!--hero section wd 24-->
@@ -280,10 +289,16 @@
 wd 25 slider section
 
 <div class="span12 hero_section_wd_25 section-padding change-mobile" style="background:{{ item.add_background_color }} no-repeat;background-position:top center;background-size:cover;">
+=======
+<!--hero section wd 25-->
+
+<div class="span12 hero_section_wd_25 section-padding change-mobile" style="background:{{ item.add_background_color }} url('{{ item.add_background_image.src }} no-repeat;background-position:top center;background-size:cover;">
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
     <div class="wrapper equal-height-container">
         <div class="row-fluid-wrapper">
             <div class="row-fluid">
                 <div class="slider-section">
+<<<<<<< HEAD
                     {% for item in module.add_slider_group %}
 
 
@@ -296,15 +311,31 @@ wd 25 slider section
                                 <p>{{ item.add_description }}
                                 </p>
                             </div>
+=======
+                    {% for item in item.add_slider_group %}
+
+                    <div class="inner-layer">
+                        <div class="span6 left-col section-heading vertical-center">
+                            <h1{{ item.add_heading }}</h1>
+                            <p>{{ item.add_description }}
+                            </p>
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
                             <div class="button">
                                 <span class="left-button">{% cta guid="{{ item.add_cta_button }}" %}</span>
                                 <span class="right-button">{% cta guid="{{ item.add_cta_button_1 }}" %}</span>
                             </div>
                         </div>
                         <div class="span6 right-col">
+<<<<<<< HEAD
                             <img src="{{ item.add_image.src }}"
                                  alt="{{ item.add_image.alt }}">
 
+=======
+                            <div class="image-secion">
+                                <img src="{{ item.add_image.src }}"
+                                     alt="{{ item.add_image.alt }}">
+                            </div>
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
                         </div>
                     </div>
                     {% endfor %}
@@ -322,10 +353,18 @@ wd 25 slider section
 
     </div>
 </div>
+<<<<<<< HEAD
 
 </body>
 </html>
 {% for item in module.add_slick_slider_group %}
+=======
+</body>
+</html>
+
+
+{% for item in module.add_slider_group %}
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
 {% inline_text field="add_background_color" value="{{ item.add_background_color }}" %}
 {% if item.add_background_image.src %}
 <img src="{{ item.add_background_image.src }}"
@@ -335,8 +374,13 @@ wd 25 slider section
 {% endif %}
 {% inline_text field="add_heading" value="{{ item.add_heading }}" %}
 {% inline_rich_text field="add_description" value="{{ item.add_description }}" %}
+<<<<<<< HEAD
 {% cta guid="{{ item.add_cta_button_left }}" %}
 {% cta guid="{{ item.add_cta_button_right }}" %}
+=======
+{% cta guid="{{ item.add_cta_button }}" %}
+{% cta guid="{{ item.add_cta_button_1 }}" %}
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
 {% if item.add_image.src %}
 <img src="{{ item.add_image.src }}"
      alt="{{ item.add_image.alt }}"
@@ -344,6 +388,7 @@ wd 25 slider section
      height="{{ item.add_image.height }}">
 {% endif %}
 {% endfor %}
+<<<<<<< HEAD
 
 <div class="span12 hero_section_wd_25 section-padding change-mobile" style="background:{{ item.add_background_color }} url('{{ item.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
     <div class="wrapper equal-height-container">
@@ -660,12 +705,27 @@ wd 25 slider section
 </style>
 
 {% for item in module.add_single_column_group %}
+=======
+{% for item in module.add_slider_group %}
+{% inline_text field="add_background_color" value="{{ item.add_background_color }}" %}
+{% if item.add_background_image.src %}
+<img src="{{ item.add_background_image.src }}"
+     alt="{{ item.add_background_image.alt }}"
+     width="{{ item.add_background_image.width }}"
+     height="{{ item.add_background_image.height }}">
+{% endif %}
+{% inline_text field="add_heading" value="{{ item.add_heading }}" %}
+{% inline_rich_text field="add_description" value="{{ item.add_description }}" %}
+{% cta guid="{{ item.add_cta_button }}" %}
+{% cta guid="{{ item.add_cta_button_1 }}" %}
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
 {% if item.add_image.src %}
 <img src="{{ item.add_image.src }}"
      alt="{{ item.add_image.alt }}"
      width="{{ item.add_image.width }}"
      height="{{ item.add_image.height }}">
 {% endif %}
+<<<<<<< HEAD
 {% inline_text field="add_heading" value="{{ item.add_heading }}" %}
 {% inline_rich_text field="add_description" value="{{ item.add_description }}" %}
 {% inline_text field="add_button_link" value="{{ item.add_button_link }}" %}
@@ -718,6 +778,15 @@ wd 25 slider section
 
 
 <div class="span12 content_section_wd_39 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+=======
+{% endfor %}
+
+{{ module.add_slider_group }}
+
+
+content section wd 18
+<div class="span12 content_section_wd_18 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
     <div class="wrapper equal-height-container">
         <div class="row-fluid-wrapper">
             <div class="row-fluid">
@@ -725,7 +794,13 @@ wd 25 slider section
                     <h2>
                         {{ module.add_heading }}
                     </h2>
+<<<<<<< HEAD
 
+=======
+                    <p>
+                        {{ module.add_description }}
+                    </p>
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
                 </div>
             </div>
         </div>
@@ -734,7 +809,11 @@ wd 25 slider section
             <div class="row-fluid">
                 <div class="inner-layer">
                     {% for item in module.add_card %}
+<<<<<<< HEAD
                     <div class="single-card align-center">
+=======
+                    <div class="single-card align-left">
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
                         <div class="image-text">
                             <div class="image-section">
                                 <img src="{{ item.add_card_image.src }}"
@@ -749,16 +828,54 @@ wd 25 slider section
                                 </p>
                             </div>
                         </div>
+<<<<<<< HEAD
+=======
+                        <div class="button-section">
+                            {% cta guid="{{ item.add_card_button }}" %}
+                        </div>
+
+                        <!--                   hover text -->
+                        <div class="hover-text">
+                            <div class="row-fluid-wrapper">
+                                <div class="row-fluid">
+                                    <div class="text-highlight red-cta">
+                                        <div class="image-section">
+                                            <img src="{{ item.add_card_hover_image.src }}"
+                                                 alt="{{ item.add_card_hover_image.alt }}">
+                                        </div>
+                                        <div class="text-section">
+                                            <h4>
+                                                {{ item.add_card_hover_heading }}
+                                            </h4>
+                                            <p>
+                                                {{ item.add_card_hover_text }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="button-section">
+                                        {% cta guid="{{ item.add_card_hover_button }}" %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
                     </div>
                     {% endfor %}
 
                 </div>
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
             </div>
         </div>
     </div>
 </div>
 
 
+<<<<<<< HEAD
 <style>
     /*==================================================================
      Content Section WD 39 Styling
@@ -943,11 +1060,46 @@ wd 25 slider section
             <div class="row-fluid">
                 <div class="button-section">
 
+=======
+<div  class="span12 hero_section_wd_34 section-padding  change-mobile"  style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span5 left-col align-center vertical-center">
+                    <div class="text-section section-heading ">
+                        <h1>
+                            {{ module.add_heading }}
+                        </h1>
+                        <p>
+                            {{ module.add_description }}
+                        </p>
+                    </div>
+                    <div class="form-section">
+                        {% form
+                        form_to_use="{{ module.form_field.form_id }}"
+                        response_response_type="{{ module.form_field.response_type }}"
+                        response_message="{{ module.form_field.message }}"
+                        response_redirect_id="{{ module.form_field.redirect_id }}"
+                        response_redirect_url="{{module.form_field.redirect_url}}"
+                        gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                        %}
+                        <p>{{ module.add_form_bottom_text }}
+
+                        </p>
+                    </div>
+                </div>
+                <div class="span7 right-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}">
+                    </div>
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
                 </div>
             </div>
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 
 <style>
     /*==================================================================
@@ -1171,10 +1323,46 @@ wd 25 slider section
         .hero_section_wd_1_copy .wrapper .button .left-button .hs_cos_wrapper .hs-cta-wrapper .hs-cta-node .cta_button {
             margin: 0 0 20px;
 
+=======
+<style>
+    @media (min-width: 1024px) {
+        .hero_section_wd_34 .text-section h1{
+            margin: 0;
+            padding: 0 0 20px;
+        }
+        .hero_section_wd_34 .text-section p{
+            margin: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        .hero_section_wd_34 .left-col .text-section form input {
+            margin: 0;
+        }
+    }
+
+        @media (max-width: 767px) {
+        .hero_section_wd_34 .right-col{
+            min-height: 50vh;
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
         }
     }
 
 </style>
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> 5802bf6ebf9c4c0f111712bfa000f066aebceb3e
+
+
+
 
 
 
