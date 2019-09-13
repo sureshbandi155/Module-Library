@@ -1,0 +1,216 @@
+
+
+<div class="span12 gallery_wd_8 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="text-section text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                </div>
+                <div class="three-col-adjust">
+                    <span>
+                      {% for item in module.add_images_group %}
+                        <div class="inner-layer hs_cos_wrapper">
+                          <div class="image-section">
+                            <img src="{{ item.add_card_image.src }}"
+                                 alt="{{ item.add_card_image.alt }}"
+                                 width="{{ item.add_card_image.width }}"
+                                 height="{{ item.add_card_image.height }}">
+                          </div>
+                            <div class="hover-text">
+                                <div class="text-section">
+                                    <h4>
+                                        {{ item.add_hover_heading }}
+                                    </h4>
+                                    <h6>
+                                        {{ item.add_hover_sub_heading }}
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                      {% endfor %}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .gallery_wd_8 .inner-layer{
+        position: relative;
+    }
+    .gallery_wd_8 .inner-layer .hover-text{
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border: 10px solid #000;
+        text-align: center;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    .gallery_wd_8 .inner-layer .hover-text:hover{
+        opacity: 1;
+    }
+    @media (min-width: 1025px) {
+        .gallery_wd_8 .inner-layer .hover-text{
+            padding: 154px 64px;
+        }
+        .gallery_wd_8 .text-section h2{
+            padding: 0 0 43px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .gallery_wd_8 .inner-layer .hover-text{
+            padding: 70px 30px;
+        }
+    }
+    @media (min-width: 768px){
+        .gallery_wd_8 .text-section h2{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .gallery_wd_8 .inner-layer .hover-text{
+            padding: 30px 15px;
+        }
+
+    }
+
+</style>
+
+<style>
+    /*==================================================================
+Gallary Wd 8 Styling
+=====================================================================*/
+    .gallery_wd_9 .inner-layer{
+        position: relative;
+    }
+    .gallery_wd_9 .inner-layer .hover-text{
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border: 10px solid #000;
+        text-align: center;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+
+    }
+    .gallery_wd_9 .inner-layer .hover-text:hover{
+        opacity: 1;
+    }
+    .gallery_wd_9 .text-section h2{
+        padding: 0 0 20px;
+    }
+    @media (min-width: 1025px) {
+        .gallery_wd_9 .inner-layer .hover-text{
+            padding: 154px 64px;
+        }
+        .gallery_wd_9 .text-section h2{
+            padding: 0 0 43px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .gallery_wd_9 .inner-layer .hover-text{
+            padding: 0 15px;
+        }
+    }
+    @media (max-width: 767px) {
+        .gallery_wd_9 .inner-layer .hover-text{
+            padding: 0 30px;
+        }
+        .gallery_wd_9 .text-section h2{
+            text-align: center;
+        }
+        .gallery_wd_9 .image-section img{
+            width: 100%;
+        }
+    }
+    /*==================================================================
+    End of Gallary Wd 8 Styling
+    =====================================================================*/
+
+
+</style>
+
+
+
+
+<div class="span12 gallery_wd_20 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="text-section section-padding text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p></p>
+                </div>
+                {% for item in module.add_gallery_categories_group %}
+                <div class="three-col-adjust">
+                    <span>
+                        {% for item2 in item.add_images_group %}
+                        <div class="inner-layer hs_cos_wrapper {{ item.add_class_gallery_category }}">
+                          <div class="image-section">
+                            <img src="{{ item.add_card_image.src }}"
+                                 alt="{{ item.add_card_image.alt }}"
+                                 width="{{ item.add_card_image.width }}"
+                                 height="{{ item.add_card_image.height }}">
+                          </div>
+                        </div>
+                        {% endfor %}
+                    </span>
+                </div>
+                <div class="portfolioFilter clearfix">
+                    <a href="#" data-filter="{{ item.add_class_gallery_category }}" class="{{ item.add_class_initial_highlight }}">{{ item.add_gallery_category_name }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% for item in module.add_gallery_categories_group %}
+{% inline_text field="add_gallery_category_name" value="{{ item.add_gallery_category_name }}" %}
+{% inline_text field="add_class_gallery_category" value="{{ item.add_class_gallery_category }}" %}
+{% inline_text field="add_class_initial_highlight" value="{{ item.add_class_initial_highlight }}" %}
+{% for item2 in item.add_images_group %}
+{% if item2.add_image.src %}
+<img src="{{ item2.add_image.src }}"
+     alt="{{ item2.add_image.alt }}"
+     width="{{ item2.add_image.width }}"
+     height="{{ item2.add_image.height }}">
+{% endif %}
+{% endfor %}
+{% endfor %}

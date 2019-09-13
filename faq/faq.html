@@ -320,12 +320,161 @@ Faq System Styling
             $(this).parent(".question-answer-group").removeClass('expanded').children('.answer').stop(true,true).slideUp();
         }
     });
-
-
-
-
 </script>
 
+
+
+
+<div class="span12 faq_wd_4 section-padding"  style="background:{{ module.add_background_color .color}} url('{{ module.add_background_image.src }}') no-repeat;background-position:center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span5 left-col two-col-text ">
+                    <div class="all-topics">
+                        {% for item in module.add_topics_group %}
+                        <h5 class="each-topic {{ item.add_class_for_initial_hightlight }}" data-tab="{{ item.add_topic_data_id }}">
+                            {{ item.add_topic }}
+                        </h5>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="right-col span7 float-right">
+                    {% for item in module.add_topics_group %}
+                    {% for item2 in item.add_question_answers_group %}
+                    <div  id="" class="accordion">
+                        <div class="accordion_group span12 text-margin-zero {% if item2.make_this_default_open %} expanded {% endif %}">
+                            <div class="accordion_header accordion-start text-margin-zero">
+                                <h5>{{ item2.add_question }}</h5>
+                            </div>
+                            <div class="accordion_content ">
+                                {{ item2.add_answer }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+
+    /**********************************************************
+             faq section wd 4 styling starts here
+    *********************************************************/
+
+    .faq_wd_4 .accordion_group {
+        border-radius: 4px;
+        border: solid 1px #d8d8d8;
+        padding: 20px 47px 20px 31px;
+        margin-bottom: 30px;
+    }
+
+    body .faq_wd_4 .accordion_group.expanded {
+        border-radius: 4px;
+        border:0px;
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+        background-color: #ffffff;
+    }
+    .faq_wd_4 .row-fluid .span5 {
+        width: 41.17094%;
+    }
+    .faq_wd_4 .row-fluid .span7 {
+        width: 54.264957%;
+    }
+    body .faq_wd_4  .accordion_header h5 {
+        margin: 0;
+        padding-bottom: 0px;
+        cursor:pointer;
+        position:relative;
+        transition: all ease-in-out .3s;
+    }
+
+    .faq_wd_4 .accordion_header h5:after {
+        content: "";
+        background-image: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Faq%20Section%20WD%2011%20(%20bottom-arrow%20).png);
+        right: -27px;
+        position: absolute;
+        background-position: center;
+        top: 0px;
+        background-size: cover;
+        width: 28px;
+        height: 28px;
+    }
+
+    .faq_wd_4 .accordion_group.expanded h5:after {
+        content: '';
+        background-image: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Faq%20Section%20WD%2011%20(%20Close%20).png);
+        background-repeat: no-repeat;
+    }
+
+    .faq_wd_4 .accordion_content p {
+        padding-top: 17px;
+    }
+
+
+    @media (max-width:767px){
+
+        .faq_wd_4 .accordion_group {
+            padding: 25px 30px;
+        }
+
+        .faq_wd_4 .row-fluid .span7 {
+            width: 100%;
+        }
+
+        .faq_wd_4 .row-fluid .span5 {
+            width: 100%;
+        }
+
+        .faq_wd_4 .accordion_header h5:after {
+            right: -20px;
+        }
+
+        body .faq_wd_4 .accordion_header h5{
+            padding-right:15px;
+        }
+
+        .faq_wd_4 .two-col-items {
+            display: block;
+        }
+
+        .faq_wd_4{
+            text-align: center;
+        }
+
+    }
+
+    /**********************************************************
+          faq section wd 4 styling ends here
+    *********************************************************/
+
+</style>
+<script>
+    /**
+     * Accordion tabber
+     */
+    var $accordion = $('.accordion');
+    // Initially hide all accordion content
+    $accordion.find('.accordion_content').hide();
+    // Initially display the accordion content with .expanded class
+    $accordion.find('.accordion_group.expanded .accordion_content').show();
+    $accordion.find('.accordion_header').click(function(){
+// Hide the displayed sibling accordion content so only one appears at a time
+        $accordion.find(".accordion_header").not(this).parent(".accordion_group.expanded").removeClass('expanded').children('.accordion_content').stop(true,true).slideUp();
+        if(!$(this).parent('.accordion_group').hasClass('expanded')){
+// Display the accordion content if it is not displayed
+            $(this).parent(".accordion_group").addClass('expanded').children('.accordion_content').stop(true,true).slideDown();
+        }
+        else{
+// Hide the accordion content if it is displayed
+            $(this).parent(".accordion_group").removeClass('expanded').children('.accordion_content').stop(true,true).slideUp();
+        }
+    });
+</script>
 
 
 

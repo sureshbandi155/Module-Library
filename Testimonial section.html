@@ -38,7 +38,6 @@
         outline:none;
     }
     .testimonial_section_wd_2 ul.slick-dots {
-
         padding-left: 0px;
     }
     .testimonial_section_wd_2 .slick-dots li{
@@ -95,5 +94,166 @@
         }
     }
 
+</style>
+
+
+<div class="span12 testimonial_section_wd_8 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span4" style="background: url('{{ module.add_left_col_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+                    <h2>
+                        {{ module.add_heading }}
+                    </h2>
+
+                </div>
+                <div class="span8">
+                    <div class="testimonial-outer-layer">
+                        {% for item in module.add_testimonial_group %}
+                        <div class="testimonial-inner-layer" style="background:	{{ item.background_color.color }}">
+                            <div class="image-text-section">
+                                <img src="{{ item.add_testimonial_image.src }}"
+                                     alt="{{ item.add_testimonial_image.alt }}"
+                                     width="{{ item.add_testimonial_image.width }}"
+                                     height="{{ item.add_testimonial_image.height }}">
+                                <div class="text-section">
+                                    <p>{{ item.add_testimonial_description }}</p>
+                                    <div class="heading">
+                                        <h5>{{ item.add_testimonial_heading }}</h5>
+                                        <h6>{{ item.add_testimonial_company }}</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .testimonial_section_wd_8 .heading h5, .testimonial_section_wd_8 .heading h6{
+        display: inline;
+    }
+
+    body .container-fluid .row-fluid .testimonial_section_wd_8 .testimonial-inner-layer.slick-slide.slick-current.slick-active{
+        color: #fff;
+        background: #000 !important;
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    }
+    body .container-fluid .row-fluid .testimonial_section_wd_8 .testimonial-inner-layer.slick-slide{
+
+    }
+    .testimonial_section_wd_8 .testimonial-inner-layer.slick-slide.slick-current.slick-active p,
+    .testimonial_section_wd_8 .testimonial-inner-layer.slick-slide.slick-current.slick-active h5,
+    .testimonial_section_wd_8 .testimonial-inner-layer.slick-slide.slick-current.slick-active h6{
+        color: #fff;
+    }
+    .testimonial_section_wd_8{
+        position: relative;
+    }
+    .testimonial_section_wd_8.section-padding:before {
+        content: '';
+        position: absolute;
+        background: #fff;
+        left: 0;
+        width: 52%;
+        /* bottom: 0; */
+        top: 0;
+        height: 100%;
+    }
+    .testimonial_section_wd_8 .testimonial-outer-layer{
+        margin-right: -51%;
+    }
+    /*     slick slider and dots  styling */
+    .testimonial_section_wd_8 .slick-slide:focus{
+        outline:none;
+    }
+    .testimonial_section_wd_8 ul.slick-dots {
+        text-align: center;
+        padding-left: 0;
+    }
+    .testimonial_section_wd_8 .slick-dots li{
+        margin: 0 5px;
+        display: inline-block;
+    }
+    .testimonial_section_wd_8 .slick-dots li:before{
+        content: '';
+    }
+    .testimonial_section_wd_8 .slick-dots li.slick-active button {
+        width: 18px;
+        height: 18px;
+        background:#000;
+    }
+    .testimonial_section_wd_8 .slick-dots li button:hover{
+        background: #000;
+    }
+
+    .testimonial_section_wd_8 .slick-dots li button {
+        font-size: 1px;
+        color: transparent;
+        padding: 0;
+        border: 1px solid #000;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #fff;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+    .testimonial_section_wd_8 .slick-dots li:focus, .testimonial_section_wd_8 .slick-dots li.slick-active button:focus,
+    .testimonial_section_wd_8 .slick-dots li button {
+        outline: none;
+    }
+    .testimonial_section_wd_8 .slick-dots li button:before {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        body .row-fluid .testimonial_section_wd_8 .testimonial-inner-layer{
+            margin: 0 36px 0 0;
+            /*     width: 433px !important; */
+            padding: 84px 37px 70px;
+        }
+        /* body .row-fluid .testimonial_section_wd_8 .testimonial-inner-layer .image-text-section{
+
+
+        } */
+        .testimonial_section_wd_8 .span4 h2{
+            padding: 68px 0 161px;
+        }
+        .testimonial_section_wd_8 .text-section{
+            padding: 45px 0 0;
+        }
+        .testimonial_section_wd_8 .text-section p{
+            letter-spacing: 0.3px;
+            line-height: 36px;
+
+        }
+    }
+    @media (min-width: 1025px) {
+        body .row-fluid .testimonial_section_wd_8 .span4{
+            position: relative;
+            min-height: 363px;
+            top: -278px;
+        }
+        body .row-fluid .testimonial_section_wd_8.section-padding{
+            padding: 500px 0 300px;
+        }
+        .testimonial_section_wd_8 ul.slick-dots {
+            text-align: center;
+            margin: 0;
+            padding: 100px 0 0;
+            margin-left: -43.7%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }@media (max-width: 767px) {
+
+    }
 </style>
 

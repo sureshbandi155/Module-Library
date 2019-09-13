@@ -1,0 +1,34 @@
+var img = new Array();
+
+// The following would be in some sort of loop or array iterator:
+
+var num = [NUMBER] // You'd use this number to keep track of multiple images.
+  // You could also do this by using $("ul>li").each() and using the index #
+
+img[num] = new Image();
+
+  // Specify the source for the image
+var imgSource = "http://yourimage.com/example.jpg";
+
+  // only append the corresponding LI after the image is loaded
+img[num].onload = function() {
+    $("#pic" + num).attr("style", "background-image:url('" + imgSource + "')");
+};
+
+img[num].src = imgSource;​
+
+// Image Selection
+$('#image1').click(function() {
+    $('#card-img').attr('src','../img/image1.jpeg');
+});
+var list = $('.insert-imgs');
+    list.each(function(){
+var bg = $(this).css('background-image');
+});
+var image= $('.
+
+var bg = $(this).css('background-image');
+
+
+slider-img-1
+

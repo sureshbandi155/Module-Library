@@ -1,0 +1,223 @@
+<div class="index-hero-slider-cm">
+    {% for item in module.slider_image %}
+    <div class="inner-class">
+        {% if item.select_image.src %}
+
+        {#   <div class="insert-imgs" style="background-image:url('{{ item.select_image.src }}');background-size:cover;">
+        <a href="{{ item.add_image_link }}"></a>
+    </div> #}
+        <div class="insert-imgs">
+            <a href="{{ item.add_image_link }}">
+                <img src="" data-lazy="{{ item.select_image.src }}"></a>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+    /* .insert-imgs{
+ position:relative;
+}
+
+.insert-imgs a{
+ display:block;
+ position:absolute;
+ left:0px;
+ right:0px;
+ top:0px;
+ bottom:0px;
+
+} */
+
+
+    .index-hero-slider-cm img:before{
+        display: block;
+        content: '';
+        /*   padding-top: calc(100% * 2 / 3); */
+    }
+    .index-hero-slider-cm img {
+        display: block;
+        width: 100%;
+        /*   margin: 0 0 1rem; */
+        /*   border: 4px solid orange; */
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .index-hero-slider-cm img::before {
+        max-width: 171px;
+        height: 77px;
+        overflow: visible;
+    }
+
+    .index-hero-slider-cm img::after {
+        content: '';
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /* .index-hero-slider-cm img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+    } */
+    body .row-fluid .index-hero-slider-cm .inner-class .insert-imgs {
+        /*     background-repeat: no-repeat;
+            background-size: cover; */
+        max-width: 171px;
+        height: 77px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    /* .index-hero-slider-cm [data-src]::before {
+      content: '';
+      display: block;
+    } */
+    .index-hero-slider-cm .insert-imgs img {
+        display: block;
+        width: 100%;
+        /*   margin: 0 0 1rem; */
+        /*   border: 4px solid orange; */
+        box-sizing: border-box;
+        position: relative;
+    }
+    /* .index-hero-slider-cm ..insert-imgs img:before{
+      display: block;
+      content: '';
+       max-width: 171px;
+        height: 77px;
+      overflow: visible;
+      padding-top: calc(100% * 2 / 3);
+    } */
+
+    .index-hero-slider-cm .insert-imgs img:before {
+        content: '';
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /* .index-hero-slider-cm img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+    } */
+    body .row-fluid .index-hero-slider-cm .inner-class .insert-imgs {
+        /*     background-repeat: no-repeat;
+            background-size: cover; */
+        max-width: 171px;
+        height: 77px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .index-hero-slider-cm [data-src]{
+        position: relative;
+    }
+    .index-hero-slider-cm [data-src]::before {
+        content: '';
+        display: block;
+        position: absolute;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+//   $(window).load(function(){
+//
+//  var list = $('.insert-imgs');
+//     list.each(function(){
+// var bg = $(this).css('background-image');
+//       console.log(bg);
+//         // only append the corresponding LI after the image is loaded
+
+// });
+//  var imgSource = "https://cdn2.hubspot.net/hubfs/5886374/AVVC/Images/slider-img-1.png";
+//         list.onload = function() {
+//     $(this).attr("style", "background-image:url('" + imgSource + "')");
+//     console.log('lazy');
+// };
+
+        $('.index-hero-slider-cm').slick({
+
+            lazyLoad: 'ondemand',
+            slidesToScroll: 3,
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 9000,
+            arrows: true,
+            nextArrow:'<p class="next"> > </p>',
+            prevArrow:'<p class="prev"> < </p>',
+            dots:false,
+            centerMode: false,
+            varialbeWidth: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 2,
+                        arrows:false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 2,
+                        arrows:false,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 360,
+                    settings: {
+                        centerMode: false,
+                        slidesToShow: 1,
+                        arrows:false,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    });
+    // });
+
+    //   $(window).load(function(){
+    //
+    //  var list = $('.insert-imgs');
+    //     list.each(function(){
+    // var bg = $(this).css('background-image');
+    //       console.log(bg);
+    //         // only append the corresponding LI after the image is loaded
+
+    // });
+    //  var imgSource = "https://cdn2.hubspot.net/hubfs/5886374/AVVC/Images/slider-img-1.png";
+    //         list.onload = function() {
+    //     $(this).attr("style", "background-image:url('" + imgSource + "')");
+    //     console.log('lazy');
+    // };
+
+</script>

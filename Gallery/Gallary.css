@@ -1,0 +1,138 @@
+/*==================================================================
+Gallary Wd 8 Styling
+=====================================================================*/
+.gallery_wd_8 .inner-layer{
+    position: relative;
+}
+.gallery_wd_8 .inner-layer .hover-text{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 10px solid #000;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+}
+.gallery_wd_8 .inner-layer .hover-text:hover{
+    opacity: 1;
+}
+.gallery_wd_8 .text-section h2{
+    padding: 0 0 20px;
+}
+@media (min-width: 1025px) {
+    .gallery_wd_8 .inner-layer .hover-text{
+        padding: 0 64px;
+    }
+    .gallery_wd_8 .text-section h2{
+        padding: 0 0 43px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gallery_wd_8 .inner-layer .hover-text{
+        padding: 0 15px;
+    }
+}
+@media (max-width: 767px) {
+    .gallery_wd_8 .inner-layer .hover-text{
+        padding: 0 30px;
+    }
+    .gallery_wd_8 .text-section h2{
+        text-align: center;
+    }
+    .gallery_wd_8 .image-section img{
+        width: 100%;
+    }
+}
+/*==================================================================
+End of Gallary Wd 8 Styling
+=====================================================================*/
+/*==================================================================
+Gallary Wd 9 Styling
+=====================================================================*/
+.gallery_wd_9 .inner-layer{
+    position: relative;
+}
+.gallery_wd_9 .inner-layer .hover-text{
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 10px solid #000;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+}
+.gallery_wd_9 .inner-layer .hover-text:hover{
+    opacity: 1;
+}
+.gallery_wd_9 .text-section h2{
+    padding: 0 0 20px;
+}
+@media (min-width: 1025px) {
+    .gallery_wd_9 .inner-layer .hover-text{
+        padding: 0 64px;
+    }
+    .gallery_wd_9 .text-section h2{
+        padding: 0 0 43px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gallery_wd_9 .inner-layer .hover-text{
+        padding: 0 15px;
+    }
+}
+@media (min-width: 768px){
+    body .row-fluid .gallery_wd_9 .three-col-adjust span>.hs_cos_wrapper:nth-child(4){
+        flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+        width: 100%;
+    }
+    .gallery_wd_9 .image-section img{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .gallery_wd_9 .inner-layer .hover-text{
+        padding: 0 30px;
+    }
+    .gallery_wd_9 .text-section h2{
+        text-align: center;
+    }
+    .gallery_wd_9 .image-section img{
+        width: 100%;
+    }
+}
+/*==================================================================
+End of Gallary Wd 9 Styling
+=====================================================================*/
