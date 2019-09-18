@@ -1,0 +1,220 @@
+<div class="span12 hero_section_wd_23 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="single-col align-center section-heading">
+                    <h1>{{ module.add_heading }}</h1>
+                    <p>{{ module.add_description }}</p><hr/>
+                    <div class="video-section">
+                        <a data-fancybox="" data-width="1040" data-height="660" href="{{ module.add_video_link }}">
+                            <img src="{{ module.add_video_image.src }}"
+                                 alt="{{ module.add_video_image.alt }}">
+                        </a>
+                    </div>
+                    <div class="simple-cta">
+                        <a data-fancybox="" data-width="1040" data-height="660" href="{{ module.add_video_link }}"> {{ module.add_button_text }} </a>
+                    </div>
+                    <div class="down-arrow">
+                        <a href="#href">
+                            <img src="{{ module.add_down_arrow_image.src }}"
+                                 alt="{{ module.add_down_arrow_image.alt }}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /*==================================================================
+        Hero Section WD 23 Styling
+    =====================================================================*/
+    .hero_section_wd_23 .single-col {
+        max-width: 963px;
+        margin: 0 auto;
+    }
+    .hero_section_wd_23 .single-col h1{
+        padding: 0 0 20px;
+        margin: 0;
+    }
+    .hero_section_wd_23 .single-col p{
+        padding: 0 0 35px;
+        margin: 0;
+    }
+    .hero_section_wd_23 .single-col hr{
+         border-top: 2px solid #bcbaba;
+        margin: 0;
+    }
+    .hero_section_wd_23 .single-col .video-section {
+        padding: 31px 0 20px;
+    }
+    .hero_section_wd_23 .single-col .video-section  img{
+        cursor: pointer;
+    }
+    .hero_section_wd_23 .single-col .down-arrow{
+        padding: 133px 0 0;
+    }
+    .hero_section_wd_23 .single-col .down-arrow img{
+        cursor: pointer;
+    }
+    @media (min-width: 1024px) {
+        .hero_section_wd_23 .single-col hr{
+            margin: 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .hero_section_wd_23 .single-col h1{
+            padding: 0 0 10px;
+            margin: 0;
+        }
+        .hero_section_wd_23 .single-col p{
+            padding: 0 0 17px;
+            margin: 0;
+        }
+        .hero_section_wd_23 .single-col .video-section {
+            padding: 20px 0;
+        }
+        .hero_section_wd_23 .single-col .down-arrow{
+            padding: 65px 0 0;
+        }
+    }
+    /*==================================================================
+       End Of  Hero Section WD 23 Styling
+    =====================================================================*/
+</style>
+
+
+
+<div  class="span12 hero_section_wd_24 section-padding  change-mobile"  style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span7 left-col align-center vertical-center">
+                    <div class="text-section section-heading ">
+                        <h1>{{ module.add_heading }}</h1>
+                        <p>{{ module.add_description }}</p>
+                    </div>
+                    <div class="hero-section-button">
+                        {% cta guid="{{ module.add_cta_button }}" %}
+                    </div>
+                    <div class="simple-cta">
+                        <a  data-fancybox="" data-width="1040" data-height="660" href="{{ module.add_video_link }}">{{ module.add_play_button_text }}</a>
+                    </div>
+                </div>
+                <div class="span5 right-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    /*==================================================================
+   Hero Section WD 24 Styling
+=====================================================================*/
+
+
+    .hero_section_wd_24 .left-col .text-section h1{
+        padding: 0 0 30px;
+        margin: 0;
+    }
+    .hero_section_wd_24 .left-col .text-section p{
+        padding: 0 0 39px;
+        margin: 0;
+    }
+    .hero_section_wd_24 .left-col  .hero-section-button{
+        padding: 0 0 30px;
+        margin: 0;
+    }
+    /* play button styling  right arrow  */
+    .hero_section_wd_24 .left-col .simple-cta a{
+        background: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/right%20arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 99.6%;
+        padding: 10px 32px;
+    }
+    @media (min-width: 1025px){
+        .hero_section_wd_24 .left-col .section-heading{
+            max-width: 593px;
+        }
+    }
+    @media (min-width: 768px) {
+        .hero_section_wd_24 .right-col .image-section{
+            text-align: center;
+        }
+    }
+    @media (max-width: 767px) {
+        .hero_section_wd_24 .wrapper .right-col{
+            padding: 0 0 40px;
+        }
+        .hero_section_wd_24 .wrapper .right-col .image-section img{
+            display: block;
+            margin: 0 auto;
+        }
+        .hero_section_wd_24 .left-col .text-section h1{
+            padding: 0 0 20px;
+        }
+        .hero_section_wd_24 .left-col .text-section p{
+            padding: 0 0 20px;
+        }
+        .hero_section_wd_24 .left-col  .hero-section-button{
+            padding: 0 0 20px;
+        }
+    }
+    /*==================================================================
+       End Of Hero Section WD 24 tyling
+    =====================================================================*/
+</style>
+
+
+<div  class="span12 hero_section_wd_30 section-padding change-mobile"  style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="single-col section-heading align-center">
+                    <div class="text-section ">
+                        <h6>
+                            {{ module.add_sub_heading }}
+                        </h6>
+                        <h1>
+                            {{ module.add_heading }}
+                        </h1>
+                        <p>
+                            {{ module.add_description }}
+                        </p>
+                    </div>
+                    <div class="form-section">
+                        {% form
+                        form_to_use="{{ module.form_field.form_id }}"
+                        response_response_type="{{ module.form_field.response_type }}"
+                        response_message="{{ module.form_field.message }}"
+                        response_redirect_id="{{ module.form_field.redirect_id }}"
+                        response_redirect_url="{{module.form_field.redirect_url}}"
+                        gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                        %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container" style="background: {{ module.add_image_background_color }};background-position:top center;background-size:cover;">
+        <div class="wrapper">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    <div class="image-section section-heading align-center">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
