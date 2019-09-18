@@ -5,6 +5,25 @@ hs_cos_wrapper
 .section-padding
 .section-border
 
+no-margin-span
+no-list-style
+
+.no-list-style li:before{
+    display:none;
+}
+
+.text-margin-zero h1,
+.text-margin-zero h2,
+.text-margin-zero h3,
+.text-margin-zero p,
+.text-margin-zero h4,
+.text-margin-zero h5,
+.text-margin-zero .fa,
+.text-margin-zero a,
+.text-margin-zero .widget-type-cta{
+    margin:0;
+}
+
 
 ==for cm naming conversions==
     Add Background Color
@@ -25,7 +44,15 @@ Add Description
 https://www.google.com/
 
 
+    @media (min-width: 1025px) {
 
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }
+    @media (min-width: 767px) {
+
+    }
 /*==================================================================
    Content Section WD 9 Styling
 =====================================================================*/

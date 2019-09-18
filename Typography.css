@@ -140,10 +140,10 @@ h4{
 }
 
 h5{
-    font-size: 20px;
     font-weight: 500;
     line-height: 1.44;
     letter-spacing: 0.02px;
+    font-size:20px;
 }
 
 h6{
@@ -237,7 +237,7 @@ margin-bottom: 20px;
     margin-top:15px;
 }
 
-body a.cta_button,
+body .hs-cta-wrapper a.cta_button[title],
 body .container-fluid .row-fluid .hs-button{
     font-size: 20px;
     font-weight: 500;
@@ -259,26 +259,43 @@ body .container-fluid .row-fluid .hs-button{
     background:#000000;
 }
 
-body a.cta_button:hover,
+body .hs-cta-wrapper a.cta_button[title]:hover,
 body .container-fluid .row-fluid .hs-button:hover{
     background:transparent;
     border-color:#000000;
     color:#000000;
-
 }
 
-body .transparent-cta a.cta_button{
+body .hs-cta-wrapper a.cta_button{ // Image CTA Example
+padding:0;
+    border:none;
+}
+
+body .dark-cta .hs-cta-wrapper a.cta_button[title] {
+    border-color:#ffffff;
+    background: #ffffff;
+    color: #000000;
+}
+
+body .dark-cta .hs-cta-wrapper a.cta_button[title]:hover {
+    border-color:#ffffff;
+    background: #000000;
+    color: #ffffff;
+}
+
+body .transparent-cta  .hs-cta-wrapper a.cta_button[title]{
     background:transparent;
     border-color:#000000;
     color:#000000;
 }
 
-body .transparent-cta a.cta_button:hover{
+body .transparent-cta .hs-cta-wrapper a.cta_button[title]:hover{
     background:#000000;
     color: #ffffff;
 }
 
-.simple-cta a.cta_button,
+
+body .simple-cta  .hs-cta-wrapper a.cta_button[title],
 .simple-cta a{
     background:transparent;
     border:0;
@@ -286,13 +303,20 @@ body .transparent-cta a.cta_button:hover{
     position:relative;
 color: {{ baseColor }};
 font-weight:500;
+font-size:16px;
+letter-spacing: 0.3px;
+text-decoration: underline;
 }
 
-.simple-cta a.cta_button:hover:before{
+body .simple-cta  .hs-cta-wrapper a.cta_button[title]:hover {
+    text-decoration: underline;
+}
+
+body .simple-cta  .hs-cta-wrapper a.cta_button[title]:hover:before{
     display:none;
 }
 
-.simple-cta a:after{
+body .arrow-cta  .hs-cta-wrapper a.cta_button[title]:after{
     content:'\f107';
     font-family: FontAwesome;
     padding-left: 6px;
@@ -358,7 +382,6 @@ font-weight:500;
 .text-margin-zero p,
 .text-margin-zero h4,
 .text-margin-zero h5,
-.text-margin-zero h6,
 .text-margin-zero .fa,
 .text-margin-zero a,
 .text-margin-zero .widget-type-cta{
@@ -418,6 +441,17 @@ body .section-heading{
     letter-spacing: -0.3px;
 }
 
+
+.two-col-text p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #808080;
+}
+
+body .container-fluid .row-fluid .no-margin-span{
+    margin:0;
+}
 
 
 @media (min-width: 768px) {
@@ -484,6 +518,8 @@ body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
     -webkit-flex-direction: column;
 }
 
+
+
 @media (max-width:767px){
 
     body .container-fluid .row-fluid .two-col-adjust>span {
@@ -505,7 +541,7 @@ body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
 
 
 /*========================================================
-         Typography Responsive Styling
+Typography Responsive Styling
 ========================================================*/
 
 @media (min-width:768px) and (max-width:1024px){
@@ -635,18 +671,23 @@ body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
         flex-direction: column-reverse;
     }
 
+    .section-heading p{
+        font-size:16px;
+    }
+
+
 }
 
 
 @media (max-width:480px){
 
-    .body-container-wrapper a.cta_button, body .container-fluid .row-fluid .hs-button {
+    .body-container-wrapper .hs-cta-wrapper a.cta_button[title], body .container-fluid .row-fluid .hs-button {
         padding-left:0;
         padding-right:0;
         width:100%;
     }
 
-    body a.cta_button {
+    body .hs-cta-wrapper a.cta_button[title] {
         padding-left:0;
         padding-right:0;
         width:100%;
@@ -656,7 +697,7 @@ body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
 
 
 /*==================================================
-            Three Col Adjust
+Three Col Adjust
 ==================================================*/
 
 body .container-fluid .row-fluid .three-col-adjust>span {
@@ -729,7 +770,7 @@ body .row-fluid .three-col-adjust span>.hs_cos_wrapper {
 
 
 /*==================================================
-            Four Col Adjust
+Four Col Adjust
 ==================================================*/
 
 body .container-fluid .row-fluid .four-col-adjust>span {
@@ -790,7 +831,7 @@ body .row-fluid .four-col-adjust span>.hs_cos_wrapper {
 
 
 /*=========================================================
-                    FORM STYLING
+FORM STYLING
 =========================================================*/
 
 /*======= Placeholder Color ====*/
@@ -982,7 +1023,7 @@ body .row-fluid select{
 
 
 /*=======================================================
-            CHECKBOX AND RADIO BUTTONS STYLING
+CHECKBOX AND RADIO BUTTONS STYLING
 =======================================================*/
 
 .row-fluid .hs-form .field .input input[type="checkbox"],
@@ -1081,7 +1122,7 @@ border-radius: 50%;
 
 
 /*==============================================================
-            Header Styling
+Header Styling
 ==============================================================*/
 
 
@@ -1133,6 +1174,7 @@ padding: 12px 18px;
     background: rgb(255, 255, 255);
     pointer-events: none;
     width: 15px;
+    height: 15px;
     height: 15px;
     z-index: -1;
     transform: rotate(45deg);
@@ -1188,7 +1230,7 @@ color:{{ navColor }};;
     margin-top:2px;
 }
 
-.cs-dp-header a.cta_button{
+.cs-dp-header .hs-cta-wrapper a.cta_button[title]{
 color:{{ navColor }};
 font-size: 15px;
 line-height: 16px;
@@ -1208,7 +1250,7 @@ padding: 10px 16px;
 
 
 /*==============================================================
-            Hero Section DP_01
+Hero Section DP_01
 ==============================================================*/
 
 
@@ -1278,8 +1320,8 @@ body .row-fluid .dp01-hero-section .scroll-down-icon{
 
 
 /* ==========================================================================
-   Custom Menu Primary
-   ========================================================================== */
+Custom Menu Primary
+========================================================================== */
 
 
 {% set ulColor       = "" %} /* Set ul background color */
@@ -1332,16 +1374,16 @@ color:{{ aColorHover }};
 
 
 /* ==========================================================================
-   Mobile Menu - Hubspot Standard Toggle Menu
-   ========================================================================== */
+Mobile Menu - Hubspot Standard Toggle Menu
+========================================================================== */
 
 
 /**
- * Special Note
- *
- * When the menu is open, a class of .mobile-open is applied to the body. You can
- * use this for custom styling on any element when the menu is in the open position.
- */
+* Special Note
+*
+* When the menu is open, a class of .mobile-open is applied to the body. You can
+* use this for custom styling on any element when the menu is in the open position.
+*/
 
 .mobile-trigger, .child-trigger{
     display: none; /* Hide button on Desktop */
@@ -1351,18 +1393,18 @@ color:{{ aColorHover }};
 
 
     /* Variables
-       ========================================================================== */
+    ========================================================================== */
 
 {% set menuColorMobile = "#000" %}   /* Set Mobile Menu Background Color */
 {% set aColorMobile = "#fff" %}      /* Set Link Color */
 {% set aColorHoverMobile = "#fff" %} /* Set Link Hover Color */
 
     /*
-      * Menu Reset
-      *
-      * Remove styling from desktop version of cs-menu-primary. Place any
-      * additional CSS you want removed from the mobile menu in this reset
-      */
+    * Menu Reset
+    *
+    * Remove styling from desktop version of cs-menu-primary. Place any
+    * additional CSS you want removed from the mobile menu in this reset
+    */
 
     .cs-menu-primary,
     .cs-menu-primary .hs-menu-wrapper > ul,
@@ -1399,7 +1441,7 @@ color:{{ aColorHover }};
 
 
 /* Toggle Button
-   ========================================================================== */
+========================================================================== */
 
 .mobile-trigger{
     display: inline-block !important; /* Show button on mobile */
@@ -1437,7 +1479,7 @@ border-color: transparent;
 
 
 /* Toggle Button Icon
-   ========================================================================== */
+========================================================================== */
 
 .mobile-trigger i{
     display: inline;
@@ -1471,7 +1513,7 @@ background-color: {{ aColorHoverMobile }}; /* Icon color */
 
 
 /* Child Toggle Button
-   ========================================================================== */
+========================================================================== */
 
 .child-trigger{
     display: block !important; /* Hide button on Desktop */
@@ -1522,7 +1564,7 @@ display: block;
 
 
 /* Menu Styles on Mobile Devices
-   ========================================================================== */
+========================================================================== */
 
 .cs-menu-primary.js-enabled{
     position: absolute;
@@ -1619,7 +1661,7 @@ body .header-container-wrapper .row-fluid .cs-dp-header {
     padding: 18px 0;
 }
 
-.cs-dp-header a.cta_button{
+.cs-dp-header .hs-cta-wrapper a.cta_button[title]{
     display:none;
 }
 }
@@ -1634,7 +1676,7 @@ body .header-container-wrapper .row-fluid .cs-dp-header {
 }
 
 /*==================================================================
-   Content Section WD 9 Styling
+Content Section WD 9 Styling
 =====================================================================*/
 
 .content_section_wd_9 h2{
@@ -1649,7 +1691,7 @@ body .header-container-wrapper .row-fluid .cs-dp-header {
 
 
 /*==================================================================
-   End Of Content Section WD 9 Styling
+End Of Content Section WD 9 Styling
 =====================================================================*/
 
 
