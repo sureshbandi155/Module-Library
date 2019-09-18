@@ -1,0 +1,879 @@
+<div class="span12 hero_section_wd_34 section-padding change-mobile"  style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span5 left-col vertical-center">
+                    <div class="text-section section-heading ">
+                        <h1>
+                            {{ module.add_heading }}
+                        </h1>
+                        <p>
+                            {{ module.add_description }}
+                        </p>
+                    </div>
+                    <div class="form-section">
+                        {% form
+                        form_to_use="{{ module.form_field.form_id }}"
+                        response_response_type="{{ module.form_field.response_type }}"
+                        response_message="{{ module.form_field.message }}"
+                        response_redirect_id="{{ module.form_field.redirect_id }}"
+                        response_redirect_url="{{module.form_field.redirect_url}}"
+                        gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                        %}
+                        <p>{{ module.add_form_bottom_text }}
+                        </p>
+                    </div>
+                </div>
+                <div class="span7 right-col" style="background: url('{{ module.add_image.src }}') no-repeat;background-position: center;background-size: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /*==================================================================
+  Hero Section WD 34  Styling
+=====================================================================*/
+    .hero_section_wd_34 .left-col .form-section .hubspot-link__container.sproket{
+        display: none;
+    }
+    body .row-fluid .hubspot-link__container.sproket{
+        display: none;
+    }
+    .hero_section_wd_34 .left-col .form-section form .hs-button.primary{
+        width: 100%;
+        margin: 0;
+    }
+    @media (min-width: 1025px) {
+        .hero_section_wd_34 .left-col .text-section {
+            padding: 0 0 55px;
+        }
+        .hero_section_wd_34 .text-section h1{
+            margin: 0;
+            padding: 0 0 20px;
+        }
+        .hero_section_wd_34 .text-section p{
+            margin: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        .hero_section_wd_34 {
+            position: relative;
+        }
+        .hero_section_wd_34 .right-col{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -47px;
+            max-width: 50vw;
+        }
+        .hero_section_wd_34 .left-col .form-section form input {
+            margin: 0 0 11px;
+        }
+        .hero_section_wd_34 .left-col .form-section form .field>label{
+            margin: 0;
+        }
+        .hero_section_wd_34 .left-col .form-section p {
+            text-align: center;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .hero_section_wd_34 .left-col .text-section {
+            padding: 0;
+        }
+        .hero_section_wd_34 .left-col .text-section h1{
+            padding: 0 0 20px;
+            margin: 0;
+        }
+
+    }
+    @media (max-width: 767px) {
+        body .container-fluid .row-fluid .hero_section_wd_34 .right-col {
+            margin: var(--mobile-padding);
+            min-height: 30vh;
+        }
+    }
+    /*==================================================================
+       End Of  Hero Section WD 34 Styling
+    =====================================================================*/
+</style>
+
+<div class="span12 team_section_wd_20 section-padding change-mobile" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span5 left-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}">
+                    </div>
+                </div>
+                <div class="span7 vertical-center right-col">
+                    <div class="text-section">
+                        <h1>{{ module.add_heading }}</h1>
+                        <h5>
+                            {{ module.add_sub_heading }}
+                        </h5>
+                        <p>{{ module.add_descripion }}</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="{{ module.facebook_link }}" target="_blank">
+                            <i class="fa fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="{{ module.twitter_link }}" target="_blank">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="{{ module.linkedin_link }}" target="_blank">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="span12 team_section_wd_18 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                </div>
+                <div class="outer-layer three-col-adjust">
+                  <span>
+                    {% for item in module.add_images_group %}
+                    <div class="inner-layer hs_cos_wrapper">
+                        <div class="image-section">
+                            <img src="{{ item.add_image.src }}"
+                                 alt="{{ item.add_image.alt }}">
+                        </div>
+                        <!--hover text -->
+                        <div class="hover-text">
+                            <div class="row-fluid-wrapper">
+                                <div class="row-fluid">
+                                    <div class="text-highlight">
+                                        <div class="text-section">
+                                            <h4>
+                                                {{ item.add_hover_headign }}
+                                            </h4>
+                                            <h6>
+                                                {{ item.add_hover_sub_heading }}
+                                            </h6>
+                                        </div>
+                                        <div class="social-icons">
+                                            <a href="{{ item.add_facebook_link }}" target="_blank">
+
+                                                <i class="fa fa-facebook-f fa-2x"></i>
+                                            </a>
+                                            <a href="{{ item.add_linked_in_link }}" target="_blank">
+                                                <i class="fa fa-linkedin fa-2x"></i>
+                                            </a>
+                                            <a href="{{ item.add_twitter_link }}" target="_blank">
+
+                                                <i class="fa fa-twitter fa-2x"></i>
+                                            </a>
+
+                                        </div>
+                                        <p>
+                                            {{ item.add_hover_description }}
+                                        </p>
+                                        <div class="simple-cta">
+                                            <a href="{{ item.add_hover_button_link }}">{{ item.add_hover_button_text }}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /*==================================================================
+   Team Section WD 18 Styling
+=====================================================================*/
+
+    body .row-fluid .team_section_wd_18 .section-heading.align-center {
+        max-width: 770px;
+    }
+    .team_section_wd_18 .outer-layer .inner-layer {
+        position: relative;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    /* social icons styling */
+    .team_section_wd_18 .outer-layer .inner-layer .hover-text .text-highlight .social-icons i {
+        margin: 0 16px 0 0;
+        font-size: 24px;
+    }
+    /*hover text styling*/
+    .team_section_wd_18 .outer-layer .inner-layer .hover-text {
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border: 1px solid #000;
+        text-align: center;
+        -webkit-transition:  0.3s;
+        -o-transition:  0.3s;
+        transition:  0.3s;
+    }
+    .team_section_wd_18 .outer-layer .inner-layer .hover-text .text-highlight{
+        position: relative;
+        z-index: 1;
+    }
+    .team_section_wd_18 .outer-layer .inner-layer .hover-text:hover{
+        opacity: 1;
+    }
+    @media (min-width: 1025px) {
+        body .row-fluid .team_section_wd_18 .three-col-adjust span>.hs_cos_wrapper{
+            margin: 34px 37px 0 0;
+        }
+        body .row-fluid .team_section_wd_18 .three-col-adjust span>.hs_cos_wrapper{
+            flex-basis: 30.2%;
+            -webkit-flex-basis: 30.2%;
+        }
+        body .container-fluid .row-fluid .team_section_wd_18 .section-heading.align-center{
+            margin-bottom: 36px;
+        }
+
+    }
+    @media (min-width: 768px) {
+        .team_section_wd_18 .section-heading  h2{
+            padding: 0 0 20px;
+        }
+        .team_section_wd_18 .outer-layer .inner-layer .hover-text .text-highlight .social-icons{
+            padding: 24px 0 32px;
+        }
+        .team_section_wd_18 .outer-layer .inner-layer .hover-text .text-highlight h6{
+            margin: 0;
+        }
+        .team_section_wd_18 .outer-layer .inner-layer .hover-text {
+            padding: 97px 34px 102px;
+        }
+
+        /*.team_section_wd_18 .outer-layer .inner-layer:nth-child(3n+1) {*/
+        /*    margin-left: 0;*/
+        /*}*/
+        .team_section_wd_18 .outer-layer .inner-layer .image-section img {
+            width: 100%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .team_section_wd_18 .outer-layer .inner-layer .image-section img {
+            width: 100%;
+        }
+    }
+    @media (max-width: 767px) {
+        .team_section_wd_18 .outer-layer .inner-layer .image-section img {
+            width: 100%;
+        }
+        .team_section_wd_18 .outer-layer .inner-layer .hover-text {
+            bottom: 0%;
+        }
+        .team_section_wd_18 .outer-layer .inner-layer .hover-text .text-highlight .social-icons{
+            padding:10px 0;
+        }
+        .team_section_wd_18 .section-heading  h2{
+            padding: 0 0 20px;
+        }
+    }
+    /*==================================================================
+    End Of  Team Section WD 18 Styling
+    =====================================================================*/
+</style>
+<div class="span12 team_section_wd_4 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <h2>{{ module.add_heading }}</h2>
+            </div>
+        </div>
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="outer-layer">
+                    <div class="inner-layer" style="background: url('{{ module.add_background_image_card.src }}')no-repeat;background-position: top center;background-size: cover">
+                        <div class="image-section">
+                            <img src="{{ module.add_image_card.src }}"
+                                 alt="{{ module.add_image_card.alt }}">
+                        </div>
+                        <div class="text-section">
+                            <h5>{{ module.add_card_heading }}</h5>
+                            <p>{{ module.add_sub_heading }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="span12 clients_section_wd_8 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <h5>{{ module.add_heading }}</h5>
+            </div>
+        </div>
+        <div class="outer-layer">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    {% for item in module.left_col_group %}
+                    <div class="inner-layer">
+                        <h6>{{ item.add_company_name }}</h6>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /*==================================================================
+Client Section WD 4 Styling
+=====================================================================*/
+    .clients_section_wd_8 .outer-layer .inner-layer h6{
+        margin: 0;
+        padding: 0 0 10px;
+    }
+    @media (min-width: 480px) {
+        .clients_section_wd_8 .outer-layer .row-fluid{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: stretch;
+            -moz-box-align: stretch;
+            -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            flex-wrap: wrap;
+            -wevkit-flex-wrap: wrap;
+            flex-direction: row;
+            -webkit-flex-direction: row;
+            margin-right: -2.5%;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 98%;
+        }
+    }
+    @media (min-width: 576px){
+        .clients_section_wd_8 .outer-layer .inner-layer{
+            -webkit-flex-basis: 33%;
+            flex-basis: 33%
+        }
+        .clients_section_wd_8 .outer-layer .inner-layer:nth-child(3n-1){
+            text-align: center;
+        }
+        .clients_section_wd_8 .outer-layer .inner-layer:nth-child(3n){
+            text-align: right;
+        }
+
+        .clients_section_wd_8 h5 {
+            margin: 0;
+            padding: 0 0 20px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .clients_section_wd_8 h5 {
+            margin: 0;
+            padding: 0 0 40px;
+        }
+    }
+    @media (max-width: 575px) and (min-width: 480px){
+        .clients_section_wd_8 .outer-layer .inner-layer{
+            -webkit-flex-basis: 50%;
+            flex-basis: 50%
+        }
+        .clients_section_wd_8 .outer-layer .inner-layer:nth-child(2n){
+            text-align: right;
+        }
+    }
+    @media (max-width: 479px){
+        .clients_section_wd_8  {
+            text-align: center;
+        }
+    }
+    /*==================================================================
+    End Of  Team Section WD 4 Styling
+    =====================================================================*/
+</style>
+
+<div class="span12 clients_section_wd_12 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                </div>
+                <div class="outer-layer four-col-adjust">
+                    <span>
+                        {% for item in module.add_images_group %}
+                        <div class="inner-layer hs_cos_wrapper">
+                            <div class="image-section">
+                                <img src="{{ item.add_image.src }}"
+                                     alt="{{ item.add_image.alt }}">
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /*==================================================================
+Client Section WD 12 Styling
+=====================================================================*/
+    .clients_section_wd_12 .outer-layer .inner-layer .image-section img{
+        margin: 0 auto;
+        display: block;
+        padding: 45px 0;
+    }
+    @media (min-width: 1025px) {
+        body .container-fluid .row-fluid .clients_section_wd_12 .section-heading.align-center{
+            margin-bottom: 58px;
+        }
+    }
+    @media (min-width: 768px) {
+        .clients_section_wd_12 .outer-layer .inner-layer {
+            border-right: 2px solid #e7e7e7;
+            border-bottom: 2px solid #e7e7e7;
+        }
+        body .row-fluid .clients_section_wd_12 .four-col-adjust span>.hs_cos_wrapper{
+            margin-right: 0;
+            margin-top:0
+        }
+        .clients_section_wd_12 .outer-layer .inner-layer:nth-child(4n){
+            border-right: none;
+        }
+        .clients_section_wd_12 .outer-layer .inner-layer:nth-last-child(-n+4) {
+            border-bottom: none;
+        }
+        .clients_section_wd_12 .outer-layer{
+            padding-top: 33px;
+        }
+        body .row-fluid  .clients_section_wd_12 .four-col-adjust span>.hs_cos_wrapper{
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }
+    @media (max-width: 767px) {
+        .clients_section_wd_12 .outer-layer .inner-layer{
+            border-bottom: 2px solid #e7e7e7;
+            box-sizing: border-box;
+        }
+        .clients_section_wd_12 .outer-layer .inner-layer:nth-last-child(1){
+            border-bottom: none;
+        }
+
+    }
+    /*==================================================================
+    End Of  Client Section WD 12 Styling
+    =====================================================================*/
+
+</style>
+
+
+
+<div class="span12 clients_section_wd_17 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="outer-layer">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    {% for item in module.add_images_group %}
+                    <div class="inner-layer">
+                        <div class="image-section">
+                            <img src="{{ item.add_image.src }}"
+                                 alt="{{ item.add_image.alt }}">
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="span12 client_section_wd_18 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="two-col-text-card">
+                    <div class="left-col text-section text-margin-zero">
+                        <h3>{{ module.add_heading }}</h3>
+                        <p>{{ module.add_description }}</p>
+                        <div class="button-section">
+                            {% cta guid="{{ module.add_button }}" %}
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <div class="four-col-adjust">
+                        <span>
+                        {% for item in module.add_clients_group %}
+                        <div class="single-card hs_cos_wrapper">
+                            <div class="image-section">
+                                <img src="{{ item.add_image.src }}"
+                                     alt="{{ item.add_image.alt }}">
+                            </div>
+                        </div>
+                        {% endfor %}
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /*==================================================================
+Client Section WD 18 Styling
+=====================================================================*/
+    .client_section_wd_18 .two-col-text-card .right-col .single-card {
+        background: #fff;
+    }
+    .client_section_wd_18 .two-col-text-card .right-col .single-card .image-section img{
+        display: block;
+        padding: 70px 24px;
+        margin: 0 auto;
+    }
+    .client_section_wd_18 .two-col-text-card h3{
+        padding: 0 0 22px;
+    }
+    .client_section_wd_18 .two-col-text-card p{
+        padding: 0 0 30px;
+    }
+    @media (min-width: 1025px) {
+        body .row-fluid .client_section_wd_18 .four-col-adjust span>.hs_cos_wrapper{
+            margin-top: 30px;
+        }
+    }
+    @media (min-width: 768px) {
+        .client_section_wd_18 .two-col-text-card{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            width: 100%;
+        }
+        .client_section_wd_18 .two-col-text-card .left-col{
+            flex-basis: 30.4%;
+            -webkit-flex-basis: 30.4%;
+        }
+        .client_section_wd_18 .two-col-text-card .right-col{
+            flex-basis: 66.8%;
+            -webkit-flex-basis: 66.8%;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-left: 34px;
+        }
+        body .row-fluid .client_section_wd_18 .four-col-adjust span>.hs_cos_wrapper{
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+    @media (max-width: 767px) {
+        .client_section_wd_18 .two-col-text-card .left-col {
+            text-align: center;
+            padding: 0 0 40px;
+        }
+        .client_section_wd_18 .two-col-text-card .right-col .single-card .image-section img{
+            display: block;
+            padding: 60px 10px;
+            margin: 0 auto;
+        }
+    }
+    /*==================================================================
+    End of Client Section WD 18 Styling
+    =====================================================================*/
+
+
+
+
+</style>
+
+<div class="span12 client_section_wd_20 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                </div>
+                <div class="outer-layer-slick">
+                    {% for item in module.add_images_group %}
+                    <div class="image-section">
+                        <img src="{{ item.add_image.src }}"
+                             alt="{{ item.add_image.alt }}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /*==================================================================
+Client Section WD 20 Styling
+=====================================================================*/
+    .client_section_wd_20{
+        position: relative;
+    }
+    .client_section_wd_20 .outer-layer-slick button img{
+        width: 13px;
+    }
+    .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
+        outline: none;
+        border: none;
+        background: none;
+        position: absolute;
+        left: -10px;
+        top: 9%;
+    }
+    .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
+        outline: none;
+        border: none;
+        background: none;
+        position: absolute;
+        right: -10px;
+        top: 23%;
+    }
+    .client_section_wd_20 .outer-layer-slick .image-section img{
+        display: block;
+        margin: 0 auto;
+    }
+    @media (min-width: 1280px) {
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
+            left: -4%;
+            top: 14%;
+        }
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
+            right: -3.2%;
+            top: 22%;
+        }
+    }
+    @media (min-width: 1200px) and (max-width: 1279px) {
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.prev-arrow2.slick-arrow{
+            left: -1%;
+            top: 9%;
+        }
+        .client_section_wd_20 .outer-layer-slick button.slide-arrow.next-arrow2.slick-arrow{
+            right: -1.2%;
+            top: 23%;
+        }
+    }
+    @media (min-width: 1025px) {
+        .client_section_wd_20 h2 {
+            margin: 0;
+            padding: 0 0 50px;
+        }
+    }
+    @media (min-width: 768px) {
+        .client_section_wd_20 .outer-layer-slick .slick-track{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+    }
+    /*==================================================================
+    End of Client Section WD 20 Styling
+    =====================================================================*/
+</style>
+
+
+<div class="span12 testimonial_section_wd_2 section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                </div>
+                <div class="outer-layer-slick1">
+                    {% for item in module.add_testimonial_group %}
+                    <div class="inner-layer-slick1" style="background: {{ item.add_background_color_testimonial }} url('{{ item.add_background_image_card.src }}')no-repeat;background-size:contain;">
+                        <div class="image-section">
+                            <div class="left-img">
+                                <img src="{{ item.add_left_image.src }}"
+                                     alt="{{ item.add_left_image.alt }}">
+                            </div>
+                            <div class="right-img">
+                                <img src="{{ item.add_right_image.src }}"
+                                     alt="{{ item.add_right_image.alt }}">
+                            </div>
+                        </div>
+                        <div class="text-section align-center">
+                            <p>{{ item.add_description }}</p>
+                            <div class="headline">
+                                <h6>{{ item.add_testimonial_heading }}</h6> <p> -{{ item.add_testimonial_paragaph }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    /*==================================================================
+Testimonial Section WD 2 Styling
+=====================================================================*/
+    /*     slick slider and dots  styling */
+    .testimonial_section_wd_2 .slick-slide:focus{
+        outline:none;
+    }
+    .testimonial_section_wd_2 ul.slick-dots {
+        text-align: center;
+        padding-left: 0;
+    }
+    .testimonial_section_wd_2 .slick-dots li{
+        margin: 0 5px;
+        display: inline-block;
+    }
+    .testimonial_section_wd_2 .slick-dots li:before{
+        content: '';
+    }
+    .testimonial_section_wd_2 .slick-dots li.slick-active button {
+        width: 18px;
+        height: 18px;
+        background:#000;
+    }
+    .testimonial_section_wd_2 .slick-dots li button:hover{
+        background: #000;
+    }
+    .testimonial_section_wd_2 .slick-dots li button {
+        font-size: 1px;
+        color: transparent;
+        padding: 0;
+        border: 1px solid #000;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #fff;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+    }
+    .testimonial_section_wd_2 .slick-dots li:focus, .testimonial_section_wd_2 .slick-dots li.slick-active button:focus,
+    .testimonial_section_wd_2 .slick-dots li button {
+        outline: none;
+    }
+    .slick-dots li button:before {
+        display: none;
+    }
+    /*     slick slider images styling */
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .image-section{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 18px 20px 0;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .image-section .left-img img{
+        width: 69px;
+        height: 69px;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .slick-list.draggable{
+        box-sizing: initial;
+        padding: 25px 0 25px 25px;
+        margin: 0 auto;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .slick-slide {
+        box-shadow: none;
+        transition: box-shadow 0.1s ease-in-out;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .slick-slide.slick-active {
+        box-shadow: 0 2px 34px 0 rgba(0,0,0,0.12);
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1{
+        margin: 0 61px 0 0;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section{
+        padding: 40px 85px 68px;
+    }
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section .headline h6 ,
+    .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section .headline p{
+        display: inline;
+    }
+    @media (min-width: 1025px) {
+        .testimonial_section_wd_2 .section-heading h2{
+            margin: 0;
+        }
+        .testimonial_section_wd_2 ul.slick-dots {
+            padding: 67px 0 0;
+            margin: 0;
+        }
+        body .row-fluid .testimonial_section_wd_2 .section-heading.align-center{
+            margin-bottom: 75px;
+        }
+        .testimonial_section_wd_2 .outer-layer-slick1 .inner-layer-slick1 .text-section p{
+            margin: 0;
+            padding: 0 0 20px;
+        }
+    }
+    /*==================================================================
+    End of  Testimonial Section WD 2 Styling
+    =====================================================================*/
+</style>

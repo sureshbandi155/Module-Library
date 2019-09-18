@@ -1,0 +1,191 @@
+/*==================================================================
+   Form Section WD 3 Styling
+=====================================================================*/
+.form-wd-3 .left-col h2{
+    padding: 0 0 14px;
+}
+.form-wd-3 .left-col p{
+    padding: 0 0 14px;
+}
+.form-wd-3 form .form-columns-2{
+    padding: 0 0 6px;
+}
+.form-wd-3 .address-container .text-section h5{
+    margin: 0;
+    padding: 0 0 6px ;
+}
+.form-wd-3 .address-container .address-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+body .row-fluid .form-wd-3 form .hs-button.primary{
+    float: right;
+}
+.form-wd-3 .address-container{
+    border-top: 1px solid #000;
+    padding: 42px 0 0;
+    margin: 88px 0 0;
+}
+.form-wd-3 .address-container .image-section{
+    padding: 0 23px 0 0;
+}
+@media (min-width: 768px) {
+    .form-wd-3 .right-col .image-section{
+        text-align: center;
+    }
+}
+@media (min-width: 1025px) {
+    .form-wd-3 .address-container{
+        border-top: 1px solid #000;
+        padding: 42px 0 0;
+        margin: 88px 0 0;
+    }
+    .form-wd-3 .form-section{
+        padding: 42px 0 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .form-wd-3 .address-container{
+        padding: 20px 0 0;
+        margin: 50px 0 0;
+    }
+    .form-wd-3 .form-section{
+        padding: 30px 0 0;
+    }
+}
+@media (max-width: 768px) {
+    .form-wd-3 .address-container{
+        padding: 20px 0 0;
+        margin: 40px 0 0;
+    }
+    .form-wd-3 .form-section{
+        padding: 20px 0 0;
+    }
+    .form-wd-3 .right-col{
+        margin: var(--mobile-padding);
+    }
+    .form-wd-3 .left-col h2,  .form-wd-3 .left-col p{
+        text-align: center;
+    }
+    .form-wd-3 .right-col .image-section{
+        text-align: center;
+    }
+    .form-wd-3 .address-container .address-section{
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 0 20px;
+    }
+
+}
+/*==================================================================
+   End of Form Section WD 3 Styling
+=====================================================================*/
+/*==================================================================
+   Form Section WD 5 Styling
+====================================================================*/
+.form-wd-5 .left-col{
+    border-radius: 8px;
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+.form-wd-5 .project-section{
+    border-radius: 8px;
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+.form-wd-5 .right-col p span, .form-wd-5 .left-col h3 span{
+    display: block;
+}
+body .row-fluid .form-wd-5 form input,
+body .row-fluid .form-wd-5 form select,
+body .row-fluid .form-wd-5 form textarea{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0;
+    color: #808080;
+    line-height: 1.56;
+}
+@media (min-width: 768px) {
+    .form-wd-5 .left-col h3{
+        margin: 0;
+        padding: 0 0 27px;
+    }
+}
+@media (min-width: 768px) {
+    body .row-fluid .form-wd-5 form .hs-button.primary{
+        float: right;
+    }
+}
+@media (min-width: 1025px) {
+    .form-wd-5 .left-col{
+        padding: 83px 54px 74px;
+        max-width: 516px;
+    }
+    .form-wd-5 .right-col{
+        padding: 0 0 0 87px;
+    }
+    .form-wd-5 .contact-details h5{
+        padding: 0 0 20px;
+    }
+    .form-wd-5 .contact-details p{
+        padding: 0 0 73px;
+    }
+    .form-wd-5 .contact-details p span:nth-child(2){
+        padding: 0 0 18px;
+    }
+    /*       project section */
+    .form-wd-5 .project-section{
+        padding: 48px 52px 48px 46px;
+    }
+    .form-wd-5 .project-section h5{
+        padding: 0 0 27px;
+    }
+    .form-wd-5 .project-section p{
+        padding: 0 0 26px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-5 .left-col{
+        padding: 40px 25px;
+    }
+    /*       project section */
+    .form-wd-5 .project-section{
+        padding: 30px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .form-wd-5 .contact-details h5{
+        padding: 0 0 20px;
+    }
+    .form-wd-5 .contact-details p{
+        padding: 0 0 20px;
+    }
+    .form-wd-5 .project-section h5{
+        padding: 0 0 20px;
+    }
+    .form-wd-5 .project-section p{
+        padding: 0 0 20px;
+    }
+    .form-wd-5 .contact-details p span:nth-child(2){
+        padding: 0 0 18px;
+    }
+}
+@media (max-width: 767px) {
+    .form-wd-5 .left-col{
+        padding: 30px;
+        margin: var(--mobile-padding);
+    }
+    /*       project section */
+    .form-wd-5 .project-section{
+        padding: 30px;
+    }
+    .form-wd-5{
+        text-align: center;
+    }
+}
+/*==================================================================
+   End of Form Section WD 5 Styling
+=====================================================================*/

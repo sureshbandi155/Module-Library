@@ -7,7 +7,12 @@ hs_cos_wrapper
 
 
 ==for cm naming conversions==
-Add Background Color
+    Add Background Color
+
+.color
+Add Left Col Background
+#f6fbff
+
 Add Background Image
 Add Heading
 Add Description
@@ -71,3 +76,6 @@ a-
 			height="{{ item.add_image.height }}">
 	{% endif %}
 {% endfor %}
+
+width="{{ module.add_image.width }}"
+		height="{{ module.add_image.height }}

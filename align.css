@@ -1,0 +1,104 @@
+/**********************************************************
+         faq section wd 4 styling starts here
+*********************************************************/
+/* .faq_wd_4 .right-col h5{
+  font-size: 18px;
+} */
+.faq_wd_4 .all-topics p.active {
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+.faq_wd_4 .all-topics p{
+    cursor: pointer;
+    padding: 0 0 2px;
+}
+.faq_wd_4 .all-topics p.active:before {
+    transform: translate(1px,11px);
+    content: "";
+    position: absolute;
+    left: -380px;
+    height: 1px;
+    background-color: #000;
+    width: 371px;
+}
+.faq_wd_4 .question-answer{
+    display: none;
+}
+.faq_wd_4 .question-answer.active{
+    display: inherit;
+}
+.faq_wd_4 .accordion_group {
+    border-radius: 4px;
+    border: solid 1px #d8d8d8;
+    padding: 20px 47px 20px 31px;
+    margin-bottom: 30px;
+}
+
+body .faq_wd_4 .accordion_group.expanded {
+    border-radius: 4px;
+    border:0px;
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+body .faq_wd_4  .accordion_header h5 {
+    margin: 0;
+    padding-bottom: 0px;
+    cursor:pointer;
+    position:relative;
+    transition: all ease-in-out .3s;
+}
+
+.faq_wd_4 .accordion_header h5:after {
+    content: "";
+    background-image: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Faq%20Section%20WD%2011%20(%20bottom-arrow%20).png);
+    right: -27px;
+    position: absolute;
+    background-position: center;
+    top: 0px;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+}
+
+.faq_wd_4 .accordion_group.expanded h5:after {
+    content: '';
+    background-image: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Faq%20Section%20WD%2011%20(%20Close%20).png);
+    background-repeat: no-repeat;
+}
+
+.faq_wd_4 .accordion_content p {
+    padding-top: 17px;
+}
+
+
+@media (max-width:767px){
+
+    .faq_wd_4 .accordion_group {
+        padding: 25px 30px;
+    }
+
+    .faq_wd_4 .accordion_header h5:after {
+        right: -20px;
+    }
+
+    body .faq_wd_4 .accordion_header h5{
+        padding-right:15px;
+    }
+
+    .faq_wd_4 .two-col-items {
+        display: block;
+    }
+
+    .faq_wd_4{
+        text-align: center;
+    }
+    .faq_wd_4 .left-col {
+        padding: var(--mobile-padding);
+    }
+
+}
+
+/**********************************************************
+      faq section wd 4 styling ends here
+*********************************************************/
