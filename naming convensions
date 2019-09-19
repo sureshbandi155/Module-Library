@@ -5,7 +5,29 @@ hs_cos_wrapper
 .section-padding
 .section-border
 
+<<<<<<< HEAD
 @media (min-width: 1025px) {
+=======
+no-margin-span
+no-list-style
+
+.no-list-style li:before{
+    display:none;
+}
+
+.text-margin-zero h1,
+.text-margin-zero h2,
+.text-margin-zero h3,
+.text-margin-zero p,
+.text-margin-zero h4,
+.text-margin-zero h5,
+.text-margin-zero .fa,
+.text-margin-zero a,
+.text-margin-zero .widget-type-cta{
+    margin:0;
+}
+
+>>>>>>> 750d6fced44a38d1224b3b8fb84e1a73f9691080
 
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -33,7 +55,15 @@ Add Description
 https://www.google.com/
 
 
+    @media (min-width: 1025px) {
 
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }
+    @media (min-width: 767px) {
+
+    }
 /*==================================================================
    Content Section WD 9 Styling
 =====================================================================*/
