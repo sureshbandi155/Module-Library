@@ -467,3 +467,470 @@
         </div>
     </div>
 </div>
+
+
+<style>
+    @media  (min-width: 768px) and (max-width: 1024px) {
+
+    }
+
+
+
+    body .row-fluid .form-wd-13 .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 33.6%;
+        margin-right: 2.9%;
+    }
+
+    .form-wd-13{
+        border: 1px solid #bcb5b9;
+    }
+    @media (min-width: 768px){
+        .form-wd-13 h4{
+            position: relative;
+            top: 55px;
+        }
+        body .container-fluid .row-fluid .form-wd-13 .no-margin-span{
+            margin-left:0.7%;
+        }
+        body .row-fluid .form-wd-13 .hs-form{
+            position: relative;
+        }
+        .form-wd-13 .row-fluid form .hs-button.primary{
+            position: absolute;
+            right: 5.9%;
+            top: 11%;
+        }
+    }
+    @media  (min-width: 768px) and (max-width: 1024px) {
+        body .row-fluid .form-wd-13 .hs-form{
+            position: relative;
+        }
+        .form-wd-13 .row-fluid form .hs-button.primary{
+            position: absolute;
+            right: 5.9%;
+            top: 11%;
+        }
+    }
+
+</style>
+
+<div class="span12 form-wd-14 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="text-section section-heading">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                </div>
+                <div class="form-section">
+                    {% form
+                    form_to_use="{{ module.form_field.form_id }}"
+                    response_response_type="{{ module.form_field.response_type }}"
+                    response_message="{{ module.form_field.message }}"
+                    response_redirect_id="{{ module.form_field.redirect_id }}"
+                    response_redirect_url="{{module.form_field.redirect_url}}"
+                    gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+                    %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="span12 form-wd-15 section-padding change-mobile" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span8">
+                    <h2></h2>
+                    <p></p>
+                    <div class="form-section">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span12 logo-section">
+            <div class="logo">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="span12 form-wd-15 section-padding change-mobile" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span8 text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                    <div class="form-section">
+                        {% form
+                        form_to_use="{{ module.add_form.form_id }}"
+                        response_response_type="{{ module.add_form.response_type }}"
+                        response_message="{{ module.add_form.message }}"
+                        response_redirect_id="{{ module.add_form.redirect_id }}"
+                        response_redirect_url="{{module.add_form.redirect_url}}"
+                        gotowebinar_webinar_key="{{ module.add_form.gotowebinar_webinar_key }}"
+                        %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span12 no-margin-span">
+            <div class="logo-section">
+                {% for item in module.add_logos_group %}
+                <div class="logo">
+                    <img src="{{ item.add_logo.src }}" alt="{{ item.add_logo.alt }}" width="{{ item.add_logo.width }}" height="{{ item.add_logo.height }}">
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="span12 form-wd-20 section-padding">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6 left-col no-margin-span">
+                    <img src="{{ module.add_left_col_background.src }}"
+                         alt="{{ module.add_left_col_background.alt }}"
+                         width="{{ module.add_left_col_background.width }}"
+                         height="{{ module.add_left_col_background.height }}">
+
+                </div>
+                <div class="span6 right-col no-margin-span" style="background:{{ module.add_background_color.color }}">
+                    <h4>{{ module.add_heading }}</h4>
+                    <p>{{ module.add_description }}</p>
+                    <div class="form-section">
+                        {% form
+                        form_to_use="{{ module.add_form.form_id }}"
+                        response_response_type="{{ module.add_form.response_type }}"
+                        response_message="{{ module.add_form.message }}"
+                        response_redirect_id="{{ module.add_form.redirect_id }}"
+                        response_redirect_url="{{module.add_form.redirect_url}}"
+                        gotowebinar_webinar_key="{{ module.add_form.gotowebinar_webinar_key }}"
+                        %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-wd-20 .right-col{
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+        padding: 106px 114px 91px
+    }
+    .form-wd-20 .row-fluid form input,
+    .form-wd-20 .row-fluid form select,
+    .form-wd-20 .row-fluid form textarea{
+        border: 0;
+        border-bottom: 1px solid #c2c2c2;
+        border-radius: 0;
+    }
+    .form-wd-20 .row-fluid form input:focus,
+    .form-wd-20 .row-fluid form select:focus,
+    .form-wd-20 .row-fluid form textarea:focus {
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid #c2c2c2;
+    }
+    body .row-fluid .form-wd-20 form .actions {
+        text-align: end;
+    }
+    .form-wd-20 .left-col.no-margin-span{
+        width: inherit;
+    }
+    .form-wd-20 .right-col h4{
+        padding: 0 0 18px;
+    }
+    .form-wd-20 .right-col p{
+        padding: 0 0 31px;
+    }
+    @media (min-width: 1025px) {
+        .form-wd-20 .left-col img{
+            height: 100%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .form-wd-20 .right-col{
+            padding: 50px;
+        }
+        .form-wd-20 .right-col p{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .form-wd-20 .right-col{
+            padding: 40px;
+        }
+        .form-wd-20 .right-col p{
+            padding: 0 0 15px;
+        }
+        body .row-fluid .form-wd-20 form .actions{
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="span12 form-wd-7 section-padding">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <h2>{{ module.add_heading }}</h2>
+                <div class="outer-layer three-col-adjust">
+                <span>
+                    <div class="left-col all-text-white align-center text-margin-zero" style="background: {{ module.add_left_col_group.add_background_color.color }}">
+                        <h6>{{ module.add_left_col_group.add_sub_heading }}</h6>
+                        <h4>{{ module.add_left_col_group.add_heading }}</h4>
+                        <p>{{ module.add_left_col_group.add_description }}</p>
+                        <div class="simple-cta all-text-white">
+                            {% cta guid="{{ module.add_left_col_group.add_button }}" %}
+
+                        </div>
+                    </div>
+                    <div class="center-col align-center">
+                        {% for item in module.add_center_col_group %}
+                        <div class="card-details {% if item.are_you_add_image_and_text %} image-added {% endif %}" style="background: {{ item.add_background_color.color }}">
+                            <img src="{{ item.add_image.src }}"
+                                 alt="{{ item.add_image.alt }}"
+                                 width="{{ item.add_image.width }}"
+                                 height="{{ item.add_image.height }}">
+                            <h6>{{ item.add_heading }}</h6>
+                            <p>{{ item.add_description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="right-col">
+                    <div class="image-section">
+                    <img src="{{ module.add_right_image.src }}"
+                         alt="{{ module.add_right_image.alt }}"
+                         width="{{ module.add_right_image.width }}"
+                         height="{{ module.add_right_image.height }}">
+                    </div>
+                    <div class="text-section align-center">
+                        <h6>{{ module.add_title }}</h6>
+                        <h5>{{ module.add_right_col_heading }}</h5>
+                        <p>{{ module.add_right_col_description }}</p>
+                        <div class="simple-cta">
+                        {% cta guid="{{ module.add_button }}" %}
+                        </div>
+                    </div>
+                </div>
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-wd-7 h2{
+        margin: 0;
+        padding:0 0 38px;
+    }
+    .form-wd-7 .left-col h4{
+        padding: 0 0 11px;
+    }
+    .form-wd-7 .left-col p{
+        padding: 0 0 10px;
+        font-size: 12px;
+    }
+    .form-wd-7 .left-col{
+        padding: 47px 70px 52px;
+        max-height: 574px;
+    }
+    .form-wd-7 .left-col .simple-cta{
+        padding:317px 0 0;
+    }
+    body .row-fluid .form-wd-7 .left-col .simple-cta .hs-cta-wrapper a.cta_button[title], body .row-fluid .form-wd-7 .left-col .simple-cta a{
+        color: #fff;
+    }
+    .form-wd-7 .center-col .card-details p, .form-wd-7 .right-col p{
+        font-size: 12px;
+    }
+    .form-wd-7 .center-col .card-details.image-added img{
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 18px;
+    }
+    .form-wd-7 .center-col .card-details.image-added{
+        padding-top: 47px;
+    }
+    .form-wd-7 .center-col .card-details{
+        border-bottom: 1px solid #000;
+        padding: 38px;
+        padding-bottom: 25px;
+    }
+    .form-wd-7 .center-col .card-details img{
+        display: none;
+    }
+    .form-wd-7 .center-col .card-details.image-added p{
+        display: none;
+    }
+    .form-wd-7 .center-col .card-details.image-added h6{
+        font-size: 18px;
+    }
+    .form-wd-7 .center-col .card-details h6{
+        margin: 0;
+        padding: 0 0 13px;
+    }
+    .form-wd-7 .center-col{
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .form-wd-7 .center-col .card-details:last-child{
+        border-bottom:none;
+    }
+    /*right-col*/
+    .form-wd-7 .text-section{
+        padding: 93px 40px 0;
+    }
+    .form-wd-7 .text-section h5{
+        padding: 0 0 9px;
+    }
+    .form-wd-7 .text-section p{
+        padding: 0 0 15px;
+    }
+    /*removing margin right*/
+    body .container-fluid .form-wd-7 .row-fluid .three-col-adjust>span{
+        margin-right: 0;
+    }
+    @media (min-width: 1025px) {
+        .form-wd-7 .left-col{
+            flex-basis: 38%;
+            -webkit-flex-basis: 38%;
+        }
+        .form-wd-7 .center-col{
+            flex-basis: 25.7%;
+            -webkit-flex-basis: 25.7%;
+        }
+        .form-wd-7 .right-col{
+            flex-basis: 36%;
+            -webkit-flex-basis:  36%;
+        }
+        .form-wd-7 .center-col{
+            box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+            margin-top: -4.9%;
+        }
+        .form-wd-7 .outer-layer{
+            margin-top: 43px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .form-wd-7 .left-col{
+            flex-basis: 38%;
+            -webkit-flex-basis: 38%;
+        }
+        .form-wd-7 .center-col{
+            flex-basis: 25.7%;
+            -webkit-flex-basis: 25.7%;
+        }
+        .form-wd-7 .right-col{
+            flex-basis: 36%;
+            -webkit-flex-basis:  36%;
+        }
+        .form-wd-7 h2{
+            padding:0 0 30px;
+        }
+        .form-wd-7 .left-col{
+            padding: 30px 40px 30px;
+            /*max-height: 574px;*/
+        }
+        .form-wd-7 .left-col .simple-cta{
+            padding:200px 0 0;
+        }
+        .form-wd-7 .center-col{
+            margin-top: -3%;
+        }
+        .form-wd-7 .outer-layer{
+            margin-top: 30px;
+        }
+        .form-wd-7 .center-col .card-details.image-added{
+            padding-top: 30px;
+        }
+        .form-wd-7 .center-col .card-details{
+            padding: 30px;
+            padding-bottom: 25px;
+        }
+        /*right-col*/
+        .form-wd-7 .text-section{
+            padding: 70px 30px 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .form-wd-7 h2{
+            padding:0 0 20px;
+        }
+        .form-wd-7 .left-col{
+            padding: 30px;
+            /*max-height: 574px;*/
+        }
+        .form-wd-7 .left-col .simple-cta{
+            padding:200px 0 0;
+        }
+        .form-wd-7 .center-col .card-details.image-added{
+            padding-top: 20px;
+        }
+        .form-wd-7 .center-col .card-details{
+            padding: 20px;
+            padding-bottom: 20px;
+        }
+        /*right-col*/
+        .form-wd-7 .text-section{
+            padding: 40px 40px 0;
+        }
+        .form-wd-7 .center-col{
+            margin-top: 20px;
+        }
+        .form-wd-7 .right-col{
+            margin-top: 20px;
+        }
+        .form-wd-7 .right-col .image-section img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+</style>
+
+<div class="span12 form-wd-16 section-padding">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+
+                <div class="form-text-section">
+                    {% for item in module.add_forms_group %}
+                    <!-- progressbar -->
+                <div class="form-section{{loop.index0}}">
+                    <h3>{{ item.add_heading }}</h3>
+                    <h6>{{ item.add_sub_heading }}</h6>
+                    <form action="" class="hs-form">
+                        <label for=""></label>
+                        <input type="">
+                    </form>
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .form-wd-16 .form-text-section{
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+        padding: 53px 65px 72px;
+    }
+</style>
+
+

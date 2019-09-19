@@ -189,3 +189,507 @@ body .row-fluid .form-wd-5 form textarea{
 /*==================================================================
    End of Form Section WD 5 Styling
 =====================================================================*/
+
+
+/*==================================================================
+   Form Section WD 15 Styling
+====================================================================*/
+.form-wd-15  h2{
+    padding: 0 0 21px;
+}
+
+.form-wd-15 p{
+    padding: 0 0 21px;
+}
+.form-wd-15 .form-section {
+    padding: 13px 0 0;
+}
+.form-wd-15 .hs-form input{
+    border: 1px solid #dadada;
+}
+body .row-fluid .form-wd-15 .hs-form fieldset.form-columns-2 .hs-form-field {
+    width: 37.1%;
+    margin-right: 3.3%;
+}
+.form-wd-15 .logo-section{
+    border-top: 1px solid #c2c2c2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 56px 0 0;
+    margin: 37px 0 0;
+}
+
+@media (min-width: 1025px) {
+    .form-wd-15 .hs-form{
+        position: relative;
+    }
+    .row-fluid .form-wd-15 form .hs-button.primary{
+        position: absolute;
+        top: -19%;
+        right: 0.7%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .form-wd-15 .logo-section{
+        padding: 28px 0 0;
+        margin: 18px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-wd-15 .logo-section{
+        padding: 56px 0 0;
+        margin: 37px 0 0;
+    }
+    .form-wd-15 .logo-section{
+        padding: 18px 0 0;
+        margin: 18px 0 0;
+        display: block;
+    }
+}
+@media (max-width: 1024px) {
+    .form-wd-15 h2{
+        padding: 0 0 15px;
+    }
+
+    .form-wd-15 p{
+        padding: 0 0 15px;
+    }
+}
+/*==================================================================
+   End of Form Section WD 15 Styling
+====================================================================*/
+
+/*==================================================================
+   Form Section WD 14 Styling
+====================================================================*/
+.form-wd-14 .text-section{
+    max-width: 679px;
+    margin: 0 auto;
+}
+.form-wd-14 .form-section{
+    max-width: 67%;
+    margin: 0 auto;
+}
+.form-wd-14 .text-section h2{
+    padding: 0 0 23px;
+}
+.form-wd-14 .text-section p{
+    padding: 0 0 20px;
+}
+@media (min-width: 1025px) {
+    .form-wd-14 .form-section{
+        position: relative;
+    }
+    .row-fluid .form-wd-14 form .hs-button.primary {
+        margin-top: 0;
+        position: absolute;
+        right: 3.4%;
+        top: 42%;
+    }
+    .form-wd-14 .text-section{
+        padding: 0 0 8px;
+    }
+}
+@media (min-width: 768px) {
+    body .row-fluid .form-wd-14 .hs-form fieldset.form-columns-2 .hs-form-field{
+        width: 36.2%;
+        margin-right: 3.2%
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-14 .wrapper{
+        position: relative;
+
+    }
+    .row-fluid .form-wd-14 form .hs-button.primary{
+        position: absolute;
+        right: 13.6%;
+        top: 59%;
+    }
+    .form-wd-14 .text-section h2{
+        padding: 0 0 15px;
+    }
+}
+@media (max-width: 767px) {
+    .form-wd-14 .text-section h2{
+        padding: 0 0 15px;
+    }
+}
+/*==================================================================
+   End of Form Section WD 14 Styling
+====================================================================*/
+
+
+
+/*==================================================================
+   Form Section WD 8 Styling
+====================================================================*/
+.form-wd-8 .form-section{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+body .row-fluid .form-wd-8 form input,
+body .row-fluid .form-wd-8 form select,
+body .row-fluid .form-wd-8 form textarea{
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0;
+    max-width: 432px;
+}
+body .row-fluid .form-wd-8 form .actions{
+    text-align: end;
+}
+body .row-fluid .form-wd-8 form {
+    float: none;
+}
+body .row-fluid .form-wd-8 form .hs_submit{
+    /*    padding: 0 0 120px; */
+}
+@media (min-width: 1025px) {
+    .form-wd-8 .form-section{
+        padding: 60px 124px 120px;
+        margin: 81px 0 0;
+    }
+    body .container-fluid .row-fluid .form-wd-8 .section-heading.align-center{
+        max-width: 741px;
+    }
+    .form-wd-8 .section-heading h2{
+        padding: 0 0 22px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-8 .form-section{
+        padding: 60px;
+        margin: 40px 0 0;
+    }
+}
+@media (max-width: 1024px) {
+    .form-wd-8 .section-heading h2{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .form-wd-8 .form-section{
+        padding: 30px;
+        margin: 30px 0 0;
+    }
+}
+/*==================================================================
+   End of Form Section WD 8 Styling
+====================================================================*/
+
+/*==================================================================
+    Form Section WD 12 Styling
+====================================================================*/
+.form-wd-12 .left-col p span{
+    display: block;
+    padding: 0 0 3px 29px;
+}
+.form-wd-12 .left-col h2{
+    padding: 0 0 54px;
+}
+.form-wd-12 .left-col p span:first-child{
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20email.svg') no-repeat;
+    padding-bottom: 6px;
+    background-position-y: 7px;
+
+}
+.form-wd-12 .left-col p span:nth-child(2){
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20phone.svg') no-repeat;
+    background-position-y: 7px;
+    padding-bottom: 30px;
+}
+.form-wd-12 .left-col p span:nth-child(3){
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20map.svg') no-repeat;
+    background-position: 0;
+}
+.form-wd-12 .left-col p span:last-child{
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20clock.svg') no-repeat;
+    background-size: 17px;
+    padding-top: 26px;
+    background-position-y: 31px;
+}
+@media (min-width: 1025px) {
+    .form-wd-12 .form-section {
+        padding-top: 81px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .form-wd-12 .form-section {
+        padding-top: 40px;
+    }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 767px) {
+    .form-wd-12 .form-section {
+        padding-top: 20px;
+    }
+    .form-wd-12 .image-section img{
+        margin: 0 auto;
+        display: block;
+    }
+    .form-wd-12 .right-col{
+        padding: var(--mobile-padding);
+    }
+    /*       .form-wd-12{
+            text-align: center;
+          } */
+}
+/*==================================================================
+   End of Form Section WD 12 Styling
+====================================================================*/
+
+/*==================================================================
+    Form Section WD 20 Styling
+====================================================================*/
+.form-wd-20 .right-col{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    padding: 106px 114px 91px
+}
+.form-wd-20 .row-fluid form input,
+.form-wd-20 .row-fluid form select,
+.form-wd-20 .row-fluid form textarea{
+    border: 0;
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0;
+}
+.form-wd-20 .row-fluid form input:focus,
+.form-wd-20 .row-fluid form select:focus,
+.form-wd-20 .row-fluid form textarea:focus {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #c2c2c2;
+}
+body .row-fluid .form-wd-20 form .actions {
+    text-align: end;
+}
+.form-wd-20 .right-col h4{
+    padding: 0 0 18px;
+}
+.form-wd-20 .right-col p{
+    padding: 0 0 31px;
+}
+body .container-fluid .form-wd-20 .row-fluid .no-margin-span {
+    width: inherit;
+}
+@media (min-width: 1025px) {
+    .form-wd-20 .left-col img{
+        height: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-20 .right-col{
+        padding: 50px;
+    }
+    .form-wd-20 .right-col p{
+        padding: 0 0 20px;
+    }
+    .form-wd-20 .left-col img{
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .form-wd-20 .right-col{
+        padding: 40px;
+    }
+    .form-wd-20 .right-col p{
+        padding: 0 0 15px;
+    }
+    body .row-fluid .form-wd-20 form .actions{
+        text-align: center;
+    }
+    .form-wd-20 .left-col img{
+        margin: 0 auto;
+        display: block;
+    }
+    .form-wd-20 .left-col{
+        padding: var(--mobile-padding);
+    }
+}
+/*==================================================================
+   End of Form Section WD 20 Styling
+====================================================================*/
+
+/*==================================================================
+   Form Section WD 7 Styling
+====================================================================*/
+
+.form-wd-7 h2{
+    margin: 0;
+    padding:0 0 38px;
+}
+.form-wd-7 .left-col h4{
+    padding: 0 0 11px;
+}
+.form-wd-7 .left-col p{
+    padding: 0 0 10px;
+    font-size: 12px;
+}
+.form-wd-7 .left-col{
+    padding: 47px 70px 52px;
+    max-height: 574px;
+}
+.form-wd-7 .left-col .simple-cta{
+    padding:317px 0 0;
+}
+body .row-fluid .form-wd-7 .left-col .simple-cta .hs-cta-wrapper a.cta_button[title], body .row-fluid .form-wd-7 .left-col .simple-cta a{
+    color: #fff;
+}
+.form-wd-7 .center-col .card-details p, .form-wd-7 .right-col p{
+    font-size: 12px;
+}
+.form-wd-7 .center-col .card-details.image-added img{
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 18px;
+}
+.form-wd-7 .center-col .card-details.image-added{
+    padding-top: 47px;
+}
+.form-wd-7 .center-col .card-details{
+    border-bottom: 1px solid #000;
+    padding: 38px;
+    padding-bottom: 25px;
+}
+.form-wd-7 .center-col .card-details img{
+    display: none;
+}
+.form-wd-7 .center-col .card-details.image-added p{
+    display: none;
+}
+.form-wd-7 .center-col .card-details.image-added h6{
+    font-size: 18px;
+}
+.form-wd-7 .center-col .card-details h6{
+    margin: 0;
+    padding: 0 0 13px;
+}
+.form-wd-7 .center-col{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+}
+
+.form-wd-7 .center-col .card-details:last-child{
+    border-bottom:none;
+}
+/*right-col*/
+.form-wd-7 .text-section{
+    padding: 93px 40px 0;
+}
+.form-wd-7 .text-section h5{
+    padding: 0 0 9px;
+}
+.form-wd-7 .text-section p{
+    padding: 0 0 15px;
+}
+/*removing margin right*/
+body .container-fluid .form-wd-7 .row-fluid .three-col-adjust>span{
+    margin-right: 0;
+}
+@media (min-width: 1025px) {
+    .form-wd-7 .left-col{
+        flex-basis: 38%;
+        -webkit-flex-basis: 38%;
+    }
+    .form-wd-7 .center-col{
+        flex-basis: 25.7%;
+        -webkit-flex-basis: 25.7%;
+    }
+    .form-wd-7 .right-col{
+        flex-basis: 36%;
+        -webkit-flex-basis:  36%;
+    }
+    .form-wd-7 .center-col{
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+        margin-top: -4.9%;
+    }
+    .form-wd-7 .outer-layer{
+        margin-top: 43px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-7 .left-col{
+        flex-basis: 38%;
+        -webkit-flex-basis: 38%;
+    }
+    .form-wd-7 .center-col{
+        flex-basis: 25.7%;
+        -webkit-flex-basis: 25.7%;
+    }
+    .form-wd-7 .right-col{
+        flex-basis: 36%;
+        -webkit-flex-basis:  36%;
+    }
+    .form-wd-7 h2{
+        padding:0 0 30px;
+    }
+    .form-wd-7 .left-col{
+        padding: 30px 40px 30px;
+        /*max-height: 574px;*/
+    }
+    .form-wd-7 .left-col .simple-cta{
+        padding:200px 0 0;
+    }
+    .form-wd-7 .center-col{
+        margin-top: -3%;
+    }
+    .form-wd-7 .outer-layer{
+        margin-top: 30px;
+    }
+    .form-wd-7 .center-col .card-details.image-added{
+        padding-top: 30px;
+    }
+    .form-wd-7 .center-col .card-details{
+        padding: 30px;
+        padding-bottom: 25px;
+    }
+    /*right-col*/
+    .form-wd-7 .text-section{
+        padding: 70px 30px 0;
+    }
+}
+@media (max-width: 767px) {
+    .form-wd-7 h2{
+        padding:0 0 20px;
+    }
+    .form-wd-7 .left-col{
+        padding: 30px;
+        /*max-height: 574px;*/
+    }
+    .form-wd-7 .left-col .simple-cta{
+        padding:200px 0 0;
+    }
+    .form-wd-7 .center-col .card-details.image-added{
+        padding-top: 20px;
+    }
+    .form-wd-7 .center-col .card-details{
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+    /*right-col*/
+    .form-wd-7 .text-section{
+        padding: 40px 40px 0;
+    }
+    .form-wd-7 .center-col{
+        margin-top: 20px;
+    }
+    .form-wd-7 .right-col{
+        margin-top: 20px;
+    }
+    .form-wd-7 .right-col .image-section img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+/*==================================================================
+   End of Form Section WD 7 Styling
+====================================================================*/

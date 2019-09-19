@@ -131,6 +131,52 @@
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="span12 content_section_wd_23 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="text-section section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                </div>
+                <div class="outer-layer four-col-adjust">
+                  <span>
+                    {% for item in module.add_card_ %}
+                    <div class="single-card align-center hs_cos_wrapper">
+                      <img src="{{ item.add_card_image.src }}"
+                           alt="{{ item.add_card_image.alt }}"
+                           width="{{ item.add_card_image.width }}"
+                           height="{{ item.add_card_image.height }}">
+                      <h5>{{ item.add_card_heading }}</h5>
+                    </div>
+                    {% endfor %}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="single-col-card-section">
+            <div class="row-fluid-wrapper">
+                <div class="row-fluid">
+                    <div class="span7">
+                        <div class="text-section">
+                            <h3>{{ module.add_card_heading }}</h3>
+                            <p>{{ module.add_card_description }}</p>
+                        </div>
+                    </div>
+                    <div class="span5">
+                        <div class="button-section">
+                            {% cta guid="{{ module.add_card_cta_button }}" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
