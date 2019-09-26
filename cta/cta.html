@@ -1,0 +1,723 @@
+<div class="span12 call-to-action-1 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                    <span class="left-button">
+                        {% cta guid="{{ module.add_left_button }}" %}
+                    </span>
+                    <span class="transparent-cta">
+                        {% cta guid="{{ module.add_right_button }}" %}
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-1 .section-heading{
+         max-width: 831px;
+     }
+    .call-to-action-1 h2{
+        padding: 0 0 29px;
+    }
+    .call-to-action-1 p{
+        padding: 0 0 43px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-1 h2{
+            padding: 0 0 25px;
+        }
+        .call-to-action-1 p{
+            padding: 0 0 25px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-1 h2{
+            padding: 0 0 20px;
+        }
+        .call-to-action-1 p{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 480px) {
+        .call-to-action-1 .left-button{
+            margin-bottom: 20px;
+        }
+    }
+</style>
+<div class="span12 call-to-action-2 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                    <div class="button-section">
+                        {% cta guid="{{ module.add_button }}" %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-2 h2{
+        padding: 0 0 30px;
+    }
+    .call-to-action-2 p{
+        padding: 0 0 38px;
+    }
+
+    @media (max-width: 1024px) {
+        .call-to-action-2 h2{
+            padding: 0 0 15px;
+        }
+        .call-to-action-2 p{
+            padding: 0 0 16px;
+        }
+    }
+</style>
+
+<div class="span12 call-to-action-4 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="image-section">
+                    <img src="{{ module.add_image.src }}"
+                         alt="{{ module.add_image.alt }}"
+                         width="{{ module.add_image.width }}"
+                         height="{{ module.add_image.height }}">
+                </div>
+                <div class="section-heading align-center">
+                    <h2></h2>
+                    <p></p>
+                    <div class="button-section">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-4 .section-heading{
+        max-width: 905px;
+    }
+    .call-to-action-4 .image-section img{
+        display: block;
+        margin: 0 auto;
+    }
+    .call-to-action-4 .image-section{
+        padding-bottom: 67px;
+    }
+    .call-to-action-4 h2{
+        padding-bottom: 33px;
+    }
+    .call-to-action-4 p{
+        padding-bottom: 51px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-4 .image-section{
+            padding-bottom: 30px;
+        }
+        .call-to-action-4 h2{
+            padding-bottom: 20px;
+        }
+        .call-to-action-4 p{
+            padding-bottom: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+
+    }.call-to-action-4 .image-section{
+         padding-bottom: 20px;
+     }
+    .call-to-action-4 h2{
+        padding-bottom: 15px;
+    }
+    .call-to-action-4 p{
+        padding-bottom: 15px;
+    }
+</style>
+
+<div class="span12 call-to-action-5 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="align-center text-margin-zero">
+                    <h1>
+                        {{ module.add_heading }}
+                    </h1>
+                    <div class="button-section">
+                        {% cta guid="{{ module.add_button }}" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-5 h1{
+        padding-bottom: 37px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-5 h1{
+            padding-bottom: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-5 h1{
+            padding-bottom: 10px;
+        }
+    }
+</style>
+
+<div class="span12 call-to-action-6 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span7 left-col">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div class="span5 right-col">
+                    <div class="button-section">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-6 h2{
+        padding: 0 0 21px;
+    }
+    .call-to-action-6 p{
+        padding: 0 0 15px;
+    }
+    .call-to-action-6 .right-col{
+        position: relative;
+    }
+
+    @media (min-width: 1025px) {
+        .call-to-action-6 .right-col .dark-cta .cta_button{
+            position: absolute;
+            right: 45px;
+            top: 63px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-6 .right-col .dark-cta .cta_button{
+            position: absolute;
+            right: 10px;
+            top: 63px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .call-to-action-6 h2{
+            padding: 0 0 15px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-6 {
+            text-align: center;
+        }
+
+    }
+</style>
+
+<div class="span12 call-to-action-7 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span8 left-col text-margin-zero two-col-text">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                </div>
+                <div class="span4 right-col">
+                    <div class="button-section">
+                        {% cta guid="{{ module.add_button }}" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .call-to-action-7 .row-fluid{
+        border: 1px solid #c2c2c2;
+    }
+    .call-to-action-7 h2{
+        padding: 0 0 21px;
+    }
+    .call-to-action-7 p{
+        padding: 0 0 15px;
+    }
+    .call-to-action-7 .right-col{
+        position: relative;
+    }
+
+    @media (min-width: 1025px) {
+        .call-to-action-7 .right-col .dark-cta .cta_button{
+            position: absolute;
+            right: 45px;
+            top: 63px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-7 .right-col .dark-cta .cta_button{
+            position: absolute;
+            right: 10px;
+            top: 63px;
+        }
+    }
+    @media (max-width: 1024px) {
+        .call-to-action-7 h2{
+            padding: 0 0 15px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-7 {
+            text-align: center;
+        }
+
+    }
+</style>
+
+<div class="span12 call-to-action-8 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <h2 class="simple-cta">
+                    <a href=""></a>
+                </h2>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-8 .simple-cta a{
+        font-size: 42px;
+    }
+</style>
+
+<div class="span12 call-to-action-9 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span12 no-margin-span border-section">
+                    <div class="span7 left-col text-margin-zero all-text-white two-col-text">
+                        <h3>{{ module.add_heading }}</h3>
+                        <p>{{ module.add_description }}</p>
+                    </div>
+                    <div class="span4 right-col">
+                        <div class="button-section">
+                        <span class="dark-cta">
+                             {% cta guid="{{ module.add_left_button }}" %}
+                        </span>
+                            <span class="right-button">
+                            {% cta guid="{{ module.add_right_button }}" %}
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body .call-to-action-9 .right-button .hs-cta-wrapper a.cta_button[title]{
+        border: 1px solid #fff;
+    }
+    .call-to-action-9 .border-section{
+        border-radius: 8px;
+        background: #000;
+        padding: 80px 0 53px 59px;
+
+    }
+    .call-to-action-9 h3{
+        padding: 0 0 20px;
+
+    }
+    .call-to-action-9 p{
+        padding: 0 0 20px;
+
+    }
+    .call-to-action-9 .dark-cta .cta_button{
+        margin-right: 24px;
+    }
+    .call-to-action-9 .right-col{
+        position: relative;
+    }
+    
+    @media (min-width: 1025px) {
+        .call-to-action-9 .right-col .button-section{
+            position: absolute;
+            right: 4px;
+            top: 19px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-9 .border-section{
+            padding: 30px;
+
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-9 .border-section{
+            padding: 20px;
+        }
+        .call-to-action-9{
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="span12 call-to-action-10 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid background-section" style="background:{{ module.add_section_background_color.color }}">
+                <div class="span5 left-col text-margin-zero vertical-center">
+                    <div class="button-text">
+                        <h6>{{ module.add_tag_text }}</h6>
+                    </div>
+                    <h4>{{ module.add_heading }}</h4>
+                    <div class="button-section">
+                        {% cta guid="{{ module.add_button }}" %}
+                    </div>
+                </div>
+                <div class="span7 right-col">
+                    <img src="{{ module.add_image.src }}" alt="{{ module.add_image.alt }}" width="{{ module.add_image.width }}" height="{{ module.add_image.height }}">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .call-to-action-10 .button-text h6{
+        background-color: var(--tag-bg);
+        padding: 7px 18px;
+        display: inline;
+        color: var(--font-white);
+    }
+    .call-to-action-10 .button-text{
+        margin-bottom: 20px;
+    }
+    .call-to-action-10 .left-col h4{
+        padding: 0 0 25px;
+    }
+    .call-to-action-10 .background-section{
+        border-radius: 8px;
+        padding: 101px 100px 108px;
+    }
+
+    @media (min-width: 768px){
+        .call-to-action-10 .right-col img{
+            float: right;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-10 .button-text{
+            margin-bottom: 15px;
+        }
+        .call-to-action-10 .left-col h4{
+            padding: 0 0 20px;
+        }
+        .call-to-action-10 .background-section{
+            padding: 60px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-10 .button-text{
+            margin-bottom: 10px;
+        }
+        .call-to-action-10 .left-col h4{
+            padding: 0 0 15px;
+        }
+        .call-to-action-10 .background-section{
+            padding: 30px;
+        }
+        .call-to-action-10{
+            text-align: center;
+        }
+        .call-to-action-10 .right-col img{
+            display: block;
+            margin: 0 auto;
+        }
+        .call-to-action-10 .right-col{
+            margin-bottom: 20px;
+        }
+    }
+</style>
+<div class="span12 call-to-action-12 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="two-col-text">
+                    <p>{{ module.add_description_1 }}</p>
+                </div>
+
+                <div class="button-section">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-12 .section-heading h4{
+        padding: 0 0 21px;
+    }
+    .call-to-action-12 .section-heading p{
+        padding: 0 0 35px;
+    }
+    .call-to-action-12 .two-col-text p{
+        padding: 0 0 25px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-12 .section-heading p{
+            padding: 0 0 20px;
+        }
+        .call-to-action-12 .two-col-text p{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-12 .section-heading p{
+            padding: 0 0 15px;
+        }
+        .call-to-action-12 .two-col-text p{
+            padding: 0 0 15px;
+        }
+    }
+</style>
+<div class="span12 call-to-action-16 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center text-margin-zero">
+                    <h4></h4>
+                    <div class="button-section">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .call-to-action-16 .section-heading{
+        max-width: 852px;
+    }
+    .call-to-action-16 h2{
+        padding: 0 0 39px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .call-to-action-16 h2{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-16 h2{
+            padding: 0 0 15px;
+        }
+    }
+</style>
+<div class="span12 call-to-action-17 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="flex-items">
+                    <div class="text-section">
+                        <h3></h3>
+                    </div>
+                    <div class="button-section">
+                        <span class="left-button">
+
+                        </span>
+                        <div class="transparent-cta">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .call-to-action-17 h3{
+        padding: 0 0 15px;
+    }
+    .call-to-action-17 .flex-items{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .call-to-action-17 .button-section .left-button .cta_button{
+        margin-bottom: 28px;
+    }
+    @media (max-width: 767px) {
+        .call-to-action-17{
+            text-align: center;
+        }
+        .call-to-action-17 .flex-items .text-section,
+        .call-to-action-17 .flex-items .button-section{
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="span12 call-to-action-13 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="heading-section align-center">
+                    <h2>{{ module.add_section_heading }}</h2>
+                </div>
+                <div class="span6 left-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}"
+                             width="{{ module.add_image.width }}"
+                             height="{{ module.add_image.height }}">
+                    </div>
+                </div>
+               <div class="span6 right-col">
+                   <div class="text-section two-col-text all-text-white" style="background-color:{{ module.add_right_col_background_color.color }}">
+                       <h3>{{ module.add_heading }}</h3>
+                       <p>{{ module.add_description }}</p>
+                       <div class="dark-cta">
+                           {% cta guid="{{ module.add_button }}" %}
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .call-to-action-13 .image-section {
+        min-height: 548px;
+        max-width: 612px;
+
+    }
+</style>
+
+<div class="span12 call-to-action-15 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6 left-col all-text-white">
+                    <h1>{{ module.add_left_col_group.add_heading }}</h1>
+                    <h4>{{ module.add_left_col_group.add_description }}</h4>
+                    <div class="button-section">
+                        {% cta guid="{{ module.add_left_col_group.add_button }}" %}
+                    </div>
+                </div>
+                <div class="span6 right-col">
+                    <h2 class="all-text-white">{{ module.add_right_col_group.add_heading }}</h2>
+                    <span class="button-section">
+                    {% cta guid="{{ module.add_right_col_group.add_button }}" %}
+                    </span>
+                    <span class="simple-cta">
+                        <a href="{{ module.add_right_col_group.add_button_link }}">{{ module.add_right_col_group.add_button_text }}</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .call-to-action-15 .simple-cta{
+        color: #000;
+        text-decoration: underline;
+    }
+    .call-to-action-15 .right-col span.simple-cta{
+        margin-left: 26px;
+    }
+    .call-to-action-15 .left-col h1{
+        max-width: 370px;
+        padding: 0 0 20px;
+    }
+    .call-to-action-15 .left-col h4{
+        padding: 0 0 41px
+    }
+    .call-to-action-15 .right-col h2{
+        max-width: 304px;
+        padding: 0 0 30px;
+    }
+    @media (min-width: 768px) {
+        .call-to-action-15{
+            position: relative;
+        }
+        .call-to-action-15 .left-col:after{
+            position: absolute;
+            content: '';
+            border-right: 1px solid #474747;
+            right: 49.7%;
+            height: 100%;
+            top: 0;
+        }
+        body .row-fluid .call-to-action-15 .right-col{
+            margin-left: 7.8%;
+            margin-top: 9.7%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        body .row-fluid .call-to-action-15 .right-col{
+            margin-top: 5%;
+        }
+        .call-to-action-15 .left-col h1{
+            padding: 0 0 20px;
+        }
+        .call-to-action-15 .left-col h4{
+            padding: 0 0 20px
+        }
+        .call-to-action-15 .right-col h2{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .call-to-action-15{
+            text-align: center;
+        }
+        .call-to-action-15 .left-col h1{
+            padding: 0 0 15px;
+        }
+        .call-to-action-15 .left-col h4{
+            padding: 0 0 15px
+        }
+        .call-to-action-15 .right-col h2{
+            padding: 0 0 15px;
+        }
+        .call-to-action-15 .left-col{
+            margin-bottom: 20px;
+        }
+    }
+</style>

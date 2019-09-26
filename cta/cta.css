@@ -1,0 +1,445 @@
+
+/*==================================================================
+   Call to Action WD 1 Styling
+=====================================================================*/
+.call-to-action-1 .left-button{
+    margin-right: 27px;
+}
+.call-to-action-1 .section-heading{
+    max-width: 831px;
+}
+.call-to-action-1 h2{
+    padding: 0 0 29px;
+}
+.call-to-action-1 p{
+    padding: 0 0 40px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-1 h2{
+        padding: 0 0 25px;
+    }
+    .call-to-action-1 p{
+        padding: 0 0 25px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-1 h2{
+        padding: 0 0 15px;
+    }
+    .call-to-action-1 p{
+        padding: 0 0 15px;
+    }
+}
+@media (max-width: 480px) {
+    body .row-fluid .call-to-action-1 .left-button .cta_button {
+        margin-bottom: 20px;
+    }
+}
+
+/*==================================================================
+  End of Call to Action WD 1 Styling
+=====================================================================*/
+/*==================================================================
+  Call to Action WD 2 Styling
+=====================================================================*/
+.call-to-action-2 h2{
+    padding: 0 0 30px;
+}
+.call-to-action-2 p{
+    padding: 0 0 38px;
+}
+@media (max-width: 1024px) {
+    .call-to-action-2 h2{
+        padding: 0 0 15px;
+    }
+    .call-to-action-2 p{
+        padding: 0 0 16px;
+    }
+}
+/*==================================================================
+  End of Call to Action WD 2 Styling
+=====================================================================*/
+
+/*==================================================================
+   Call to Action WD 4 Styling
+=====================================================================*/
+
+.call-to-action-4 .section-heading{
+    max-width: 905px;
+}
+.call-to-action-4 .image-section img{
+    display: block;
+    margin: 0 auto;
+}
+.call-to-action-4 .image-section{
+    padding-bottom: 67px;
+}
+.call-to-action-4 h2{
+    padding-bottom: 33px;
+}
+.call-to-action-4 p{
+    padding-bottom: 51px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-4 .image-section{
+        padding-bottom: 30px;
+    }
+    .call-to-action-4 h2{
+        padding-bottom: 20px;
+    }
+    .call-to-action-4 p{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-4 .image-section{
+        padding-bottom: 20px;
+    }
+    .call-to-action-4 h2{
+        padding-bottom: 15px;
+    }
+    .call-to-action-4 p{
+        padding-bottom: 15px;
+    }
+}
+/*==================================================================
+  End of Call to Action WD 4 Styling
+=====================================================================*/
+/*==================================================================
+  Call to Action WD 5 Styling
+=====================================================================*/
+.call-to-action-5 h1{
+    padding-bottom: 37px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-5 h1{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-5 h1{
+        padding-bottom: 10px;
+    }
+}
+/*==================================================================
+  End of Call to Action WD 5 Styling
+=====================================================================*/
+/*==================================================================
+   Call to Action WD 6 Styling
+=====================================================================*/
+.call-to-action-6 h2{
+    padding: 0 0 21px;
+}
+.call-to-action-6 p{
+    padding: 0 0 15px;
+}
+.call-to-action-6 .right-col{
+    position: relative;
+}
+
+@media (min-width: 1025px) {
+    .call-to-action-6 .right-col .dark-cta .cta_button{
+        position: absolute;
+        right: 45px;
+        top: 63px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-6 .right-col .dark-cta .cta_button{
+        position: absolute;
+        right: 10px;
+        top: 63px;
+    }
+}
+@media (max-width: 1024px) {
+    .call-to-action-6 h2{
+        padding: 0 0 15px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-6 {
+        text-align: center;
+    }
+
+}
+/*==================================================================
+  End of Call to Action WD 6 Styling
+=====================================================================*/
+/*==================================================================
+   Call to Action WD 7 Styling
+=====================================================================*/
+.call-to-action-7 .row-fluid{
+    border: 1px solid #c2c2c2;
+    padding: 44px 0 28px 58px;
+}
+.call-to-action-7 h3{
+    padding: 0 0 20px;
+}
+.call-to-action-7 p{
+    padding: 0 0 15px;
+}
+.call-to-action-7 .right-col{
+    position: relative;
+}
+
+@media (min-width: 1025px) {
+    .call-to-action-7 .right-col .button-section .cta_button{
+        position: absolute;
+        position: absolute;
+        right: 10px;
+        top: 24px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-7 .right-col .button-section .cta_button{
+        position: absolute;
+        right: 10px;
+        top: 24px;
+    }
+    .call-to-action-7 .row-fluid{
+        padding: 30px 0 30px 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .call-to-action-7 h3{
+        padding: 0 0 15px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-7 {
+        text-align: center;
+    }
+    .call-to-action-7 .row-fluid{
+        padding: 20px;
+    }
+
+}
+/*==================================================================
+  End of Call to Action WD 7 Styling
+=====================================================================*/
+/*==================================================================
+  Call to Action WD 8 Styling
+=====================================================================*/
+
+.call-to-action-8 .simple-cta a{
+    font-size: inherit;
+}
+.call-to-action-8 h2{
+    margin:0;
+}
+/*==================================================================
+  End of Call to Action WD 8 Styling
+=====================================================================*/
+
+
+/*==================================================================
+   Call to Action WD 10 Styling
+=====================================================================*/
+.call-to-action-10 .button-text h6{
+    background-color: var(--tag-bg);
+    padding: 7px 18px;
+    display: inline;
+    color: var(--font-white);
+}
+.call-to-action-10 .button-text{
+    margin-bottom: 20px;
+}
+.call-to-action-10 .left-col h4{
+    padding: 0 0 25px;
+}
+.call-to-action-10 .background-section{
+    border-radius: 8px;
+    padding: 101px 100px 108px;
+}
+.call-to-action-10 .right-col img{
+    float: right;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-10 .button-text{
+        margin-bottom: 15px;
+    }
+    .call-to-action-10 .left-col h4{
+        padding: 0 0 20px;
+    }
+    .call-to-action-10 .background-section{
+        padding: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-10 .button-text{
+        margin-bottom: 10px;
+    }
+    .call-to-action-10 .left-col h4{
+        padding: 0 0 15px;
+    }
+    .call-to-action-10 .background-section{
+        padding: 30px;
+    }
+}
+
+/*==================================================================
+  End of Call to Action WD 10 Styling
+=====================================================================*/
+
+/*==================================================================
+Call to Action WD 12 Styling
+=====================================================================*/
+.call-to-action-12 .section-heading h4{
+    padding: 0 0 21px;
+}
+.call-to-action-12 .section-heading p{
+    padding: 0 0 35px;
+}
+.call-to-action-12 .two-col-text p{
+    padding: 0 0 25px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-12 .section-heading p{
+        padding: 0 0 20px;
+    }
+    .call-to-action-12 .two-col-text p{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-12 .section-heading p{
+        padding: 0 0 15px;
+    }
+    .call-to-action-12 .two-col-text p{
+        padding: 0 0 15px;
+    }
+}
+/*==================================================================
+End of Call to Action WD 12 Styling
+=====================================================================*/
+/*==================================================================
+Call to Action WD 16 Styling
+=====================================================================*/
+.call-to-action-16 .section-heading{
+    max-width: 852px;
+}
+.call-to-action-16 h2{
+    padding: 0 0 39px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-16 h2{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-16 h2{
+        padding: 0 0 15px;
+    }
+}
+/*==================================================================
+End of Call to Action WD 16 Styling
+=====================================================================*/
+
+/*==================================================================
+Call to Action WD 17 Styling
+=====================================================================*/
+.call-to-action-17 h3{
+    padding: 0 0 15px;
+}
+.call-to-action-17 .flex-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.call-to-action-17 .button-section .left-button .cta_button{
+    margin-bottom: 28px;
+}
+@media (max-width: 767px) {
+    .call-to-action-17{
+        text-align: center;
+    }
+    .call-to-action-17 .flex-items .text-section,
+    .call-to-action-17 .flex-items .button-section{
+        width: 100%;
+    }
+}
+/*==================================================================
+End of Call to Action WD 17 Styling
+=====================================================================*/
+
+/*==================================================================
+ Call to Action WD 15 Styling
+=====================================================================*/
+
+.call-to-action-15 .simple-cta{
+    color: #000;
+    text-decoration: underline;
+}
+.call-to-action-15 .right-col span.simple-cta{
+    margin-left: 26px;
+}
+.call-to-action-15 .left-col h1{
+    max-width: 370px;
+    padding: 0 0 20px;
+}
+.call-to-action-15 .left-col h4{
+    padding: 0 0 41px
+}
+.call-to-action-15 .right-col h2{
+    max-width: 304px;
+    padding: 0 0 30px;
+}
+@media (min-width: 768px) {
+    .call-to-action-15{
+        position: relative;
+    }
+    .call-to-action-15 .left-col:after{
+        position: absolute;
+        content: '';
+        border-right: 1px solid #474747;
+        right: 49.7%;
+        height: 100%;
+        top: 0;
+    }
+    body .row-fluid .call-to-action-15 .right-col{
+        margin-left: 7.8%;
+        margin-top: 9.7%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body .row-fluid .call-to-action-15 .right-col{
+        margin-top: 5%;
+    }
+    .call-to-action-15 .left-col h1{
+        padding: 0 0 20px;
+    }
+    .call-to-action-15 .left-col h4{
+        padding: 0 0 20px
+    }
+    .call-to-action-15 .right-col h2{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-15{
+        text-align: center;
+    }
+    .call-to-action-15 .left-col h1{
+        max-width: none;
+        padding: 0 0 15px;
+    }
+    .call-to-action-15 .left-col h4{
+        padding: 0 0 15px
+    }
+    .call-to-action-15 .right-col h2{
+        max-width: none;
+        padding: 0 0 15px;
+    }
+    .call-to-action-15 .left-col{
+        margin-bottom: 20px;
+    }
+}
+/*==================================================================
+ End of Call to Action WD 15 Styling
+=====================================================================*/

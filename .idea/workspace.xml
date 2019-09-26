@@ -23,48 +23,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Blog/Blog.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cta/cta.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5122">
-              <caret line="905" column="9" lean-forward="true" selection-start-line="905" selection-start-column="9" selection-end-line="905" selection-end-column="9" />
+            <state relative-caret-position="675">
+              <caret line="720" column="9" lean-forward="true" selection-start-line="718" selection-start-column="8" selection-end-line="720" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#div#6;n#!!top" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
-                <element signature="n#div#7;n#!!top" />
                 <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#div#8;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#8;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#9;n#!!top" expanded="true" />
-                <element signature="n#div#9;n#!!top" />
                 <element signature="n#style#0;n#div#10;n#!!top" expanded="true" />
-                <element signature="n#div#10;n#!!top" />
                 <element signature="n#style#0;n#div#11;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#12;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#12;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#13;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#14;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#14;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#14;n#!!top" />
-                <element signature="n#style#0;n#div#15;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blog/Blog.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cta/cta.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="344" selection-start-line="344" selection-end-line="348" selection-end-column="1" />
+            <state relative-caret-position="-1822">
+              <caret line="363" column="20" lean-forward="true" selection-start-line="363" selection-start-column="20" selection-end-line="363" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -72,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naming convensions">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="62" selection-start-line="62" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="434">
+              <caret line="59" selection-start-line="59" selection-end-line="61" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -81,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Typo new.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-927">
-              <caret line="476" column="36" selection-start-line="476" selection-start-column="21" selection-end-line="476" selection-end-column="36" />
+            <state relative-caret-position="-462">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -119,6 +109,9 @@
       <find>.wrapper</find>
       <find>two-col-ad</find>
       <find>vertical</find>
+      <find>H1</find>
+      <find>MARGIN</find>
+      <find>border-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,9 +138,11 @@
         <option value="$PROJECT_DIR$/hero section wd 1.html" />
         <option value="$PROJECT_DIR$/form/form.html" />
         <option value="$PROJECT_DIR$/align.css" />
-        <option value="$PROJECT_DIR$/naming convensions" />
         <option value="$PROJECT_DIR$/Blog/Blog.css" />
         <option value="$PROJECT_DIR$/Blog/Blog.html" />
+        <option value="$PROJECT_DIR$/naming convensions" />
+        <option value="$PROJECT_DIR$/cta/cta.html" />
+        <option value="$PROJECT_DIR$/cta/cta.css" />
       </list>
     </option>
   </component>
@@ -163,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,13 +179,17 @@
             <path>
               <item name="Module Library" type="b2602c69:ProjectViewProjectNode" />
               <item name="Module Library" type="462c0819:PsiDirectoryNode" />
+              <item name="cta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Module Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Module Library" type="462c0819:PsiDirectoryNode" />
               <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,11 +250,12 @@
       <workItem from="1569213096450" duration="7675000" />
       <workItem from="1569300850045" duration="25334000" />
       <workItem from="1569387391666" duration="20499000" />
+      <workItem from="1569473601407" duration="28211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109086000" />
+    <option name="totallyTimeSpent" value="137297000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,7 +270,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13113007" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13113007" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -472,31 +473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/Blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="344" selection-start-line="344" selection-end-line="348" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/naming convensions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="62" selection-start-line="62" selection-end-line="67" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Typo new.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-927">
-          <caret line="476" column="36" selection-start-line="476" selection-start-column="21" selection-end-line="476" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog/Blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5122">
-          <caret line="905" column="9" lean-forward="true" selection-start-line="905" selection-start-column="9" selection-end-line="905" selection-end-column="9" />
+        <state relative-caret-position="682">
+          <caret line="926" column="5" lean-forward="true" selection-start-line="926" selection-start-column="5" selection-end-line="926" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
@@ -525,6 +505,59 @@
             <element signature="n#div#0;n#div#0;n#div#14;n#!!top" />
             <element signature="n#style#0;n#div#15;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/Blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10664">
+          <caret line="344" selection-start-line="344" selection-end-line="348" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Typo new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/naming convensions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="59" selection-start-line="59" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta/cta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="720" column="9" lean-forward="true" selection-start-line="718" selection-start-column="8" selection-end-line="720" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#8;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#12;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#12;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#13;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cta/cta.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1822">
+          <caret line="363" column="20" lean-forward="true" selection-start-line="363" selection-start-column="20" selection-end-line="363" selection-end-column="20" />
         </state>
       </provider>
     </entry>
