@@ -14,22 +14,28 @@
 .hero_section_wd_23 .single-col {
     max-width: 898px;
 }
+
 .hero_section_wd_23 .single-col h1{
     padding: 0 0 20px;
 }
+
 .hero_section_wd_23 .single-col p{
     padding: 0 0 35px;
     border-bottom: 2px solid #bcbaba;
 }
+
 .hero_section_wd_23 .video-section {
     padding: 31px 0 20px;
 }
+
 .hero_section_wd_23 .video-section  img{
     cursor: pointer;
 }
+
 .hero_section_wd_23 .down-arrow{
     padding: 123px 0 0;
 }
+
 .hero_section_wd_23 .down-arrow img{
     cursor: pointer;
 }
@@ -54,50 +60,79 @@
 /*==================================================================
  Hero Section WD 24 Styling
 =====================================================================*/
+
 .hero_section_wd_24 .left-col .text-section h1{
     padding: 0 0 30px;
 }
+
 .hero_section_wd_24 .left-col .text-section p{
     padding: 0 0 39px;
 }
+
 .hero_section_wd_24 .left-col .hero-section-button{
     padding: 0 0 30px;
 }
+
 /* play button styling  right arrow  */
+
 .hero_section_wd_24 .left-col .simple-cta a{
     background: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/right%20arrow.svg);
     background-repeat: no-repeat;
     background-position: 99.6%;
     padding: 10px 32px;
 }
+
 @media (min-width: 1025px){
     .hero_section_wd_24 .left-col .section-heading{
         max-width: 593px;
     }
+
 }
+
 @media (min-width: 768px) {
+
     .hero_section_wd_24 .right-col .image-section{
         text-align: center;
     }
+
+    body .row-fluid .hero_section_wd_24 .right-col {
+        margin-left: 24px;
+    }
+
+    .hero_section_wd_24 .simple-cta{
+        margin-right: 28px;
+    }
+
 }
+
 @media (max-width: 767px) {
+
     .hero_section_wd_24 .right-col{
         padding: 0 0 40px;
     }
+
     .hero_section_wd_24 .right-col .image-section img{
         display: block;
         margin: 0 auto;
     }
+
     .hero_section_wd_24 .left-col .text-section h1{
         padding: 0 0 20px;
     }
+
     .hero_section_wd_24 .left-col .text-section p{
         padding: 0 0 20px;
     }
+
     .hero_section_wd_24 .left-col  .hero-section-button{
         padding: 0 0 20px;
     }
+    .hero_section_wd_24 .simple-cta{
+        margin-right: 28px;
+    }
+
 }
+
 /*==================================================================
   End of Hero Section WD 24  Styling
 =====================================================================*/
@@ -109,12 +144,20 @@
 .hero_section_wd_34 .left-col .form-section .hubspot-link__container.sproket{
     display: none;
 }
+
 body .row-fluid .hubspot-link__container.sproket{
     display: none;
 }
+
 .hero_section_wd_34 .left-col .form-section form .hs-button.primary{
     width: 100%;
     margin: 0;
+}
+
+
+.hero_section_wd_34 .left-col .form-section form input {
+    border: 1px solid #dadada;
+    box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.12);
 }
 @media (min-width: 1025px) {
     .hero_section_wd_34 .left-col .text-section {
@@ -129,11 +172,15 @@ body .row-fluid .hubspot-link__container.sproket{
         padding: 0 0 20px;
     }
 }
+
+
 @media (min-width: 768px) {
 
     .hero_section_wd_34 {
         position: relative;
     }
+
+
     .hero_section_wd_34 .right-col .image-section{
         position: absolute;
         top: 0;
@@ -143,8 +190,6 @@ body .row-fluid .hubspot-link__container.sproket{
     }
     .hero_section_wd_34 .left-col .form-section form input {
         margin: 0 0 11px;
-        border: 1px solid #dadada;
-        box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.12);
     }
     .hero_section_wd_34 .left-col .form-section form .field>label{
         margin: 0;
@@ -202,6 +247,15 @@ body .row-fluid .hubspot-link__container.sproket{
 .hero_section_wd_30 .image-section{
     position: relative;
 }
+.hero_section_wd_30  .form-section form input {
+    border: 1px solid #dadada;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 1025px) {
+    .hero_section_wd_30 .single-col .form-section{
+        margin: 39px 0 0;
+    }
+}
 @media (min-width: 768px) {
     .hero_section_wd_30 .single-col .text-section h6{
         padding: 0 0 10px;
@@ -217,10 +271,7 @@ body .row-fluid .hubspot-link__container.sproket{
     .hero_section_wd_30 .single-col .form-section{
         position: relative;
     }
-    .hero_section_wd_30  .form-section form input {
-        border: 1px solid #dadada;
-        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.12);
-    }
+
     body .row-fluid .hero_section_wd_30 .hs-form fieldset.form-columns-2 .hs-form-field{
         width: 39.4%;
         margin-right: 3.4%;
@@ -230,7 +281,7 @@ body .row-fluid .hubspot-link__container.sproket{
         position: absolute;
         top: 17px;
         right: 0;
-        padding: 15px 29px;
+        padding: 15px 25px;
         font-size: 11.7px;
     }
     .hero_section_wd_30 .image-container{
@@ -252,7 +303,7 @@ body .row-fluid .hubspot-link__container.sproket{
     .hero_section_wd_30:before{
         bottom: 0;
         width: 100%;
-        height: 52%;
+        height: 49%;
     }
 }
 /*==================================================================
@@ -353,14 +404,14 @@ body .row-fluid .hubspot-link__container.sproket{
 @media (min-width: 1300px) {
     .hero_section_wd_2 ul.slick-dots {
         top: 78px;
-        right: -49px;
+        right: -80px;
     }
     .hero_section_wd_2 button.slide-arrow.prev-arrow1.slick-arrow{
-        right: -33px;
+        right: -64px;
         top: 115px;
     }
     .hero_section_wd_2 button.slide-arrow.next-arrow1.slick-arrow{
-        right: -34px;
+        right: -65px;
         top: 197px;
     }
 }
@@ -383,7 +434,25 @@ body .row-fluid .hubspot-link__container.sproket{
     .hero_section_wd_2 .slick-slider-loop .inner-layer .text-section p{
         padding: 0 0 36px;
         margin: 0;
-        /*         max-width: 541px; */
+    }
+}
+@media (max-width: 1024px){
+    .hero_section_wd_2 ul.slick-dots{
+        /*     padding: 20px 0 23px; */
+    }
+    .hero_section_wd_2 button.slide-arrow.prev-arrow1.slick-arrow{
+        top: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .hero_section_wd_2 ul.slick-dots{
+        padding: 20px 0 21px;
+    }
+    .hero_section_wd_2 button.slide-arrow.prev-arrow1.slick-arrow{
+        top: 46px;
+    }
+    .hero_section_wd_2 button.slide-arrow.next-arrow1.slick-arrow{
+        top: 120px;
     }
 }
 @media (max-width: 720px) {
@@ -400,12 +469,12 @@ body .row-fluid .hubspot-link__container.sproket{
     Content Section WD 3 Styling
 =====================================================================*/
 
-.content_section_wd_3  .single-card{
+.content_section_wd_3 .single-card{
     box-sizing: border-box;
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
     position: relative;
-    padding: 55px 16px 0 25px;
+    padding: 55px 14px 0 25px;
 }
 .content_section_wd_3 .single-card hr {
     border-top: 1px solid #b7b7b7;
@@ -424,12 +493,15 @@ body .row-fluid .hubspot-link__container.sproket{
 .content_section_wd_3  .single-card .simple-cta  a{
     text-decoration: underline #7f7f7f;
 }
-.content_section_wd_3  .single-card .text-section{
-    padding: 32px 0 69px;
+.content_section_wd_3  .single-card .text-image-section{
+    padding: 0 0 69px;
 }
-body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
+.content_section_wd_3  .single-card .text-image-section h4{
+    padding: 32px 0 0;
+}
+/* body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
     display: block;
-}
+} */
 .content_section_wd_3 .section-heading h2{
     margin: 0;
     padding: 0 0 21px;
@@ -437,6 +509,12 @@ body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
 @media (min-width: 1025px) {
     .content_section_wd_3 .section-heading{
         margin-bottom: 42px;
+    }
+    .content_section_wd_3 .section-heading{
+        max-width: 707px;
+    }
+    body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
+        -ms-flex-preferred-size: 18.9%;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -450,8 +528,8 @@ body .row-fluid .content_section_wd_3 .four-col-adjust span>.hs_cos_wrapper{
     .content_section_wd_3 .single-card {
         padding: 20px 16px 0 25px;
     }
-    .content_section_wd_3  .single-card .text-section{
-        padding: 22px 0 69px;
+    .content_section_wd_3  .single-card .text-image-section h4{
+        padding: 22px 0 0;
     }
     .content_section_wd_3 .section-heading h2{
         margin: 0;
@@ -646,7 +724,7 @@ body .row-fluid .content_section_wd_18 .transparent-cta a.cta_button {
         padding: 0 0 31px;
     }
     .content_section_wd_18 .outer-layer .single-card .hover-text .text-highlight .text-section{
-        padding: 27px 0 42px;
+        padding: 27px 0 80px;
     }
     .content_section_wd_18 .outer-layer .single-card .hover-text .transparent-cta {
         position: absolute;
@@ -677,6 +755,12 @@ body .row-fluid .content_section_wd_18 .transparent-cta a.cta_button {
     .content_section_wd_18 .outer-layer .single-card:hover {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
+    }
+}
+@media (min-width: 1300px) {
+    .content_section_wd_18 .outer-layer .single-card:hover {
+        transform: scale(1.28,1.1);
+        -webkit-transform: scale(1.28,1.1);
     }
 }
 
@@ -794,8 +878,11 @@ body .row-fluid .content_section_wd_18 .transparent-cta a.cta_button {
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
     border: solid 1px #c2c2c2;
     background-color: #ffffff;
-    padding: 44px 16px 27px;
+    padding: 44px 17px 27px;
     border-radius: 8px;
+}
+.content_section_wd_23 .outer-layer .single-card h5{
+    font-weight: 800;
 }
 .content_section_wd_23 .outer-layer .single-card img{
     margin: 0 0 30px 0;
@@ -804,7 +891,7 @@ body .row-fluid .content_section_wd_18 .transparent-cta a.cta_button {
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
     border: solid 1px #c2c2c2;
     background-color: #ffffff;
-    padding: 44px 0 44px 60px;
+    padding: 44px 0 28px 60px;
 }
 @media (min-width: 1025px) {
     body .row-fluid .content_section_wd_23 .four-col-adjust span>.hs_cos_wrapper{
@@ -819,10 +906,9 @@ body .row-fluid .content_section_wd_18 .transparent-cta a.cta_button {
     }
     body .container-fluid .row-fluid .content_section_wd_23 .four-col-adjust>span{
         margin-right: -3.165%;
-        /*         width: 100%; */
     }
-    .content_section_wd_23 .text-section {
-        margin-bottom: 39px;
+    body .row-fluid .content_section_wd_23 .outer-layer .single-card h5{
+        font-size: 18px;
     }
 }
 
@@ -854,8 +940,10 @@ body .row-fluid .content_section_wd_18 .transparent-cta a.cta_button {
     body .row-fluid .content_section_wd_23 .four-col-adjust span>.hs_cos_wrapper{
         margin-top: 0;
         margin-bottom: 2.43%;
-
     }
+    /*   .content_section_wd_23 .single-col-card-section{
+        padding: 20px 0 20px 30px;
+    } */
 }
 @media (max-width: 767px) {
     .content_section_wd_23 .single-col-card-section{
@@ -1356,9 +1444,6 @@ Client Section WD 12 Styling
         margin-right: 0;
         margin-top:0
     }
-    .clients_section_wd_12 .outer-layer .inner-layer:nth-child(4n+1){
-        padding-left: 0;
-    }
     .clients_section_wd_12 .outer-layer .inner-layer:nth-child(4n){
         border-right: none;
     }
@@ -1376,6 +1461,10 @@ Client Section WD 12 Styling
         -ms-flex-align: center;
         align-items: center;
     }
+    body .row-fluid .clients_section_wd_12 .four-col-adjust span>.hs_cos_wrapper {
+        flex-basis: 24.3%;
+        -webkit-flex-basis: 24.3%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -1388,7 +1477,6 @@ Client Section WD 12 Styling
     .clients_section_wd_12 .outer-layer .inner-layer:nth-last-child(1){
         border-bottom: none;
     }
-
 }
 /*==================================================================
 End Of  Client Section WD 12 Styling
@@ -1438,6 +1526,9 @@ Client Section WD 17 Styling
     }
     .clients_section_wd_17 .outer-layer{
         padding-top: 17px;
+    }
+    .clients_section_wd_17 .section-heading{
+        margin-bottom: 29px;
     }
 
 }
@@ -1496,36 +1587,21 @@ Client Section WD 18 Styling
 }
 @media (min-width: 1025px) {
     body .row-fluid .client_section_wd_18 .four-col-adjust span>.hs_cos_wrapper{
-        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-top: 0;
     }
-    /*     body .container-fluid .row-fluid .client_section_wd_18 .four-col-adjust>span{
-            margin-right: -5.665%;
-        } */
 }
 @media (min-width: 768px) {
-    /*     .client_section_wd_18 .two-col-text-card{
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            width: 100%;
-        }
-        .client_section_wd_18 .two-col-text-card .left-col{
-            flex-basis: 30.4%;
-            -webkit-flex-basis: 30.4%;
-        }
-        .client_section_wd_18 .two-col-text-card .right-col{
-            flex-basis: 66.8%;
-            -webkit-flex-basis: 66.8%;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            padding-left: 34px;
-        } */
     body .row-fluid .client_section_wd_18 .four-col-adjust span>.hs_cos_wrapper{
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body .row-fluid .client_section_wd_18 .four-col-adjust span>.hs_cos_wrapper{
+        margin-bottom: 2.43%;
+        margin-top: 0;
     }
 }
 @media (max-width: 767px) {
@@ -2883,7 +2959,7 @@ body .row-fluid .form-wd-5 form textarea{
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 0;
-    color: #808080;
+    /*     color: #808080; */
     line-height: 1.56;
 }
 @media (min-width: 768px) {
@@ -2925,9 +3001,7 @@ body .row-fluid .form-wd-5 form textarea{
         padding: 0 0 26px;
     }
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
-
     .form-wd-5 .left-col{
         padding: 40px 25px;
     }
@@ -2935,7 +3009,6 @@ body .row-fluid .form-wd-5 form textarea{
     .form-wd-5 .project-section{
         padding: 30px;
     }
-    
 
 }
 @media (max-width: 1024px) {
@@ -2971,168 +3044,572 @@ body .row-fluid .form-wd-5 form textarea{
 /*==================================================================
    End of Form Section WD 5 Styling
 =====================================================================*/
-
-
+/*==================================================================
+   Form Section WD 8 Styling
+====================================================================*/
+.form-wd-8 .form-section{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+body .row-fluid .form-wd-8 form input,
+body .row-fluid .form-wd-8 form select,
+body .row-fluid .form-wd-8 form textarea{
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    border-radius: 0;
+    max-width: 432px;
+}
+body .row-fluid .form-wd-8 form .actions{
+    text-align: end;
+}
+body .row-fluid .form-wd-8 form {
+    float: none;
+}
+body .row-fluid .form-wd-8 form .hs_submit{
+    /*    padding: 0 0 120px; */
+}
+@media (min-width: 1025px) {
+    .form-wd-8 .form-section{
+        padding: 60px 124px 120px;
+        margin: 81px 0 0;
+    }
+    body .container-fluid .row-fluid .form-wd-8 .section-heading.align-center{
+        max-width: 741px;
+    }
+    .form-wd-8 .section-heading h2{
+        padding: 0 0 22px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-8 .form-section{
+        padding: 60px;
+        margin: 40px 0 0;
+    }
+}
+@media (max-width: 1024px) {
+    .form-wd-8 .section-heading h2{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .form-wd-8 .form-section{
+        padding: 30px;
+        margin: 30px 0 0;
+    }
+}
+/*==================================================================
+   End of Form Section WD 8 Styling
+====================================================================*/
 
 /*==================================================================
-    Form Section WD 9 Styling
-    ====================================================================*/
-.form-wd-9 .form-section{
-    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
-    padding: 25px 44px 70px;
+    Form Section WD 12 Styling
+====================================================================*/
+.form-wd-12 .left-col p span{
+    display: block;
+    padding: 0 0 3px 29px;
 }
-.form-wd-9 .left-col .two-col-text h2{
+.form-wd-12 .left-col h2{
+    padding: 0 0 54px;
+}
+.form-wd-12 .left-col p span:first-child{
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20email.svg') no-repeat;
+    padding-bottom: 6px;
+    background-position-y: 7px;
+
+}
+.form-wd-12 .left-col p span:nth-child(2){
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20phone.svg') no-repeat;
+    background-position-y: 7px;
+    padding-bottom: 30px;
+}
+.form-wd-12 .left-col p span:nth-child(3){
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20map.svg') no-repeat;
+    background-position: 0;
+}
+.form-wd-12 .left-col p span:last-child{
+    background: url('https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Form%20Section/form%2012%20clock.svg') no-repeat;
+    background-size: 17px;
+    padding-top: 26px;
+    background-position-y: 31px;
+}
+@media (min-width: 1025px) {
+    .form-wd-12 .form-section {
+        padding-top: 81px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .form-wd-12 .form-section {
+        padding-top: 40px;
+    }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 767px) {
+    .form-wd-12 .form-section {
+        padding-top: 20px;
+    }
+    .form-wd-12 .image-section img{
+        margin: 0 auto;
+        display: block;
+    }
+    .form-wd-12 .right-col{
+        padding: var(--mobile-padding);
+    }
+    /*       .form-wd-12{
+            text-align: center;
+          } */
+}
+/*==================================================================
+   End of Form Section WD 12 Styling
+====================================================================*/
+/*==================================================================
+   Form Section WD 13 Styling
+====================================================================*/
+.form-wd-13 .hs-form input{
+    border: 1px solid #bcb5b9;
+}
+@media (min-width: 768px){
+    .form-wd-13 h4{
+        position: relative;
+        top: 33px;
+    }
+    body .container-fluid .row-fluid .form-wd-13 .no-margin-span{
+        margin-left:0.7%;
+    }
+    body .row-fluid .form-wd-13 .wrapper{
+        position: relative;
+    }
+    .form-wd-13 .row-fluid form .hs-button.primary{
+        position: absolute;
+        right: 5.9%;
+        top: 0;
+    }
+    body .row-fluid .form-wd-13 .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 33.6%;
+        margin-right: 3.2%;
+    }
+}
+@media  (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-13 .row-fluid form .hs-button.primary{
+        position: absolute;
+        right:1%;
+        top: 0;
+    }
+}
+/*==================================================================
+   End of Form Section WD 13 Styling
+====================================================================*/
+
+/*==================================================================
+   Form Section WD 14 Styling
+====================================================================*/
+
+
+.form-wd-14 .text-section h2{
+    padding: 0 0 23px;
+}
+.form-wd-14 .text-section p{
     padding: 0 0 20px;
-}.form-wd-9 .left-col .two-col-text p{
-     padding: 0 0 47px;
- }
-.form-wd-9 .section-border{
-    border-bottom: 1px solid #000000;
-    margin: 0 0 45px;
 }
-.form-wd-9 .left-col li:before{
-    content: '';
-    height: 5px;
-    width: 5px;
-    background: #000;
-    border-radius: 50%;
+@media (min-width: 1025px) {
+    .form-wd-14 .form-section{
+        position: relative;
+    }
+    .row-fluid .form-wd-14 form .hs-button.primary {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: 42%;
+    }
+    .form-wd-14 .text-section{
+        padding: 0 0 8px;
+    }
+    .form-wd-14 .form-section{
+        max-width: 67%;
+        margin: 0 auto;
+    }
+    .form-wd-14 .text-section{
+        max-width: 679px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1025px) {
+    body .row-fluid .form-wd-14 .hs-form fieldset.form-columns-2 .hs-form-field{
+        width: 36.2%;
+        margin-right: 3.2%
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*     .form-wd-14 .wrapper{
+            position: relative;
 
+        }
+        .row-fluid .form-wd-14 form .hs-button.primary{
+            position: absolute;
+            right: 13.6%;
+            top: 59%;
+        } */
+    .form-wd-14 .text-section h2{
+        padding: 0 0 15px;
+    }
 }
-.form-wd-9 .left-col ul{
-    padding-left: 14px;
+@media (max-width: 767px) {
+    .form-wd-14 .text-section h2{
+        padding: 0 0 15px;
+    }
+}
+@media (max-width: 1024px) {
+    body .row-fluid .form-wd-14 .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 100%;
+        margin-right: 0;
+    }
+    /*   .form-wd-15 .span8{
+        text-align: center;
+        width: 100%;
+      } */
+}
+/*==================================================================
+   End of Form Section WD 14 Styling
+====================================================================*/
+
+/*==================================================================
+   Form Section WD 15 Styling
+====================================================================*/
+.form-wd-15  h2{
+    padding: 0 0 21px;
 }
 
-
-.form-wd-9 .two-col-text{
-    max-width: 70%;
+.form-wd-15 p{
+    padding: 0 0 21px;
 }
-.form-wd-9 .row-fluid form input,
-.form-wd-9 .row-fluid form select,
-.form-wd-9 .row-fluid form textarea {
+
+.form-wd-15 .hs-form input{
+    border: 1px solid #dadada;
+}
+
+.form-wd-15 .logo-section{
+    border-top: 1px solid #c2c2c2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 56px 0 0;
+    margin: 37px 0 0;
+}
+
+@media (min-width: 1025px) {
+    .form-wd-15 .hs-form{
+        position: relative;
+    }
+    .row-fluid .form-wd-15 form .hs-button.primary{
+        position: absolute;
+        top: -19%;
+        right: 0;
+    }
+    .form-wd-15 .form-section {
+        padding: 13px 0 0;
+    }
+    body .row-fluid .form-wd-15 .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 37.1%;
+        margin-right: 3.3%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-15 .logo-section{
+        padding: 28px 0 0;
+        margin: 28px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-wd-15 .logo-section{
+        padding: 20px 0 0;
+        margin: 20px 0 0;
+        display: block;
+    }
+    .form-wd-15 .logo-section .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .form-wd-15 .logo-section .logo{
+        padding: 20px 0 0;
+    }
+}
+@media (max-width: 1024px) {
+    .form-wd-15 h2{
+        padding: 0 0 15px;
+    }
+
+    .form-wd-15 p{
+        padding: 0 0 15px;
+    }
+    body .row-fluid .form-wd-15 .hs-form fieldset.form-columns-2 .hs-form-field {
+        width: 100%;
+        margin-right: 0;
+    }
+    .form-wd-15 .span8{
+        text-align: center;
+        width: 100%;
+    }
+}
+/*==================================================================
+   End of Form Section WD 15 Styling
+====================================================================*/
+
+/*==================================================================
+    Form Section WD 20 Styling
+====================================================================*/
+.form-wd-20 .right-col{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    padding: 106px 114px 91px
+}
+.form-wd-20 .row-fluid form input,
+.form-wd-20 .row-fluid form select,
+.form-wd-20 .row-fluid form textarea{
     border: 0;
     border-bottom: 1px solid #c2c2c2;
     border-radius: 0;
 }
-body .row-fluid .form-wd-9 form .actions {
+.form-wd-20 .row-fluid form input:focus,
+.form-wd-20 .row-fluid form select:focus,
+.form-wd-20 .row-fluid form textarea:focus {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #c2c2c2;
+}
+body .row-fluid .form-wd-20 form .actions {
     text-align: end;
 }
+.form-wd-20 .right-col h4{
+    padding: 0 0 18px;
+}
+.form-wd-20 .right-col p{
+    padding: 0 0 31px;
+}
+body .container-fluid .form-wd-20 .row-fluid .no-margin-span {
+    width: inherit;
+}
 @media (min-width: 1025px) {
-    .form-wd-9 .left-col{
-        max-width: 498px;
-    }
-    body .row-fluid .form-wd-9 .span6.right-col{
-        width: 585px;
+    .form-wd-20 .left-col img{
+        height: 100%;
     }
 }
-@media (min-width: 768px){
-    body .container-fluid .row-fluid .form-wd-9 .span6.right-col{
-        margin-left: 5.1%;
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-20 .right-col{
+        padding: 50px;
+    }
+    .form-wd-20 .right-col p{
+        padding: 0 0 20px;
+    }
+    .form-wd-20 .left-col img{
+        height: 100%;
     }
 }
 @media (max-width: 767px) {
-    .form-wd-9 .left-col{
-        margin-bottom: 20px;
+    .form-wd-20 .right-col{
+        padding: 40px;
     }
-    .form-wd-9 .form-section{
-        padding: 20px 30px;
+    .form-wd-20 .right-col p{
+        padding: 0 0 15px;
     }
-    .form-wd-9 .left-col .two-col-text h2{
-        padding: 0 0 20px;
-    }
-    .form-wd-9 .left-col .two-col-text p{
-        padding: 0 0 20px;
-    }
-    .form-wd-9 .section-border{
-        margin: 0 0 20px;
-    }
-    body .row-fluid .form-wd-9 form .actions {
+    body .row-fluid .form-wd-20 form .actions{
         text-align: center;
+    }
+    .form-wd-20 .left-col img{
+        margin: 0 auto;
+        display: block;
+    }
+    .form-wd-20 .left-col{
+        padding: var(--mobile-padding);
     }
 }
 /*==================================================================
-End of Form Section WD 9 Styling
+   End of Form Section WD 20 Styling
 ====================================================================*/
 
 
 /*==================================================================
-     Form Section WD 10 Styling
-    ====================================================================*/
-.form-wd-10 .left-col .text-section1 h2{
-    padding: 0 0 23px;
-}
-.form-wd-10 .left-col .text-section1 p{
-    padding: 0 0 34px;
-}
+   Form Section WD 7 Styling
+====================================================================*/
 
-.form-wd-10 .left-col .text-section2 h4{
-    font-weight: 300;
-    line-height: 1.67;
+.form-wd-7 h2{
+    margin: 0;
+    padding:0 0 38px;
 }
-.form-wd-10 .right-col{
-    border: 1px solid #000000;
-    padding: 45px 49px 53px;
+.form-wd-7 .left-col h4{
+    padding: 0 0 11px;
 }
-.form-wd-10 .right-col h5{
-    border-bottom: 5px solid #000000;
+.form-wd-7 .left-col p{
+    padding: 0 0 10px;
+    font-size: 12px;
+}
+.form-wd-7 .left-col{
+    padding: 47px 70px 52px;
+    height: fit-content;
+}
+.form-wd-7 .left-col .simple-cta{
+    padding:317px 0 0;
+}
+body .row-fluid .form-wd-7 .left-col .simple-cta .hs-cta-wrapper a.cta_button[title], body .row-fluid .form-wd-7 .left-col .simple-cta a{
+    color: #fff;
+}
+.form-wd-7 .center-col .card-details p, .form-wd-7 .right-col p{
+    font-size: 12px;
+}
+.form-wd-7 .center-col .card-details.image-added img{
+    display: block;
+    margin: 0 auto;
+    padding: 0 0 18px;
+}
+.form-wd-7 .center-col .card-details.image-added{
+    padding-top: 47px;
+}
+.form-wd-7 .center-col .card-details{
+    border-bottom: 1px solid #000;
+    padding: 38px;
+    padding-bottom: 25px;
+}
+.form-wd-7 .center-col .card-details img{
+    display: none;
+}
+.form-wd-7 .center-col .card-details.image-added p{
+    display: none;
+}
+.form-wd-7 .center-col .card-details.image-added h6{
+    font-size: 18px;
+    color: #000;
+}
+.form-wd-7 .center-col .card-details h6{
     margin: 0;
     padding: 0 0 13px;
 }
-body .row-fluid .form-wd-10 form .actions {
-    text-align: end;
+.form-wd-7 .center-col{
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
 }
 
-@media (min-width: 768px) {
-    body .row-fluid .form-wd-10 .left-col{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+.form-wd-7 .center-col .card-details:last-child{
+    border-bottom:none;
+}
+/*right-col*/
+.form-wd-7 .text-section{
+    padding: 93px 40px 0;
+}
+.form-wd-7 .text-section h5{
+    padding: 0 0 9px;
+}
+.form-wd-7 .text-section p{
+    padding: 0 0 15px;
+}
+/*removing margin right*/
+body .container-fluid .form-wd-7 .row-fluid .three-col-adjust>span{
+    margin-right: 0;
+}
+@media (min-width: 1025px) {
+    .form-wd-7 .left-col{
+        flex-basis: 38%;
+        -webkit-flex-basis: 38%;
     }
-    /*for dotted lines*/
-    .form-wd-10 .left-col .text-section1 p{
-        position: relative;
+    .form-wd-7 .center-col{
+        flex-basis: 25.7%;
+        -webkit-flex-basis: 25.7%;
     }
-    .form-wd-10 .left-col .text-section1 p:before {
-        position: absolute;
-        content: '';
-        border-top: 1px dashed #000;
-        width: 31%;
-        bottom: 0;
+    .form-wd-7 .right-col{
+        flex-basis: 36%;
+        -webkit-flex-basis:  36%;
     }
-    .form-wd-10 .left-col .text-section1 p:after {
-        position: absolute;
-        content: '';
-        border-right: 1px dashed #000;
-        left: 31%;
-        height: 454px;
-        top: 99%;
+    .form-wd-7 .center-col{
+        box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+        margin-top: -4.9%;
     }
-    .form-wd-10 .text-section2 {
-        padding: 0 0 0 38%;
+    .form-wd-7 .outer-layer{
+        margin-top: 43px;
     }
-    body .row-fluid .form-wd-10 .right-col{
-        margin-left: 8.2%
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form-wd-7 .left-col{
+        flex-basis: 38%;
+        -webkit-flex-basis: 38%;
     }
-    .form-wd-10 .right-col .hs-form{
-        padding: 1px 0 0;
+    .form-wd-7 .center-col{
+        flex-basis: 25.7%;
+        -webkit-flex-basis: 25.7%;
+    }
+    .form-wd-7 .right-col{
+        flex-basis: 36%;
+        -webkit-flex-basis:  36%;
+    }
+    .form-wd-7 h2{
+        padding:0 0 30px;
+    }
+    .form-wd-7 .left-col{
+        padding: 30px 40px 30px;
+        /*max-height: 574px;*/
+    }
+    .form-wd-7 .left-col .simple-cta{
+        padding:200px 0 0;
+    }
+    .form-wd-7 .center-col{
+        margin-top: -3%;
+    }
+    .form-wd-7 .outer-layer{
+        margin-top: 30px;
+    }
+    .form-wd-7 .center-col .card-details.image-added{
+        padding-top: 30px;
+    }
+    .form-wd-7 .center-col .card-details{
+        padding: 30px;
+        padding-bottom: 25px;
+    }
+    /*right-col*/
+    .form-wd-7 .text-section{
+        padding: 70px 30px 0;
     }
 }
 @media (max-width: 767px) {
-    body .row-fluid .form-wd-10 form .actions {
-        text-align: center;
+    .form-wd-7 h2{
+        padding:0 0 20px;
     }
-    .form-wd-10 .right-col{
+    .form-wd-7 .left-col{
         padding: 30px;
+        /*max-height: 574px;*/
+    }
+    .form-wd-7 .left-col .simple-cta{
+        padding: 100px 0 0;
+    }
+    .form-wd-7 .center-col .card-details.image-added img{
+        padding: 0 0 10px;
+    }
+    .form-wd-7 .center-col .card-details.image-added{
+        padding-top: 20px;
+    }
+    .form-wd-7 .center-col .card-details{
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+    /*right-col*/
+    .form-wd-7 .text-section{
+        padding: 40px 40px 0;
+    }
+    .form-wd-7 .center-col{
+        margin-top: 20px;
+    }
+    .form-wd-7 .right-col{
+        margin-top: 20px;
+    }
+    .form-wd-7 .right-col .image-section img{
+        display: block;
+        margin: 0 auto;
     }
 }
 /*==================================================================
-End of Form Section WD 10 Styling
+   End of Form Section WD 7 Styling
 ====================================================================*/
+
 
 

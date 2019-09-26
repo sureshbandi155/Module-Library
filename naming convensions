@@ -50,6 +50,8 @@ Add Description
 Add Image
 Add Title
 Add Description
+Add Button Text
+Add Button Link
 
 
 https://www.google.com/
@@ -61,7 +63,7 @@ https://www.google.com/
     @media (min-width: 768px) and (max-width: 1024px) {
 
     }
-    @media (min-width: 767px) {
+    @media (max-width: 767px) {
 
     }
 /*==================================================================
