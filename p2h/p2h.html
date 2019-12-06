@@ -1,0 +1,309 @@
+<div  class="span12 content_p2h_02  section-padding all-text-white"  style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="two-col-items">
+                    <div class="left-col two-col-text">
+                        <h2></h2>
+                        <p></p>
+                        <ul class="list">
+                            {% for item in module.add_list_group %}
+                            <li>{{ item.add_list }}</li>
+                            {% endfor %}
+                        </ul>
+                        <div class="button-section">
+                            <span class="left-button"></span>
+                            <span class="right-button"></span>
+                        </div>
+
+                    </div>
+                    <div class="right-col">
+                        <div class="text-image">
+                            {% for item in module.communication_group %}
+                            <p>{{ item.add_logo_heading }}</p>
+                            <div class="image-module">
+                                {% for item2 in item.logo_group %}
+                                <img src="{{ item2.add_logo_image.src }}"
+                                     alt="{{ item2.add_logo_image.alt }}"
+                                     width="{{ item2.add_logo_image.width }}"
+                                     height="{{ item2.add_logo_image.height }}">
+                                {% endfor %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ module.add_right_col_background_color }}
+
+<style>
+    .content_p2h_02 .button-section .left-button{
+        margin-right: 21px;
+    }
+    .content_p2h_02 .right-col {
+        padding-top: 31px;
+    }
+    @media (min-width: 768px) {
+        .content_p2h_02 .right-col .text-image{
+            float: right;
+        }
+    }
+    @media (max-width: 480px) {
+        .content_p2h_02 .button-section .left-button a.cta_button {
+            margin-bottom: 20px;
+        }
+
+    }
+
+
+
+    .content_p2h_02 .left-col p{
+        font-size: 18px;
+    }
+    .content_p2h_02 .button-section .left-button{
+        margin-right: 21px;
+    }
+    @media (min-width: 768px) {
+        .content_p2h_02 .right-col .text-image{
+            float: right;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1085px) {
+
+    }
+    .content_p2h_02 .right-col h2{
+        padding: 0 0 27px;
+    }
+    .content_p2h_02 .right-col p{
+        padding: 0 0 8px;
+    }
+    .content_p2h_02 .right-col li{
+        font-weight: 500;
+        letter-spacing: 0.02px;
+        color: #232937;
+        font-family: Avenir;
+    }
+    .content_p2h_02 .list{
+        padding-left: 6px;
+    }
+    .content_p2h_02 .button-section{
+        margin-top: 25px;
+    }
+
+</style>
+
+
+
+<div class="span12 our-partner-benefits section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="heading-section align-center text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="four-col-adjust">
+                        <span>
+                            {% for item in module.add_cards_group %}
+                            <div class="hs_cos_wrapper single-card text-margin-zero">
+                                <div class="image-text-section">
+                                    <img src="{{ item.add_image.src }}"
+                                         alt="{{ item.add_image.alt }}"
+                                         width="{{ item.add_image.width }}"
+                                         height="{{ item.add_image.height }}">
+
+                                    <h4>{{ item.add_heading }}</h4>
+                                    <p>{{ item.add_description }}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .our-partner-benefits .heading-section{
+        max-width: 827px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .our-partner-benefits h2{
+        padding: 0 0 18px;
+    }
+    .our-partner-benefits p{
+        padding: 0 0 18px;
+        line-height: 1.63;
+    }
+    .our-partner-benefits .single-card img{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 12px;
+    }
+    .our-partner-benefits .single-card h4{
+        padding: 0 0 20px;
+    }
+    .our-partner-benefits .single-card p{
+        padding: 0 0 10px;
+    }
+    .our-partner-benefits .image-text-section{
+        padding-right: 8px;
+    }
+</style>
+<div class="span12 white-label-making section-padding" style="background:{{ module.add_background_color }} url('{{ module.add_background_image.src }}') no-repeat;background-position:center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6 left-col text-margin-zero">
+                <div class="text-section">
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                    <div class="button-section">
+
+                    </div>
+                </div>
+                </div>
+                <div class="span6 right-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}"
+                             width="{{ module.add_image.width }}"
+                             height="{{ module.add_image.height }}" >
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .white-label-making h2{
+        padding: 0 0 23px;
+    }
+    .white-label-making p{
+        padding: 0 0 25px;
+    }
+    .white-label-making p:nth-child(1){
+        padding: 0 0 25px;
+    }
+.white-label-making .text-section{
+    border-bottom: 1px solid #c3c8cf;
+}
+.white-label-making .button-section{
+    padding: 24px 0 0;
+}
+    .white-label-making .right-col .image-section img{
+       max-width: 50vw;
+    }
+    @media (min-width: 1025px) {
+        .white-label-making.section-padding{
+            padding: ;
+        }
+        .white-label-making{
+            position: relative;
+        }
+        .white-label-making .right-col .image-section{
+            position: absolute;
+            right: 0;
+        }
+
+    }
+    @media (min-width: 768px) {
+        .white-label-making{
+            position: relative;
+        }
+        .white-label-making .right-col .image-section{
+            position: absolute;
+            right: 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+    }
+    @media (max-width: 767px) {
+
+    }
+</style>
+
+<div class="span12 clients-logo-section section-padding" style="background:{{ module.add_background_color.color }};">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="logo-section">
+                    {% for item in module.add_images_group %}
+                    <div class="each-logo">
+                        <img src="{{ item.add_image.src }}"
+                             alt="{{ item.add_image.alt }}"
+                             width="{{ item.add_image.width }}"
+                             height="{{ item.add_image.height }}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+
+    .clients-logo-section.section-padding{
+        padding: 56px 0;
+    }
+    @media (min-width: 480px) {
+        .clients-logo-section .logo-section{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .clients-logo-section .each-logo{
+            /*         -ms-flex-preferred-size: 14%;
+                    flex-basis: 14%; */
+        }
+        .clients-logo-section.section-padding{
+            padding: 28px 0;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        .clients-logo-section .each-logo{
+            /*         -ms-flex-preferred-size: 14%;
+                    flex-basis: 14%; */
+        }
+        .clients-logo-section.section-padding{
+            padding: 28px 0;
+        }
+    }
+    @media (max-width: 479px) {
+        .clients-logo-section .each-logo img{
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .clients-logo-section.section-padding{
+            padding: 14px 0;
+            font-family: 'Futura PT Demi','future';
+        }
+    }
+</style>
+Lorem ipsum dolor sit.

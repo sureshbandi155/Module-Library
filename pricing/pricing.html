@@ -1,0 +1,180 @@
+<div class="span12 pricing-optimization section-padding change-mobile" style="background:{{ module.add_background_color.color }};">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6 left-col text-margin-zero">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                    <div class="social-icon">
+                        <img src="{{ module.add_icon.src }}"
+                             alt="{{ module.add_icon.alt }}"
+                             width="{{ module.add_icon.width }}"
+                             height="{{ module.add_icon.height }}">
+                        <p class="fourteen-pixel">{{ module.add_survey_text }}</p>
+                    </div>
+                </div>
+                <div class="span6 right-col no-margin-span">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}"
+                             width="{{ module.add_image.width }}"
+                             height="{{ module.add_image.height }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body .row-fluid .thirteen-pixel{
+        font-size: 13px;
+        color: #737373;
+    }
+    .pricing-optimization .left-col h2{
+        padding: 0 0 12px;
+    }
+    .pricing-optimization .left-col > p{
+        padding: 0 0 12px;
+    }
+    .pricing-optimization .image-section img{
+        float: right;
+    }
+    body .row-fluid .pricing-optimization .left-col{
+        padding-right: 3.1%;
+    }
+
+    .pricing-optimization .left-col .social-icons{
+        border:thin solid #cfd0d1;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .pricing-optimization .left-col .social-icon p{
+        padding-left: 20px;
+    }
+</style>
+
+<div class="span12 pricing-transformation" style="background:{{ module.add_background_color.color }};">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="heading-section text-margin-zero">
+                    <h3>{{ module.add_heading }}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="three-col-adjust">
+          <span>
+              {% for item in module.add_pricing_group %}
+                    <div class="hs_cos_wrapper no-margin-span align-center text-margin-zero single-card">
+                        <div class="image-text">
+                            <img src="{{ item.add_image.src }}"
+                                 alt="{{ item.add_image.alt }}"
+                                 width="{{ item.add_image.width }}"
+                                 height="{{ item.add_image.height }}">
+                            <h5>{{ item.add_heading }}</h5>
+                            <p class="seventeen-pixel">{{ item.add_description }}</p>
+                        </div>
+                    </div>
+              {% endfor %}
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Caregiver and Staff Training</h1>
+<h2>Caregiver and Staff Training</h2>
+<h3>Caregiver and Staff Training</h3>
+<h4>Caregiver and Staff Training</h4>
+<h5>Caregiver and Staff Training</h5>
+<h6>Caregiver and Staff Training</h6>
+<p>Caregiver and Staff Training</p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quod.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolor id maxime molestiae pariatur placeat voluptates. Aliquam dolor ipsam itaque!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur excepturi explicabo fuga harum in odit sapiente! Accusamus animi autem, magnam maiores natus nobis optio possimus quasi reprehenderit sint. Culpa?
+
+
+<style>
+    .pricing-transformation{
+        padding: 50px 0 0;
+    }
+    body .row-fluid .seventeen-pixel{
+        font-size: 17px;
+        color: #122b57;
+    }
+    .pricing-transformation .heading-section{
+        max-width: 1010px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .pricing-transformation .image-text img{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        min-height: 110px;
+    }
+    .pricing-transformation .three-col-adjust{
+        margin: 30px auto;
+
+    }
+    .pricing-transformation h2{
+        padding: 0 0 49px;
+    }
+    .pricing-transformation .image-text h5{
+        padding: 0 0 21px;
+    }
+    .pricing-transformation .image-text p{
+        padding: 0 0 15px;
+    }
+    body .row-fluid .pricing-transformation .single-card{
+        margin-right: 32px;
+    }
+    body .row-fluid .pricing-transformation .single-card:nth-child(3n){
+        padding-left: 4.8px;
+    }
+
+
+</style>
+
+<style>
+    body .row-fluid .pth-header h4{
+        font-size: 16px;
+        font-weight: 500;
+    }
+</style>
+
+<div  class="span12 footer-section"  style="background:{{ module.add_background_color.color }};">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="text-logo-section all-text-white">
+                    <div class="text-section text-margin-zero">
+                        <p>{{ module.add_copy_right_info }}</p>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            {% for item in module.add_icons_group %}
+                            <li>
+                                <a href="{{ item.add_icon_link }}">
+                                    <i class="{{ item.add_font_awesome_icon_class }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .footer-section .social-icons ul li a i:first-child{
+        font-size: 15px;
+    }
+    .left-col{
+        max-width: 492px;
+    }
+</style>

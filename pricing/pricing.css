@@ -1,0 +1,78 @@
+
+/*==================================================================
+   Pricing Transformation CM Styling
+=====================================================================*/
+body .row-fluid .seventeen-pixel{
+    font-size: 17px;
+    color: #122b57;
+}
+.pricing-transformation{
+    padding: 50px 0 100px;
+}
+
+.pricing-transformation .heading-section{
+    max-width: 1010px;
+    margin: 0 auto;
+    text-align: center;
+}
+.pricing-transformation .image-text img{
+    margin: 0 auto 36px;
+    display: block;
+    text-align: center;
+
+}
+.pricing-transformation h3{
+    padding: 0 0 49px;
+}
+.pricing-transformation .image-text h5{
+    padding: 0 0 21px;
+}
+.pricing-transformation .image-text p{
+    padding: 0 0 15px;
+}
+body .container-fluid .row-fluid .pricing-transformation .single-card{
+    margin-right: 25px;
+}
+
+/*==================================================================
+   End of Pricing Transformation CM Styling
+=====================================================================*/
+/*==================================================================
+  Media Queries starts
+=====================================================================*/
+@media (min-width: 1025px) {
+    .pricing-transformation .image-text img{
+        min-height: 110px;
+
+    }
+    body .row-fluid .pricing-transformation .single-card:nth-child(3n){
+        padding-left: 4.8px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pricing-transformation{
+        padding: 30px 0 60px;
+    }
+    .pricing-transformation h3{
+        padding: 0 0 30px;
+    }
+    .pricing-transformation .image-text h5{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .pricing-transformation{
+        padding: 30px 0 60px;
+    }
+    .pricing-transformation h3{
+        padding: 0 0 20px;
+    }
+    .pricing-transformation .image-text h5{
+        padding: 0 0 20px;
+    }
+}
+
+
+/*==================================================================
+   Content Section WD 9 Styling
+=====================================================================*/

@@ -68,21 +68,19 @@ max-width:100%;
 }
 
 body  .container-fluid .row-fluid .wrapper{
-    max-width: 1200px;
+    max-width: 1170px;
     margin-left:auto;
     margin-right:auto;
     float: none;
     padding-left:15px;
     padding-right:15px;
-    font-family: 'relay'
+}
+
+body img{
+    height:auto;
 }
 
 
-/*BootStrap Declaration*/
-
-.col-sm-4{
-    margin-bottom:30px;
-}
 
 .container-fluid{
     padding:0;
@@ -240,10 +238,10 @@ margin-bottom: 20px;
 
 body .hs-cta-wrapper a.cta_button[title],
 body .container-fluid .row-fluid .hs-button{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     color: #ffffff;
     padding:13px 34px;
     cursor: pointer;
@@ -293,6 +291,18 @@ body .transparent-cta  .hs-cta-wrapper a.cta_button[title]{
 body .transparent-cta .hs-cta-wrapper a.cta_button[title]:hover{
     background:#000000;
     color: #ffffff;
+}
+
+
+body .transparent-white-cta  .hs-cta-wrapper a.cta_button[title]{
+    background:transparent;
+    border-color:#ffffff;
+    color:#ffffff;
+}
+
+body .transparent-white-cta .hs-cta-wrapper a.cta_button[title]:hover{
+    background:#ffffff;
+    color: #000000;
 }
 
 
@@ -422,13 +432,8 @@ body .container-fluid .row-fluid [class*="span"]{
     border-bottom:1px solid #e7e7e7;
 }
 
-body .container-fluid .row-fluid .section-heading.align-center {
-    max-width: 840px;
-    float: none;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:40px;
-}
+
+
 
 body .section-heading{
     max-width: 679px;
@@ -447,7 +452,6 @@ body .section-heading{
     font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
-    color: #808080;
 }
 
 body .container-fluid .row-fluid .no-margin-span{
@@ -538,6 +542,9 @@ body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
         margin: 30px auto 0;
         float: none;
     }
+    .two-col-text p{
+        font-size: 16px;
+    }
 }
 
 
@@ -596,6 +603,9 @@ Typography Responsive Styling
     .section-heading p {
         font-size: 18px;
     }
+    .two-col-text p{
+        font-size: 16px;
+    }
 }
 
 
@@ -635,6 +645,11 @@ Typography Responsive Styling
 
     .section-padding {
         padding: 60px 0;
+    }
+
+    .section-padding p{
+        font-size:16px;
+        line-height:26px;
     }
 
     .align-right {
@@ -1176,7 +1191,6 @@ padding: 12px 18px;
     pointer-events: none;
     width: 15px;
     height: 15px;
-    height: 15px;
     z-index: -1;
     transform: rotate(45deg);
     box-shadow: -3px -3px 3px -3px rgba(0, 0, 0, 0.39);
@@ -1240,85 +1254,6 @@ border-radius: 4px;
 border: 1px solid {{ navColor }};
 padding: 10px 16px;
 }
-
-
-
-
-
-
-
-
-
-
-/*==============================================================
-Hero Section DP_01
-==============================================================*/
-
-
-.dp01-hero-section {
-    padding:280px 0 240px;
-    position:relative;
-}
-
-body .row-fluid .dp01-hero-section .wrapper{
-    max-width:700px;
-}
-
-.dp01-hero-section .section-heading{
-    margin-bottom:25px;
-}
-
-body .row-fluid .dp01-hero-section .scroll-down-icon{
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    width: 32px;
-    margin: 0 auto;
-    float: none;
-    text-align: center;
-    border: 1px solid;
-    height: 46px;
-    padding-top: 4px;
-    border-radius: 14px;
-    font-size: 10px;
-    cursor:pointer;
-}
-
-
-@media (max-width:1024px){
-
-    .dp01-hero-section {
-        padding: 220px 0 200px;
-    }
-}
-
-
-@media (max-width:767px){
-
-    .dp01-hero-section {
-        padding: 130px 0 150px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
 Custom Menu Primary
@@ -1675,35 +1610,3 @@ body .header-container-wrapper .row-fluid .cs-dp-header {
         right: 20px;
     }
 }
-
-/*==================================================================
-Content Section WD 9 Styling
-=====================================================================*/
-
-.content_section_wd_9 h2{
-    margin-bottom:74px;
-}
-
-
-.content_section_wd_9 h4{
-    margin: 27px 0px 16px;
-}
-
-
-
-/*==================================================================
-End Of Content Section WD 9 Styling
-=====================================================================*/
-
-
-
-
-
-
-
-
-
-
-
-
-

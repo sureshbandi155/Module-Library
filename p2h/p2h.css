@@ -1,0 +1,451 @@
+/*==================================================================
+   Our Partner Benefits Styling
+=====================================================================*/
+.our-partner-benefits.section-padding{
+    padding: 127px 0;
+}
+.our-partner-benefits .heading-section{
+    max-width: 827px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.our-partner-benefits h2{
+    padding: 0 0 18px;
+}
+.our-partner-benefits p{
+    padding: 0 0 18px;
+    line-height: 1.63;
+}
+.our-partner-benefits .single-card img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 12px;
+}
+.our-partner-benefits .single-card h4{
+    padding: 0 0 20px;
+}
+.our-partner-benefits .single-card p{
+    padding: 0 0 10px;
+}
+
+@media (min-width: 1025px) {
+    .our-partner-benefits .image-text-section{
+        padding-right: 8px;
+    }
+}
+@media (max-width: 1024px) {
+    .our-partner-benefits .heading-section{
+        margin-bottom: 0;
+    }
+    .our-partner-benefits .single-card img{
+        margin-bottom: 6px;
+    }
+    .our-partner-benefits .single-card h4{
+        padding: 0 0 10px;
+    }
+    .our-partner-benefits .single-card p{
+        padding: 0 0 10px;
+    }
+}
+/*==================================================================
+   End of Our Partner Benefits Styling
+=====================================================================*/
+/*==================================================================
+   White Label Making Styling
+=====================================================================*/
+.white-label-making h2{
+    padding: 0 0 23px;
+}
+.white-label-making p{
+    padding: 0 0 25px;
+}
+.white-label-making .text-section{
+    border-bottom: 1px solid #c3c8cf;
+}
+.white-label-making .button-section{
+    padding: 24px 0 0;
+}
+@media (min-width: 1025px) {
+    .white-label-making.section-padding{
+        padding:110px 0 ;
+    }
+
+}
+@media (min-width: 768px) {
+    .white-label-making{
+        position: relative;
+    }
+    .white-label-making .right-col .image-section{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .white-label-making .right-col .image-section img{
+        max-width: 50vw;
+        height: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .white-label-making h2{
+        padding: 0 0 20px;
+    }
+    .white-label-making p{
+        padding: 0 0 20px;
+    }
+    .white-label-making .button-section{
+        padding: 20px 0 0;
+    }
+}
+@media (max-width: 767px) {
+    .white-label-making h2{
+        padding: 0 0 15px;
+    }
+    .white-label-making p{
+        padding: 0 0 15px;
+    }
+    .white-label-making .button-section{
+        padding: 15px 0 0;
+    }
+    .white-label-making .right-col{
+        margin-bottom: 20px;
+    }
+    .white-label-making .right-col{
+        text-align: center;
+    }
+    .white-label-making .image-section img{
+        margin: 0 auto;
+        display: block;
+    }
+}
+/*==================================================================
+   End of White Label Making Styling
+=====================================================================*/
+
+/*==================================================================
+  Clients Logo Section Styling
+=====================================================================*/
+
+.clients-logo-section.section-padding{
+    padding: 56px 0;
+}
+@media (min-width: 480px) {
+    .clients-logo-section .logo-section{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .clients-logo-section .each-logo{
+        /*         -ms-flex-preferred-size: 14%;
+                flex-basis: 14%; */
+    }
+    .clients-logo-section.section-padding{
+        padding: 28px 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .clients-logo-section .each-logo{
+        /*         -ms-flex-preferred-size: 14%;
+                flex-basis: 14%; */
+    }
+    .clients-logo-section.section-padding{
+        padding: 28px 0;
+    }
+}
+@media (max-width: 479px) {
+    .clients-logo-section .each-logo img{
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .clients-logo-section.section-padding{
+        padding: 14px 0;
+        font-family: 'Futura PT Demi', 'future';
+    }
+}
+
+/*==================================================================
+   End of Clients Logo Section Styling
+=====================================================================*/
+
+/*==================================================================
+   Form contact Us Section Styling
+=====================================================================*/
+
+.form-contact-us-wd-5-cloned {
+    position: relative;
+}
+.form-contact-us-wd-5-cloned.section-padding {
+    padding: 167px 0px 153px;
+}
+.form-contact-us-wd-5-cloned:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 50%;
+    left: 0;
+}
+
+.form-contact-us-wd-5-cloned:after {
+    content: '';
+    background: #f6fbff;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.form-contact-us-wd-5-cloned .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-contact-us-wd-5-cloned .left-col,
+.form-contact-us-wd-5-cloned .right-col{
+    flex-basis: 43.5%;
+}
+
+.form-contact-us-wd-5-cloned .right-col {
+    padding-top: 58px;
+}
+
+
+.form-contact-us-wd-5-cloned .left-col > div {
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    padding: 55px 50px 50px 50px;
+}
+
+.form-contact-us-wd-5-cloned .left-col h2 {
+    padding-top: 50px;
+    color: #232937;
+}
+
+.form-contact-us-wd-5-cloned form .hubspot-link__container.sproket {
+    display: none;
+}
+
+.form-contact-us-wd-5-cloned form {
+    padding-top: 15px;
+}
+
+body .row-fluid .form-contact-us-wd-5-cloned form input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 0;
+    padding-left: 0px;
+    color: #808080;
+    line-height: 1.56;
+font-family: {{formFontFamily}};
+}
+
+.form-contact-us-wd-5-cloned form .hs-submit {
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+
+.form-contact-us-wd-5-cloned .outsourcing-services ul {
+    padding-left: 25px;
+}
+
+.form-contact-us-wd-5-cloned .outsourcing-services li {
+    text-indent: -19px;
+    padding-bottom: 8px;
+    color: #232937;
+    font-weight: 500;
+}
+
+.form-contact-us-wd-5-cloned .outsourcing-services h4 {
+    color: #232937;
+}
+
+.form-contact-us-wd-5-cloned .live-chat {
+    padding-top: 22px;
+}
+
+.form-contact-us-wd-5-cloned .live-chat h4 {
+    padding-bottom: 14px;
+    color: #232937;
+}
+
+.form-contact-us-wd-5-cloned .live-chat .live-chat-content {
+    display: flex;
+    box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    margin-bottom: 67px;
+}
+
+.form-contact-us-wd-5-cloned .live-chat .live-chat-content > div:nth-of-type(1) {
+    background-color: #232937;
+    flex-basis: 16%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-contact-us-wd-5-cloned .live-chat .live-chat-content > div:nth-of-type(2) {
+    flex-basis: 84%;
+}
+
+.form-contact-us-wd-5-cloned .live-chat .live-chat-content > div:nth-of-type(2) p {
+    text-align: left;
+    padding: 19.5px 22px;
+    margin: 0;
+    color: #232937;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-contact-us-wd-5-cloned .feedback h5 {
+    padding-top: 15px;
+    margin-bottom: 2px;
+    line-height: 1.33;
+    color: #232937;
+    font-size: 18px;
+}
+
+.form-contact-us-wd-5-cloned .feedback p {
+    color: #232937;
+    line-height: 1.7;
+    letter-spacing: 0.03px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.form-contact-us-wd-5-cloned .feedback-content p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.02px;
+}
+.form-contact-us-wd-5-cloned .feedback .feedback-content {
+    position: relative;
+    padding-top: 16px;
+}
+
+.form-contact-us-wd-5-cloned .feedback-content img {
+    float: left;
+}
+
+.form-contact-us-wd-5-cloned .feedback-content > div {
+    position: absolute;
+    left: 95px;
+}
+
+.form-contact-us-wd-5-cloned .outsourcing-services li:before {
+    content: '';
+    font-family: none;
+    background: url(https://cdn2.hubspot.net/hubfs/6203144/Pattern%20Library/Image/Content%20Section/tick-with-bg.svg);
+    height: 18px;
+    width: 18px;
+    background-size: 100% 100%;
+    top: 2.5px;
+}
+
+@media(max-width: 1024px) {
+    .form-contact-us-wd-5-cloned.section-padding {
+        padding: 100px 0px;
+    }
+    .form-contact-us-wd-5-cloned .feedback h5 {
+        padding-top: 20px;
+    }
+
+    .form-contact-us-wd-5-cloned .live-chat .live-chat-content > div:nth-of-type(1) {
+        flex-basis: 20%;
+    }
+    .form-contact-us-wd-5-cloned .feedback p {
+        font-size: 18px;
+    }
+    .form-contact-us-wd-5-cloned .left-col > div {
+        padding: 35px;
+    }
+    .form-contact-us-wd-5-cloned .live-chat {
+        padding-top: 15px;
+    }
+    .form-contact-us-wd-5-cloned .live-chat .live-chat-content {
+        margin-bottom: 35px;
+    }
+    .form-contact-us-wd-5-cloned .live-chat h4 {
+        padding-bottom: 10px;
+    }
+    .form-contact-us-wd-5-cloned .left-col, .form-contact-us-wd-5-cloned .right-col {
+        flex-basis: 46.5%;
+    }
+    .form-contact-us-wd-5-cloned .live-chat .live-chat-content > div:nth-of-type(2) p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .form-contact-us-wd-5-cloned .wrapper {
+        flex-direction: column;
+    }
+    .form-contact-us-wd-5-cloned.section-padding {
+        padding: 60px 0px;
+    }
+    .form-contact-us-wd-5-cloned:before {
+        height: 50%;
+        z-index: -1;
+        width: 100%;
+    }
+
+    .form-contact-us-wd-5-cloned:after {
+        top: 50%;
+        height: 50%;
+        width: 100%;
+        left: 0;
+    }
+
+    .form-contact-us-wd-5-cloned .left-col > div {
+        padding: 40px 20px 20px 20px;
+    }
+    .form-contact-us-wd-5-cloned .feedback p {
+        font-size: 16px;
+    }
+    .form-contact-us-wd-5-cloned .live-chat .live-chat-content > div:nth-of-type(2) p {
+        font-size: 18px;
+    }
+    .form-contact-us-wd-5-cloned .left-col h2 {
+        padding-top: 30px;
+    }
+    .form-contact-us-wd-5-cloned .live-chat .live-chat-content {
+        margin-bottom: 25px;
+    }
+    .form-contact-us-wd-5-cloned .live-chat {
+        padding-top: 0px;
+    }
+    .form-contact-us-wd-5-cloned .right-col {
+        padding-top: 35px;
+    }
+}
+
+@media(max-width: 480px) {
+    .form-contact-us-wd-5-cloned .left-col > div {
+        padding: 40px 20px 20px 20px;
+    }
+    .form-contact-us-wd-5-cloned .feedback .feedback-content {
+        padding-top: 10px;
+
+    }
+}
+
+
+/*==================================================================
+   End of Form contact Us Section Styling
+=====================================================================*/

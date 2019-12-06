@@ -30,13 +30,14 @@
 
 {% set baseColor = '#000000' %}
 {% set baseFontColor = '#808080' %}
-{% set headingFontColor = '#000000' %}
+{% set headingFontColor = '#122B57' %}
 {% set buttonTextColor = '#ffffff' %}
 {% set buttonBackgroundColor = '#000000' %}
 {% set buttonHoverTextColor = '#ffffff' %}
 {% set buttonHoverBackgroundColor = '#000000' %}
 {% set headingFontColor = '#000000' %}
 {% set navColor = '#fff' %}
+{% set paraColor = 'S273F69' %}
 
 
 
@@ -68,21 +69,19 @@ max-width:100%;
 }
 
 body  .container-fluid .row-fluid .wrapper{
-    max-width: 1200px;
+    max-width: 1360px;
     margin-left:auto;
     margin-right:auto;
     float: none;
     padding-left:15px;
     padding-right:15px;
-    font-family: 'relay'
+}
+
+body img{
+    height:auto;
 }
 
 
-/*BootStrap Declaration*/
-
-.col-sm-4{
-    margin-bottom:30px;
-}
 
 .container-fluid{
     padding:0;
@@ -95,12 +94,10 @@ h1,h2,h3,h4,h5,h6,p,a{
     padding:0;
     text-decoration:none;
     margin-bottom:15px;
-    color:#000000;
+    color:#122b57;
 }
 
-h1,h2,h3,h4,h5,h6{
-color:{{ headingFontColor }};
-}
+
 
 .body-container-wrapper ul,.body-container-wrapper li{
     margin-bottom:15px;
@@ -111,7 +108,7 @@ a{
 }
 
 h1{
-    font-size: 62px;
+    font-size: 68px;
     font-weight: 500;
     line-height: 1.23;
     letter-spacing: -1.88px;
@@ -119,21 +116,21 @@ h1{
 }
 
 h2{
-    font-size: 42px;
+    font-size: 54px;
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: 0.06px;
 }
 
 h3{
-    font-size: 34px;
+    font-size: 42px;
     font-weight: 500;
     line-height: 1.41;
     letter-spacing: 0.04px;
 }
 
 h4{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.42;
     letter-spacing: 0.03px;
@@ -144,11 +141,11 @@ h5{
     font-weight: 500;
     line-height: 1.44;
     letter-spacing: 0.02px;
-    font-size:20px;
+    font-size:22px;
 }
 
 h6{
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1.43;
     letter-spacing: 2.02px;
@@ -156,13 +153,21 @@ h6{
 
 }
 
-p,
+
 .body-container-wrapper li{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.63;
     letter-spacing: 0.3px;
 color: {{ baseFontColor }};
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.63;
+    letter-spacing: 0.3px;
+color: {{ paraColor }};
+
 }
 
 .body-container-wrapper {
@@ -240,10 +245,10 @@ margin-bottom: 20px;
 
 body .hs-cta-wrapper a.cta_button[title],
 body .container-fluid .row-fluid .hs-button{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     line-height: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
     color: #ffffff;
     padding:13px 34px;
     cursor: pointer;
@@ -257,14 +262,14 @@ body .container-fluid .row-fluid .hs-button{
     position: relative;
     z-index: 1;
     border:1px solid transparent;
-    background:#000000;
+    background:#00aeef;
 }
 
 body .hs-cta-wrapper a.cta_button[title]:hover,
 body .container-fluid .row-fluid .hs-button:hover{
     background:transparent;
-    border-color:#000000;
-    color:#000000;
+    border-color: #ffffff;
+    color:#122b57;
 }
 
 body .hs-cta-wrapper a.cta_button{ // Image CTA Example
@@ -293,6 +298,18 @@ body .transparent-cta  .hs-cta-wrapper a.cta_button[title]{
 body .transparent-cta .hs-cta-wrapper a.cta_button[title]:hover{
     background:#000000;
     color: #ffffff;
+}
+
+
+body .transparent-white-cta  .hs-cta-wrapper a.cta_button[title]{
+    background:transparent;
+    border-color:#ffffff;
+    color:#ffffff;
+}
+
+body .transparent-white-cta .hs-cta-wrapper a.cta_button[title]:hover{
+    background:#ffffff;
+    color: #000000;
 }
 
 
@@ -422,13 +439,8 @@ body .container-fluid .row-fluid [class*="span"]{
     border-bottom:1px solid #e7e7e7;
 }
 
-body .container-fluid .row-fluid .section-heading.align-center {
-    max-width: 840px;
-    float: none;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:40px;
-}
+
+
 
 body .section-heading{
     max-width: 679px;
@@ -447,7 +459,6 @@ body .section-heading{
     font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
-    color: #808080;
 }
 
 body .container-fluid .row-fluid .no-margin-span{
@@ -538,6 +549,9 @@ body .row-fluid .two-col-adjust span>.hs_cos_wrapper {
         margin: 30px auto 0;
         float: none;
     }
+    .two-col-text p{
+        font-size: 16px;
+    }
 }
 
 
@@ -553,23 +567,23 @@ Typography Responsive Styling
     }
 
     h1 {
-        font-size: 34px;
+        font-size: 48px;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 42px;
     }
 
     h3 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     h4{
-        font-size: 18px;
+        font-size: 24px;
     }
 
     h5{
-        font-size: 14px;
+        font-size: 18px;
         line-height: 18px;
     }
 
@@ -586,7 +600,7 @@ Typography Responsive Styling
     }
 
     p{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .body-container-wrapper li {
@@ -595,6 +609,9 @@ Typography Responsive Styling
 
     .section-heading p {
         font-size: 18px;
+    }
+    .two-col-text p{
+        font-size: 16px;
     }
 }
 
@@ -609,23 +626,23 @@ Typography Responsive Styling
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 34px;
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     h4{
-        font-size: 18px;
+        font-size: 24px;
     }
 
     h5{
-        font-size: 14px;
+        font-size: 18px;
         line-height: 18px;
     }
 
@@ -635,6 +652,11 @@ Typography Responsive Styling
 
     .section-padding {
         padding: 60px 0;
+    }
+
+    .section-padding p{
+        font-size:16px;
+        line-height:26px;
     }
 
     .align-right {
@@ -650,7 +672,7 @@ Typography Responsive Styling
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -1176,7 +1198,6 @@ padding: 12px 18px;
     pointer-events: none;
     width: 15px;
     height: 15px;
-    height: 15px;
     z-index: -1;
     transform: rotate(45deg);
     box-shadow: -3px -3px 3px -3px rgba(0, 0, 0, 0.39);
@@ -1676,24 +1697,6 @@ body .header-container-wrapper .row-fluid .cs-dp-header {
     }
 }
 
-/*==================================================================
-Content Section WD 9 Styling
-=====================================================================*/
-
-.content_section_wd_9 h2{
-    margin-bottom:74px;
-}
-
-
-.content_section_wd_9 h4{
-    margin: 27px 0px 16px;
-}
-
-
-
-/*==================================================================
-End Of Content Section WD 9 Styling
-=====================================================================*/
 
 
 

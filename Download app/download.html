@@ -1,0 +1,532 @@
+<div class="span12 download-app-wd-1 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="section-heading align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                </div>
+                <div class="image-section">
+                    <img src="{{ module.add_image.src }}"
+                         alt="{{ module.add_image.alt }}"
+                         width="{{ module.add_image.width }}"
+                         height="{{ module.add_image.height }}">
+                </div>
+                <div class="button-section">
+                    <span class="left-button">
+                        <a href="{{ module.add_app_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                    <span class="right-button">
+                        <a href="{{ module.add_play_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .download-app-wd-1 .heading-section{
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    .download-app-wd-1 h2{
+        padding: 0 0 20px;
+    }
+    .download-app-wd-1 p{
+        padding: 0 0 20px;
+    }
+    .download-app-wd-1 .image-section{
+        margin: 50px 0 76px;
+    }
+    .download-app-wd-1 .remove-underline:hover{
+        text-decoration: none;
+    }
+    .download-app-wd-1 .left-button{
+        margin-right: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .download-app-wd-1 .image-section{
+            margin: 30px 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .download-app-wd-1 .image-section{
+            margin: 20px 0;
+        }
+    }
+</style>
+<div class="span12 download-app-wd-2 section-padding align-center change-mobile" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="heading-section">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                    <div class="button-section">
+                        <span class="left-button">
+                            <a href="{{ module.add_app_store_link }}" target="_blank">
+                                <img src="{{ module.add_app_store_button_image.src }}"
+                                     alt="{{ module.add_app_store_button_image.alt }}"
+                                     width="{{ module.add_app_store_button_image.width }}"
+                                     height="{{ module.add_app_store_button_image.height }}">
+                            </a>
+                        </span>
+                        <span class="right-button">
+                            <a href="{{ module.add_play_store_link }}" target="_blank">
+                                <img src="{{ module.add_app_store_button_image.src }}"
+                                     alt="{{ module.add_app_store_button_image.alt }}"
+                                     width="{{ module.add_app_store_button_image.width }}"
+                                     height="{{ module.add_app_store_button_image.height }}">
+                            </a>
+                        </span>
+                    </div>
+                    <p>{{ module.add_version_details }}</p>
+                </div>
+                <div class="image-section">
+                    <img src="{{ module.add_image.src }}"
+                         alt="{{ module.add_image.alt }}"
+                         width="{{ module.add_image.width }}"
+                         height="{{ module.add_image.height }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /*==================================================================
+    Download App WD 2 Styling
+    =====================================================================*/
+    .download-app-wd-2 .heading-section{
+        max-width: 777px;
+        margin: 0 auto;
+    }
+    .download-app-wd-2 .heading-section h2{
+        padding: 0 0 22px;
+    }
+    .download-app-wd-2 .heading-section p{
+        padding: 0 0 29px;
+    }
+    .download-app-wd-2 .button-section{
+        padding: 0 0 30px;
+    }
+    .download-app-wd-2 .image-section{
+        padding: 32px 0 0;
+    }
+
+    .download-app-wd-2 .button-section .left-button{
+        margin-right: 25px;
+    }
+    @media (min-width: 768px) {
+        .download-app-wd-2{
+            position: relative;
+        }
+        .download-app-wd-2 .wrapper{
+            position: relative;
+        }
+        .download-app-wd-2.section-padding:before{
+            position: absolute;
+            content: '';
+            background: #fff;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            height: 40%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .download-app-wd-2 .heading-section h2{
+            padding: 0 0 20px;
+        }
+        .download-app-wd-2 .heading-section p{
+            padding: 0 0 20px;
+        }
+        .download-app-wd-2 .button-section{
+            padding: 0 0 20px;
+        }
+        .download-app-wd-2 .image-section{
+            padding: 20px 0 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .download-app-wd-2 .heading-section h2{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-2 .heading-section p{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-2 .button-section{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-2 .image-section{
+            padding: 15px 0 0;
+        }
+        .download-app-wd-2 .image-section img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    /*==================================================================
+    End of Download App WD 2 Styling
+    =====================================================================*/
+</style>
+
+<div class="span12 download-app-wd-5 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span5">
+                    <div class="heading-section section-border text-margin-zero">
+                        <h2>{{ module.add_heading }}</h2>
+                        <p>{{ module.add_description }}</p>
+                    </div>
+                    <div class="button-section">
+                    <span class="left-button">
+                        <a href="{{ module.add_app_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                        <span class="right-button">
+                        <a href="{{ module.add_play_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                    </div>
+                </div>
+                <div class="span7">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}"
+                             width="{{ module.add_image.width }}"
+                             height="{{ module.add_image.height }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .download-app-wd-5 .heading-section h2{
+        padding: 0 0 21px;
+    }
+    .download-app-wd-5 .heading-section p{
+        padding: 0 0 27px;
+    }
+    .download-app-wd-5 .button-section .left-button{
+        margin-right: 25px;
+    }
+    .download-app-wd-5 .button-section{
+        padding: 36px 0 0;
+    }
+    .download-app-wd-5 .heading-section{
+        padding: 12px 0 0;
+    }
+
+    @media (min-width: 768px)  {
+        .download-app-wd-5{
+            position: relative;
+        }
+        .download-app-wd-5 .image-section{
+            position: absolute;
+            right: 0;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .download-app-wd-5 .heading-section h2{
+            padding: 0 0 20px;
+        }
+        .download-app-wd-5 .heading-section p{
+            padding: 0 0 20px;
+        }
+        .download-app-wd-5 .button-section .left-button{
+            margin-right: 20px;
+        }
+        .download-app-wd-5 .button-section{
+            padding: 20px 0 0;
+        }
+        .download-app-wd-5 .heading-section{
+            padding: 10px 0 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .download-app-wd-5 .heading-section h2{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-5 .heading-section p{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-5 .button-section .left-button{
+            margin-right: 15px;
+        }
+        .download-app-wd-5 .button-section{
+            padding: 15px 0 0;
+        }
+        .download-app-wd-5 .heading-section{
+            padding: 7px 0 0;
+        }
+        .download-app-wd-5 .image-section img{
+            margin: 0 auto;
+            display: block;
+        }
+        .download-app-wd-5 .right-col{
+            margin: 0 0 20px;
+        }
+    }
+    @media (max-width: 480px) {
+        .download-app-wd-5 .button-section a img{
+            margin: 0 auto;
+            display: block;
+        }
+    }
+</style>
+
+<div class="span12 download-app-wd-6 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span7 left-col text-margin-zero">
+                    <h6>{{ module.add_sub_heading }}</h6>
+                    <h4>{{ module.add_heading }}</h4>
+                </div>
+                <div class="span5 right-col">
+                    <div class="button-section">
+                    <span class="left-button">
+                        <a href="{{ module.add_app_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                        <span class="right-button">
+                        <a href="{{ module.add_play_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+
+    .download-app-wd-6 .left-col p{
+        padding: 0 0 15px;
+    }
+    .download-app-wd-6 .button-section .left-button{
+        margin-right: 25px;
+    }
+    @media (min-width: 768px) {
+        .download-app-wd-6 .wrapper .row-fluid{
+            position: relative;
+        }
+        .download-app-wd-6 .button-section{
+            position: absolute;
+            right: 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .download-app-wd-6{
+            text-align: center;
+        }
+        .download-app-wd-6 .left-col{
+            margin: 0 0 20px;
+        }
+    }
+    @media (max-width: 480px) {
+        .download-app-wd-5 .button-section a img{
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+</style>
+<div class="span12 download-app-wd-8 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="heading-section align-center">
+                    <h2>{{ module.add_heading }}</h2>
+                    <p>{{ module.add_description }}</p>
+                    <div class="button-section">
+                    <span class="left-button">
+                        <a href="{{ module.add_app_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                        <span class="right-button">
+                        <a href="{{ module.add_play_store_link }}" target="_blank">
+                            <img src="{{ module.add_play_store_button_image.src }}"
+                                 alt="{{ module.add_play_store_button_image.alt }}"
+                                 width="{{ module.add_play_store_button_image.width }}"
+                                 height="{{ module.add_play_store_button_image.height }}">
+                        </a>
+                    </span>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="{{ module.add_image.src }}"
+                         alt="{{ module.add_image.alt }}"
+                         width="{{ module.add_image.width }}"
+                         height="{{ module.add_image.height }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .download-app-wd-8 .heading-section{
+        max-width: 657px;
+        margin: 0 auto;
+    }
+    .download-app-wd-8 .left-button{
+        margin-right: 27px;
+    }
+    .download-app-wd-8 h2{
+        padding: 0 0 22px;
+    }
+    .download-app-wd-8 p{
+        padding: 0 0 15px;
+    }
+    .download-app-wd-8 .heading-section .button-section{
+        padding: 56px 0 60px;
+    }
+    .download-app-wd-8 .image-section{
+        padding: 20px 0 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .download-app-wd-8 h2{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-8 .heading-section .button-section{
+            padding: 30px 0;
+        }
+    }
+    @media (max-width: 767px) {
+        .download-app-wd-8 h2{
+            padding: 0 0 10px;
+        }
+        .download-app-wd-8 .heading-section .button-section{
+            padding: 20px 0;
+        }
+    }
+</style>
+<div class="span12 download-app-wd-11 section-padding change-mobile" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper equal-height-container">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span6 left-col vertical-center">
+                    <h6></h6>
+                    <h2></h2>
+                    <p></p>
+                    <div class="button-section">
+                    <span class="left-button">
+                        <a href="{{ module.add_app_store_link }}" target="_blank">
+                            <img src="{{ module.add_app_store_button_image.src }}"
+                                 alt="{{ module.add_app_store_button_image.alt }}"
+                                 width="{{ module.add_app_store_button_image.width }}"
+                                 height="{{ module.add_app_store_button_image.height }}">
+                        </a>
+                    </span>
+                        <span class="right-button">
+                        <a href="{{ module.add_play_store_link }}" target="_blank">
+                            <img src="{{ module.add_play_store_button_image.src }}"
+                                 alt="{{ module.add_play_store_button_image.alt }}"
+                                 width="{{ module.add_play_store_button_image.width }}"
+                                 height="{{ module.add_play_store_button_image.height }}">
+                        </a>
+                    </span>
+                    </div>
+                </div>
+                <div class="span6 right-col">
+                    <div class="image-section">
+                        <img src="{{ module.add_image.src }}"
+                             alt="{{ module.add_image.alt }}"
+                             width="{{ module.add_image.width }}"
+                             height="{{ module.add_image.height }}">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .download-app-wd-11 .left-col p{
+         max-width: 530px;
+         padding: 0 0 29px;
+     }
+    .download-app-wd-11 .right-col .image-section{
+        /*text-align: center;*/
+        margin-left: 15%;
+    }
+    .download-app-wd-11 .left-col h2{
+        padding: 0 0 20px;
+    }
+    .download-app-wd-8 .button-section .left-button{
+        margin-right: 27px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .download-app-wd-11 .left-col p{
+            padding: 0 0 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .download-app-wd-11 .left-col h2{
+            padding: 0 0 15px;
+        }
+        .download-app-wd-11 .left-col p{
+            padding: 0 0 15px;
+        }
+    }
+    @media (max-width: 480px) {
+        .download-app-wd-8 .button-section a img{
+            margin: 0 auto;
+            display: block;
+        }
+    }
+</style>
+<div class="span12 download-app-wd-10 section-padding" style="background:{{ module.add_background_color.color }} url('{{ module.add_background_image.src }}')no-repeat;background-position:top center;background-size:cover;">
+    <div class="wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="row-fluid">
+                <div class="span5 left-col">
+                    <p></p>
+                    <div class="button-section">
+
+                    </div>
+                    <h3></h3>
+                    <div class="span12 no-margin-span image-outer-layer">
+                        <div class="span4 inner-layer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

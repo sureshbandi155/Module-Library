@@ -1,0 +1,64 @@
+<div class="span12 on-hover-menu section-padding">
+    <div class="row-fluid-wrapper">
+        <div class="row-fluid-wrapper">
+            <div class="flex-items">
+                <h6></h6>
+                <div class="span4">
+                    <a href="">
+                        <p class="fifteen-pixel"></p>
+                        <p class="twelve-pixel"></p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .on-hover-menu .flex-items{
+        display: flex;
+    }
+</style>
+<div class="on-hover-menu section-padding">
+    <div class="span6 add-left-col">
+        {% for item in module.add_sub_menu_group %}
+        <div class="single-menu-item">
+            <h6>{{ item.add_sub_menu_heading }}</h6>
+            {% for item2 in item.add_sub_menu_lists_group %}
+            <div class="">
+                <a href="">
+                    {{ item2.add_sub_menu_list }}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+    <div class="span6 add-right-col">
+        {% for item in module.add_right_col_sub_menu_group %}
+        <div class="single-menu-item">
+            <h6>{{ item.add_sub_menu_heading }}</h6>
+            {% for item2 in item.add_sub_menu_lists_group %}
+            <div class="">
+                <a href="">
+                    {{ item2.add_sub_menu_list }}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+<style>
+    .on-hover-menu h6{
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.04px;
+        color: #58595b;
+    }
+    .on-hover-menu .single-menu-item div:hover{
+        border-radius: 3px;
+        background-color: #e0f3e9;
+    }
+</style>

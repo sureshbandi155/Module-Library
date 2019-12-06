@@ -443,3 +443,216 @@ End of Call to Action WD 17 Styling
 /*==================================================================
  End of Call to Action WD 15 Styling
 =====================================================================*/
+/*==================================================================
+ Call to Action WD 21 Styling
+=====================================================================*/
+@media (min-width: 768px){
+    .call-to-action-21 .text-section h3{
+        padding: 0 0 19px;
+    }
+    .call-to-action-21 .text-section p{
+        padding: 0 0 29px;
+    }
+    .call-to-action-21 .image-section{
+        float: right;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-21 .text-section h3{
+        padding: 0 0 15px;
+    }
+    .call-to-action-21 .text-section p{
+        padding: 0 0 15px;
+    }
+    .call-to-action-21 .image-section img{
+        margin: 0 auto;
+        display: block;;
+    }
+    .call-to-action-21{
+        text-align: center;
+    }
+    .call-to-action-21 .right-col{
+        margin-bottom: 20px;
+    }
+}
+/*==================================================================
+ End of Call to Action WD 21 Styling
+=====================================================================*/
+
+/*==================================================================
+  Call to Action WD 19 Styling
+=====================================================================*/
+
+@media (min-width: 1200px) {
+    body .container-fluid .row-fluid .call-to-action-19 .center-col{
+        margin-left: -28px;
+    }
+}
+@media (min-width: 768px) {
+    .call-to-action-19 .wrapper{
+        position: relative;
+    }
+    .call-to-action-19 .button-section{
+        position: absolute;
+        right: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-19{
+        text-align: center;
+    }
+}
+/*==================================================================
+ End of Call to Action WD 19 Styling
+=====================================================================*/
+
+
+/*==================================================================
+ Call to Action WD 13 Styling
+=====================================================================*/
+.call-to-action-13.section-padding{
+    padding-bottom: 120px;
+}
+.call-to-action-13 h2{
+    padding: 0 0 15px;
+}
+.call-to-action-13 .heading-section{
+    margin-bottom: 100px;
+}
+.call-to-action-13 .right-col{
+    padding: 118px 62px 112px;
+    min-width: 50.2%;
+}
+.call-to-action-13 .right-col h3{
+    padding: 0 0 33px;
+    max-width: 345px;
+}
+.call-to-action-13 .right-col p{
+    padding: 0 0 36px;
+}
+
+@media (min-width: 768px) {
+    /*overlay right col */
+    .call-to-action-13 .inner-row{
+        position: relative;
+    }
+    .call-to-action-13 .right-col{
+        position: absolute;
+        right: 0;
+        top: 16.4%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .call-to-action-13 .heading-section{
+        margin-bottom: 25px;
+    }
+    .call-to-action-13 .right-col{
+        padding: 60px;
+
+
+    }
+    .call-to-action-13 .right-col h3{
+        padding: 0 0 20px;
+    }
+    .call-to-action-13 .right-col p{
+        padding: 0 0 20px;
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-13 .heading-section{
+        margin-bottom: 10px;
+    }
+    .call-to-action-13 .right-col{
+        padding: 30px;
+        min-width: 0;
+    }
+    .call-to-action-13 .right-col h3{
+        padding: 0 0 10px;
+    }
+    .call-to-action-13 .right-col p{
+        padding: 0 0 10px;
+    }
+    .call-to-action-13 .left-col,
+    .call-to-action-13 .right-col{
+        width: 100%;
+    }
+}
+/*==================================================================
+ Call to Action WD 13 Styling
+=====================================================================*/
+
+/*==================================================================
+Download App WD 2 Styling
+=====================================================================*/
+.download-app-wd-2 .heading-section{
+    max-width: 777px;
+    margin: 0 auto;
+}
+.download-app-wd-2 .heading-section h2{
+    padding: 0 0 22px;
+}
+.download-app-wd-2 .heading-section p{
+    padding: 0 0 29px;
+}
+.download-app-wd-2 .button-section{
+    padding: 0 0 30px;
+}
+.download-app-wd-2 .image-section{
+    padding: 32px 0 0;
+}
+
+.download-app-wd-2 .button-section .left-button{
+    margin-right: 25px;
+}
+@media (min-width: 768px) {
+    .download-app-wd-2{
+        position: relative;
+    }
+    .download-app-wd-2 .wrapper{
+        position: relative;
+    }
+    .download-app-wd-2.section-padding:before{
+        position: absolute;
+        content: '';
+        background: #fff;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        height: 40%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .download-app-wd-2 .heading-section h2{
+        padding: 0 0 20px;
+    }
+    .download-app-wd-2 .heading-section p{
+        padding: 0 0 20px;
+    }
+    .download-app-wd-2 .button-section{
+        padding: 0 0 20px;
+    }
+    .download-app-wd-2 .image-section{
+        padding: 20px 0 0;
+    }
+}
+@media (max-width: 767px) {
+    .download-app-wd-2 .heading-section h2{
+        padding: 0 0 15px;
+    }
+    .download-app-wd-2 .heading-section p{
+        padding: 0 0 15px;
+    }
+    .download-app-wd-2 .button-section{
+        padding: 0 0 15px;
+    }
+    .download-app-wd-2 .image-section{
+        padding: 15px 0 0;
+    }
+    .download-app-wd-2 .image-section img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+/*==================================================================
+End of Download App WD 2 Styling
+=====================================================================*/
